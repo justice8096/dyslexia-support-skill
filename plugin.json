@@ -1,0 +1,64 @@
+{
+  "name": "dyslexia-support-skill",
+  "version": "1.0.0",
+  "description": "Evidence-based dyslexia standards compliance, remediation strategies, document generation, and gap analysis — grounded in IDA standards, structured literacy, and IDEA/504 requirements.",
+  "author": "Justice",
+  "license": "MIT",
+  "keywords": [
+    "dyslexia",
+    "structured-literacy",
+    "orton-gillingham",
+    "IDA-standards",
+    "IDEA",
+    "section-504",
+    "IEP",
+    "remediation",
+    "accessibility",
+    "EdTech",
+    "special-education"
+  ],
+  "skills": [
+    {
+      "name": "remediation-strategies",
+      "description": "Evidence-based dyslexia remediation strategies, intervention plans, and structured literacy lesson design using Orton-Gillingham principles. Use when creating reading intervention plans, tutoring strategies, lesson plans for dyslexia, or selecting remediation programs (Wilson, Barton, Lindamood-Bell, Sonday, RAVE-O).",
+      "path": "skills/remediation-strategies"
+    },
+    {
+      "name": "standards-compliance",
+      "description": "Audit programs, tools, and documents against IDA Knowledge and Practice Standards, IDEA requirements, and Section 504 for dyslexia compliance. Use for compliance checks, standards alignment, IEP audits, and 504 plan reviews.",
+      "path": "skills/standards-compliance"
+    },
+    {
+      "name": "document-generation",
+      "description": "Generate professional dyslexia support documents: IEPs, 504 plans, progress monitoring reports, accommodation letters, screening checklists, and evaluation summaries. All templates align with IDEA and IDA standards.",
+      "path": "skills/document-generation"
+    },
+    {
+      "name": "gap-analysis",
+      "description": "Identify gaps in dyslexia support tooling, assessments, and practices — then create new measures, frameworks, or standards where none exist. Includes dyslexia UX heuristics, content accessibility audits, and measure specification templates.",
+      "path": "skills/gap-analysis"
+    }
+  ],
+  "commands": [
+    {
+      "name": "dyslexia-audit",
+      "description": "Run a dyslexia standards compliance audit on a program, document, or tool",
+      "path": "commands/dyslexia-audit.md"
+    },
+    {
+      "name": "generate-iep",
+      "description": "Generate a dyslexia-focused IEP from student profile data",
+      "path": "commands/generate-iep.md"
+    },
+    {
+      "name": "remediation-plan",
+      "description": "Create an evidence-based remediation plan for a student with dyslexia",
+      "path": "commands/remediation-plan.md"
+    },
+    {
+      "name": "content-accessibility-check",
+      "description": "Audit digital content for dyslexia-friendly design and readability",
+      "path": "commands/content-accessibility-check.md"
+    }
+  ]
+}
