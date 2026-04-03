@@ -129,6 +129,177 @@ When auditing a program, tool, or document for compliance, evaluate against:
 - [ ] Assessment administered by qualified professionals
 - [ ] Results interpreted in context of dyslexia-specific patterns
 
+## Audit File Generation (Project Audits)
+
+When auditing a **project** (a codebase, EdTech tool, curriculum repository, or any target that lives in a directory), the skill MUST:
+
+1. **Create an `audits/` subdirectory** in the project root if one does not already exist.
+2. **Write the audit report as a Markdown file** inside `audits/` using the naming convention:
+   ```
+   audits/Dyslexia-Compliance-Audit-<project-name>-<YYYY-MM-DD>.md
+   ```
+3. **Follow the standard audit report format** described below.
+
+### Audit Report Format
+
+The audit report MUST follow this structure, matching the format used across other project audits:
+
+```markdown
+# Dyslexia Standards Compliance Audit Report
+
+| Field | Value |
+|-------|-------|
+| **Project** | <project name> |
+| **Audit Date** | <YYYY-MM-DD> |
+| **Auditor** | Claude (automated analysis) |
+| **Standards** | IDA KPS 2018, IDEA, Section 504, Structured Literacy |
+| **Scope** | <what was audited — files, documents, program components> |
+| **Type** | <Initial audit / Re-audit of prior findings> |
+
+---
+
+## Executive Summary
+
+<2-3 sentence summary of overall compliance posture. State the composite score
+and the most critical gaps.>
+
+### Findings Summary
+
+| Severity | Count | Description |
+|----------|-------|-------------|
+| CRITICAL | X     | <brief> |
+| HIGH     | X     | <brief> |
+| MEDIUM   | X     | <brief> |
+| LOW      | X     | <brief> |
+| **Total**| **X** |             |
+
+### Compliance by Domain
+
+| Domain | Pass | Fail | N/A |
+|--------|------|------|-----|
+| IDA Standard 1: Foundation Concepts | X | X | X |
+| IDA Standard 2: Reading Profiles | X | X | X |
+| IDA Standard 3: Assessment | X | X | X |
+| IDA Standard 4: Structured Literacy | X | X | X |
+| IDA Standard 5: Ethics | X | X | X |
+| IDEA Compliance | X | X | X |
+| Section 504 Compliance | X | X | X |
+
+---
+
+## Findings
+
+### CRITICAL Findings
+
+> CRITICAL = Students with dyslexia cannot access appropriate services or
+> instruction. Legal compliance risk.
+
+#### F-001: <Finding title>
+- **Standard/Law:** <IDA Standard X / IDEA §XXX / Section 504>
+- **Severity:** CRITICAL
+- **Category:** <Instruction / Assessment / Documentation / Accommodation / Legal>
+- **Element:** <What was audited — file, document section, program component>
+- **Description:** <What is wrong>
+- **Impact:** <How this affects students with dyslexia>
+- **Evidence:** <What was observed>
+- **Remediation:** <Specific, actionable fix>
+- **Effort Estimate:** <S / M / L / XL>
+
+---
+
+### HIGH Findings
+<same format per finding>
+
+### MEDIUM Findings
+<same format per finding>
+
+### LOW Findings
+<same format per finding>
+
+---
+
+## Standards Crosswalk
+
+| # | Standard/Requirement | Status | Finding Ref |
+|---|---------------------|--------|-------------|
+| IDA 1.1 | Reading development knowledge | PASS/FAIL | F-XXX |
+| IDA 3.1 | Assessment administration | PASS/FAIL | F-XXX |
+| IDEA §300.320 | IEP content requirements | PASS/FAIL | F-XXX |
+| ... | ... | ... | ... |
+
+---
+
+## Composite Score
+
+| Dimension | Weight | Score | Weighted |
+|-----------|--------|-------|----------|
+| Structured Literacy Alignment | 25% | XX | XX |
+| Assessment & Evaluation | 20% | XX | XX |
+| IEP/504 Compliance | 20% | XX | XX |
+| Instructional Methodology | 15% | XX | XX |
+| Progress Monitoring | 10% | XX | XX |
+| Ethical Standards & Training | 10% | XX | XX |
+| **Composite** | **100%** | | **XX/100** |
+
+### Score Interpretation
+
+| Range | Grade | Meaning |
+|-------|-------|---------|
+| 80-100 | A | Standards-aligned, minor improvements needed |
+| 60-79 | B | Good foundation, gaps in specific areas |
+| 40-59 | C | Needs improvement, multiple compliance gaps |
+| 20-39 | D | Significant deficiencies, systemic gaps |
+| 0-19 | F | Non-compliant, fundamental redesign needed |
+
+---
+
+## Remediation Roadmap
+
+| Priority | Finding | Effort | Description |
+|----------|---------|--------|-------------|
+| 1 | F-XXX | S | <description> |
+| 2 | F-XXX | M | <description> |
+| ... | ... | ... | ... |
+
+---
+
+## What Passed
+
+| Component | Standard Met |
+|-----------|-------------|
+| <component> | <what it does right> |
+
+---
+
+## Version History
+
+| Date | Version | Author | Changes |
+|------|---------|--------|---------|
+| YYYY-MM-DD | 1.0 | Claude (automated) | Initial audit |
+```
+
+### Re-Audit Behavior
+
+When re-auditing a project that already has an audit file in `audits/`:
+
+1. **Read the previous audit report** to identify prior findings.
+2. **Generate a new report** with the current date.
+3. **Include a Remediation Status table** at the top of the Findings section:
+
+```markdown
+## Remediation Status
+
+| ID | Finding | Severity | Status |
+|---|---|---|---|
+| F-001 | <title> | CRITICAL | FIXED / PARTIALLY FIXED / REMAINING |
+| F-002 | <title> | HIGH | FIXED / REMAINING |
+
+**Summary: X FIXED, X PARTIALLY FIXED, X REMAINING, X NEW**
+```
+
+4. **Document what changed and what didn't** for each dimension.
+5. **Include a Before/After Delta Table** showing score changes.
+
 ## Behavior Guidelines
 
 - Always distinguish between IDEA services and 504 accommodations — they serve different purposes.
@@ -137,8 +308,11 @@ When auditing a program, tool, or document for compliance, evaluate against:
 - When evaluating programs, be transparent about evidence levels. Many OG-based programs are widely used but have limited formal RCT evidence.
 - Always prioritize student welfare and access to appropriate services.
 - Cite specific standards (IDA Standard 3, IDEA §300.320, etc.) when flagging compliance issues.
+- **When auditing a project, ALWAYS create the audit file under `audits/` in the project directory.** Never output audit results only to the conversation — the file is the primary deliverable.
+- Use sequential finding IDs (F-001, F-002, ...) that persist across re-audits for traceability.
 
 ## Output Formats
+- **Project audits**: Markdown file in `<project>/audits/` (primary output)
 - Compliance audit reports (Markdown, DOCX, PDF)
 - Gap analysis documents with prioritized recommendations
 - Standards crosswalk matrices
