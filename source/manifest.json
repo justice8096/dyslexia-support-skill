@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "name": "Dyslexia Support Skill",
+    "version": "1.0.0",
+    "description": "Comprehensive dyslexia accessibility and educational support toolkit for standards compliance, gap analysis, remediation strategies, and document generation",
+    "author": "Dyslexia Support Team",
+    "license": "MIT",
+    "repository": "https://github.com/your-org/dyslexia-support-skill",
+    "keywords": [
+      "dyslexia",
+      "accessibility",
+      "education",
+      "iep",
+      "compliance",
+      "remediation",
+      "standards",
+      "504",
+      "ada"
+    ]
+  },
+  "skills": [
+    {
+      "name": "standards-compliance",
+      "displayName": "Standards Compliance",
+      "description": "Expert knowledge of dyslexia-related educational standards, legal requirements, and best practices for accessibility",
+      "path": "skills/standards-compliance.md",
+      "keywords": [
+        "standards",
+        "compliance",
+        "legal",
+        "requirements",
+        "ada",
+        "504",
+        "idea"
+      ]
+    },
+    {
+      "name": "gap-analysis",
+      "displayName": "Gap Analysis",
+      "description": "Methods and frameworks for identifying gaps between current academic performance and dyslexia-appropriate accommodations",
+      "path": "skills/gap-analysis.md",
+      "keywords": [
+        "analysis",
+        "assessment",
+        "gaps",
+        "performance",
+        "diagnosis"
+      ]
+    },
+    {
+      "name": "remediation-strategies",
+      "displayName": "Remediation Strategies",
+      "description": "Evidence-based intervention techniques and learning strategies specifically designed for individuals with dyslexia",
+      "path": "skills/remediation-strategies.md",
+      "keywords": [
+        "intervention",
+        "strategies",
+        "learning",
+        "techniques",
+        "remediation",
+        "orton-gillingham"
+      ]
+    },
+    {
+      "name": "document-generation",
+      "displayName": "Document Generation",
+      "description": "Templates and frameworks for generating IEPs, 504 plans, and formal accommodation documents",
+      "path": "skills/document-generation.md",
+      "keywords": [
+        "documents",
+        "iep",
+        "504",
+        "plans",
+        "templates",
+        "generation"
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "dyslexia-audit",
+      "displayName": "Dyslexia Accessibility Audit",
+      "description": "Conduct a comprehensive accessibility audit of educational materials, curricula, or programs for dyslexia-appropriateness",
+      "path": "commands/dyslexia-audit.md",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "project_name": {
+            "type": "string",
+            "description": "Name of the project, material, or program being audited"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Scope of audit: 'full', 'curriculum', 'materials', 'assessment', or 'technology'",
+            "default": "full"
+          },
+          "grade_level": {
+            "type": "string",
+            "description": "Target grade level: 'elementary', 'middle', 'high', 'college', or 'adult'"
+          }
+        },
+        "required": [
+          "project_name"
+        ]
+      },
+      "keywords": [
+        "audit",
+        "review",
+        "accessibility",
+        "compliance",
+        "assessment"
+      ]
+    },
+    {
+      "name": "generate-iep",
+      "displayName": "Generate IEP/504 Plan",
+      "description": "Generate an IEP or 504 plan with dyslexia-specific accommodations, modifications, and support strategies",
+      "path": "commands/generate-iep.md",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "student_name": {
+            "type": "string",
+            "description": "Student's full name"
+          },
+          "grade": {
+            "type": "string",
+            "description": "Current grade level or age"
+          },
+          "dyslexia_type": {
+            "type": "string",
+            "description": "Type of dyslexia: 'phonological', 'surface', 'mixed', or 'unspecified'",
+            "default": "unspecified"
+          },
+          "comorbidities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Associated conditions: 'dyscalculia', 'dysgraphia', 'dyspraxia', 'adhd', 'anxiety', etc."
+          },
+          "anxiety_level": {
+            "type": "string",
+            "description": "Anxiety level: 'none', 'mild', 'moderate', 'severe'",
+            "default": "none"
+          }
+        },
+        "required": [
+          "student_name",
+          "grade"
+        ]
+      },
+      "keywords": [
+        "iep",
+        "504",
+        "plan",
+        "accommodations",
+        "modifications",
+        "document"
+      ]
+    },
+    {
+      "name": "remediation-plan",
+      "displayName": "Create Remediation Plan",
+      "description": "Create a personalized remediation plan with specific intervention strategies, timeline, and progress monitoring approaches",
+      "path": "commands/remediation-plan.md",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "student_name": {
+            "type": "string",
+            "description": "Student's full name"
+          },
+          "current_level": {
+            "type": "string",
+            "description": "Current reading/writing level description"
+          },
+          "target_goals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Specific learning goals"
+          },
+          "intervention_duration": {
+            "type": "string",
+            "description": "Duration: '8-weeks', '12-weeks', '16-weeks', '1-year'",
+            "default": "12-weeks"
+          },
+          "intensity": {
+            "type": "string",
+            "description": "Intensity: 'light', 'moderate', 'intensive'",
+            "default": "moderate"
+          },
+          "focus_areas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Focus areas: 'phonics', 'fluency', 'comprehension', 'writing', 'vocabulary'"
+          },
+          "anxiety_considerations": {
+            "type": "boolean",
+            "description": "Include anxiety management strategies",
+            "default": false
+          }
+        },
+        "required": [
+          "student_name"
+        ]
+      },
+      "keywords": [
+        "remediation",
+        "intervention",
+        "plan",
+        "strategies",
+        "monitoring",
+        "progress"
+      ]
+    },
+    {
+      "name": "content-accessibility-check",
+      "displayName": "Content Accessibility Check",
+      "description": "Evaluate content for dyslexia-friendly formatting, readability, and accessibility compliance",
+      "path": "commands/content-accessibility-check.md",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "content_name": {
+            "type": "string",
+            "description": "Name or description of the content being checked"
+          },
+          "content_type": {
+            "type": "string",
+            "description": "Type: 'textbook', 'website', 'assessment', 'lesson', 'document', 'video'",
+            "default": "document"
+          },
+          "format": {
+            "type": "string",
+            "description": "Format: 'pdf', 'html', 'text', 'video', 'mixed'",
+            "default": "text"
+          },
+          "target_audience": {
+            "type": "string",
+            "description": "Target audience: 'elementary', 'middle', 'high', 'college', 'general'"
+          },
+          "depth": {
+            "type": "string",
+            "description": "Analysis depth: 'quick', 'standard', 'comprehensive'",
+            "default": "standard"
+          }
+        },
+        "required": [
+          "content_name"
+        ]
+      },
+      "keywords": [
+        "accessibility",
+        "check",
+        "content",
+        "readability",
+        "formatting",
+        "compliance"
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "name": "audit-report-template",
+      "displayName": "Audit Report Template",
+      "description": "Standard template for dyslexia accessibility audit reports",
+      "path": "templates/audit-report-template.md"
+    }
+  ]
+}
+
