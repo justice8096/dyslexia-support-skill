@@ -1,63 +1,68 @@
 {
   "name": "dyslexia-support-skill",
-  "version": "1.0.0",
-  "description": "Evidence-based dyslexia standards compliance, remediation strategies, document generation, and gap analysis — grounded in IDA standards, structured literacy, and IDEA/504 requirements.",
+  "version": "1.1.0",
+  "description": "Comprehensive dyslexia support system treating dyslexia as a neurodevelopmental cognitive disorder (not merely a learning disability) with brain-based phonological and orthographic processing deficits. Implements structured literacy methodology, cognitive bypass strategies, standards compliance (IDA, IDEA, Section 504), gap analysis, remediation strategies, and IEP document generation. Grounded in Shaywitz phonological deficit theory and left temporoparietal/VWFA research",
   "author": "Justice",
   "license": "MIT",
   "keywords": [
     "dyslexia",
+    "cognitive-disorder",
     "structured-literacy",
-    "orton-gillingham",
-    "IDA-standards",
-    "IDEA",
-    "section-504",
-    "IEP",
-    "remediation",
+    "Orton-Gillingham",
+    "phonological-processing",
+    "VWFA",
     "accessibility",
-    "EdTech",
-    "special-education"
+    "education",
+    "iep",
+    "compliance",
+    "remediation",
+    "standards",
+    "504",
+    "IDEA",
+    "special-education",
+    "EdTech"
   ],
   "skills": [
     {
-      "name": "remediation-strategies",
-      "description": "Evidence-based dyslexia remediation strategies, intervention plans, and structured literacy lesson design using Orton-Gillingham principles. Use when creating reading intervention plans, tutoring strategies, lesson plans for dyslexia, or selecting remediation programs (Wilson, Barton, Lindamood-Bell, Sonday, RAVE-O).",
-      "path": "skills/remediation-strategies"
-    },
-    {
       "name": "standards-compliance",
-      "description": "Audit programs, tools, and documents against IDA Knowledge and Practice Standards, IDEA requirements, and Section 504 for dyslexia compliance. Use for compliance checks, standards alignment, IEP audits, and 504 plan reviews.",
+      "description": "Expert knowledge of dyslexia-related educational standards, legal requirements, and best practices for accessibility",
       "path": "skills/standards-compliance"
     },
     {
-      "name": "document-generation",
-      "description": "Generate professional dyslexia support documents: IEPs, 504 plans, progress monitoring reports, accommodation letters, screening checklists, and evaluation summaries. All templates align with IDEA and IDA standards.",
-      "path": "skills/document-generation"
+      "name": "gap-analysis",
+      "description": "Methods and frameworks for identifying gaps between current academic performance and dyslexia-appropriate accommodations",
+      "path": "skills/gap-analysis"
     },
     {
-      "name": "gap-analysis",
-      "description": "Identify gaps in dyslexia support tooling, assessments, and practices — then create new measures, frameworks, or standards where none exist. Includes dyslexia UX heuristics, content accessibility audits, and measure specification templates.",
-      "path": "skills/gap-analysis"
+      "name": "remediation-strategies",
+      "description": "Evidence-based intervention techniques and learning strategies specifically designed for individuals with dyslexia",
+      "path": "skills/remediation-strategies"
+    },
+    {
+      "name": "document-generation",
+      "description": "Templates and frameworks for generating IEPs, 504 plans, and formal accommodation documents",
+      "path": "skills/document-generation"
     }
   ],
   "commands": [
     {
       "name": "dyslexia-audit",
-      "description": "Run a dyslexia standards compliance audit on a program, document, or tool",
+      "description": "Conduct a comprehensive accessibility audit of educational materials, curricula, or programs for dyslexia-appropriateness",
       "path": "commands/dyslexia-audit.md"
     },
     {
       "name": "generate-iep",
-      "description": "Generate a dyslexia-focused IEP from student profile data",
+      "description": "Generate an IEP or 504 plan with dyslexia-specific accommodations, modifications, and support strategies",
       "path": "commands/generate-iep.md"
     },
     {
       "name": "remediation-plan",
-      "description": "Create an evidence-based remediation plan for a student with dyslexia",
+      "description": "Create a personalized remediation plan with specific intervention strategies, timeline, and progress monitoring approaches",
       "path": "commands/remediation-plan.md"
     },
     {
       "name": "content-accessibility-check",
-      "description": "Audit digital content for dyslexia-friendly design and readability",
+      "description": "Evaluate content for dyslexia-friendly formatting, readability, and accessibility compliance",
       "path": "commands/content-accessibility-check.md"
     }
   ]

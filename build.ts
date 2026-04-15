@@ -459,23 +459,13 @@ function generateMcpTools(manifest: Manifest): void {
       'import { z } from "zod";',
       'import { loadSkillContent } from "../knowledge/loader.js";',
       "",
-      "const " + toolName + "Schema = z.object({",
+      "export const " + toolName + "Schema = z.object({",
       ...zodFields,
       "});",
       "",
-      "export const " + toolName + "Definition = {",
-      '  name: "' + toolName + '",',
-      '  description: "' + cmd.description.replace(/"/g, '\\"') + '",',
-      "  inputSchema: {",
-      '    type: "object" as const,',
-      "    properties: {",
-      ...jsonSchemaProps.map((p) => p + ","),
-      "    },",
-      "    required: [" + requiredParams.map((p) => '"' + p + '"').join(", ") + "],",
-      "  },",
-      "};",
+      "export const " + toolName + "Description = \"" + cmd.description.replace(/"/g, '\\"') + "\";",
       "",
-      "export async function handle(input: Record<string, unknown>): Promise<string> {",
+      "export async function handle(input: z.infer<typeof " + toolName + "Schema>): Promise<string> {",
       "  const validated = " + toolName + "Schema.parse(input);",
       '  const skillContent = await loadSkillContent("' + cmd.name + '");',
       "",
@@ -536,17 +526,18 @@ function generateMcpKnowledgeLoader(): void {
 
 function generateMcpIndex(manifest: Manifest): void {
   const toolImports: string[] = [];
-  const toolDefs: string[] = [];
-  const toolHandlers: string[] = [];
+  const toolRegistrations: string[] = [];
 
   for (const cmd of manifest.commands) {
     const toolName = cmd.name.replace(/-/g, "_");
     toolImports.push(
-      'import { ' + toolName + 'Definition, handle as handle_' + toolName + ' } from "./tools/' + toolName + '.js";'
+      'import { ' + toolName + 'Schema, ' + toolName + 'Description, handle as handle_' + toolName + ' } from "./tools/' + toolName + '.js";'
     );
-    toolDefs.push("  " + toolName + "Definition,");
-    toolHandlers.push(
-      '      if (name === "' + toolName + '") return { content: [{ type: "text", text: await handle_' + toolName + "(args) }] };"
+    toolRegistrations.push(
+      '  server.tool("' + toolName + '", ' + toolName + 'Description, ' + toolName + 'Schema.shape, async (args) => {',
+      '    const result = await handle_' + toolName + '(args as any);',
+      '    return { content: [{ type: "text" as const, text: result }] };',
+      '  });'
     );
   }
 
@@ -556,15 +547,14 @@ function generateMcpIndex(manifest: Manifest): void {
     "",
     ...toolImports,
     "",
-    "const tools = [",
-    ...toolDefs,
-    "];",
-    "",
     "async function main(): Promise<void> {",
     "  const server = new McpServer({",
     '    name: "dyslexia-support-mcp",',
     '    version: "' + manifest.metadata.version + '",',
     "  });",
+    "",
+    "  // Register tools",
+    ...toolRegistrations,
     "",
     "  const transport = new StdioServerTransport();",
     "  await server.connect(transport);",
@@ -598,7 +588,7 @@ function generateMcpPackageJson(manifest: Manifest): void {
       "type-check": "tsc --noEmit",
     },
     dependencies: {
-      "@modelcontextprotocol/sdk": "^0.6.0",
+      "@modelcontextprotocol/sdk": "^1.6.0",
       zod: "^3.22.4",
     },
     devDependencies: {

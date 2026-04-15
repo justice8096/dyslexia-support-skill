@@ -2,12 +2,17 @@
   "metadata": {
     "name": "Dyslexia Support Skill",
     "version": "1.0.0",
-    "description": "Comprehensive dyslexia accessibility and educational support toolkit for standards compliance, gap analysis, remediation strategies, and document generation",
-    "author": "Dyslexia Support Team",
+    "description": "Comprehensive dyslexia support system treating dyslexia as a neurodevelopmental cognitive disorder (not merely a learning disability) with brain-based phonological and orthographic processing deficits. Implements structured literacy methodology, cognitive bypass strategies, standards compliance (IDA, IDEA, Section 504), gap analysis, remediation strategies, and IEP document generation. Grounded in Shaywitz phonological deficit theory and left temporoparietal/VWFA research",
+    "author": "Justice",
     "license": "MIT",
-    "repository": "https://github.com/your-org/dyslexia-support-skill",
+    "repository": "https://github.com/justice8096/dyslexia-support-skill",
     "keywords": [
       "dyslexia",
+      "cognitive-disorder",
+      "structured-literacy",
+      "Orton-Gillingham",
+      "phonological-processing",
+      "VWFA",
       "accessibility",
       "education",
       "iep",
@@ -15,7 +20,9 @@
       "remediation",
       "standards",
       "504",
-      "ada"
+      "IDEA",
+      "special-education",
+      "EdTech"
     ]
   },
   "skills": [

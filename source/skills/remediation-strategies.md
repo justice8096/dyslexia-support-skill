@@ -3,6 +3,8 @@
 ## Purpose
 Provide evidence-based remediation strategies, intervention plans, and instructional guidance for dyslexia support — grounded in structured literacy principles, Orton-Gillingham methodology, and the IDA Knowledge and Practice Standards.
 
+> **Cognitive Disorder Framing**: This skill treats dyslexia as a **neurodevelopmental cognitive disorder** — a persistent, brain-based difference in phonological and orthographic processing architecture centered on the left temporoparietal cortex, visual word form area (VWFA), and inferior frontal gyrus (Shaywitz, Dehaene, Gabrieli). This distinction matters: accommodations should compensate for a persistent cognitive processing difference, not merely scaffold a temporary learning gap that resolves with sufficient instruction.
+
 ## When to Use
 Trigger this skill when the user mentions:
 - "remediation plan", "intervention plan", "reading intervention"
@@ -91,9 +93,14 @@ When generating a remediation plan, include:
 - Cite specific IDA standards or structured literacy elements when recommending strategies.
 - When recommending a program, note the evidence level honestly (many programs have limited formal RCT evidence despite strong practitioner support).
 - Differentiate between remediation (closing skill gaps) and accommodation (providing access). Students typically need both.
+- **Bypass vs. Remediation Balance**: Because dyslexia is a persistent cognitive disorder (not a temporary learning gap), effective intervention must balance remediation (strengthening weak neural pathways through structured literacy) with bypass (providing alternative routes around processing bottlenecks). Neither approach alone is sufficient.
+  - **Remediation targets** (trainable with sufficient intensity): phonological awareness, phoneme-grapheme mapping, decoding accuracy, spelling patterns, reading comprehension strategies
+  - **Bypass targets** (persistent deficits requiring permanent accommodation): automatic word recognition speed (many dyslexic individuals never achieve fully automatic sight-word fluency — text-to-speech and audiobooks should be permanent tools, not crutches to be withdrawn), spelling accuracy in spontaneous writing (spell-checkers should be permanent cognitive prosthetics), rapid naming speed (RAN deficits are often persistent — untimed environments should be the default), reading stamina for extended text (fatigue accommodations should be lifelong supports)
+  - Every remediation plan should explicitly identify which skills are remediation targets (expected to improve) and which are bypass targets (expected to require permanent accommodation). Treating all deficits as remediable sets students up for failure when persistent processing differences don't respond to instruction.
 - Never recommend Fundations as a dyslexia intervention — it is Wilson's classroom prevention program, not their remediation tool.
 - Adapt intensity recommendations to the severity of the deficit: mild = 3x/week, moderate = 4-5x/week, severe = daily or intensive block.
 - Always include progress monitoring — intervention without data is not evidence-based practice.
+- **Normalization**: Explicitly discuss that dyslexia is a neurodevelopmental cognitive disorder — a brain-based difference in how written language is processed (left temporoparietal cortex, VWFA), not a reflection of intelligence, effort, or character.
 - Consider comorbid conditions (dyscalculia, dysgraphia, ADHD) when designing plans.
 
 ## Output Formats
