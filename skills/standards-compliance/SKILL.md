@@ -3,6 +3,8 @@
 ## Purpose
 Ensure dyslexia-related programs, tools, documents, and practices align with federal law (IDEA, Section 504), IDA Knowledge and Practice Standards, and structured literacy research. Identify compliance gaps and generate actionable recommendations.
 
+> **Clinical Framing**: This skill uses a dual-framing approach. For IDEA/Section 504 legal compliance, dyslexia is classified as a Specific Learning Disorder (DSM-5) or Developmental Learning Disorder (ICD-11). However, the neuroscience evidence (Shaywitz, Dehaene, Gabrieli et al.) establishes dyslexia as a **neurodevelopmental cognitive disorder** — a brain-based difference in phonological and orthographic processing architecture centered on the left temporoparietal cortex, visual word form area (VWFA), and inferior frontal gyrus. This distinction matters: accommodations should compensate for a persistent cognitive processing difference, not merely scaffold a temporary learning gap.
+
 ## When to Use
 Trigger this skill when the user mentions:
 - "IDA standards", "knowledge and practice standards"
@@ -22,7 +24,7 @@ Trigger this skill when the user mentions:
 **Five Major Standards:**
 
 **Standard 1: Foundation Concepts**
-- Practitioners understand reading development theory and the nature of dyslexia as a neurological difference.
+- Practitioners understand reading development theory and the nature of dyslexia as a neurodevelopmental cognitive disorder — a brain-based difference in phonological and orthographic processing, not a reflection of intelligence or effort.
 - Knowledge of language structure (phonology, morphology, orthography) is foundational.
 
 **Standard 2: Knowledge of Diverse Reading Profiles**
@@ -128,6 +130,16 @@ When auditing a program, tool, or document for compliance, evaluate against:
 - [ ] Language skills assessed
 - [ ] Assessment administered by qualified professionals
 - [ ] Results interpreted in context of dyslexia-specific patterns
+
+### Cognitive Disorder Accommodation (Neuroscience-Informed)
+- [ ] Dyslexia framed as a neurodevelopmental cognitive disorder, not a failure to learn or a reflection of low intelligence
+- [ ] Bypass strategies (text-to-speech, audiobooks, spell-checkers, dictation tools) available as permanent cognitive prosthetics, not temporary scaffolds
+- [ ] Assessment separates comprehension ability from decoding processing (a student may understand content deeply but be unable to decode the text independently)
+- [ ] Automatic word recognition speed not assumed as prerequisite; text-to-speech and read-aloud permitted without penalty
+- [ ] Working memory demands explicitly managed: external supports (graphic organizers, written instructions, visual schedules) provided as standard practice
+- [ ] Accommodations designed as lifelong supports reflecting persistent cognitive architecture difference, not time-limited remedial aids
+- [ ] Cognitive load per task quantified and kept within dyslexia-appropriate limits (max 2-3 novel elements simultaneously)
+- [ ] Rapid naming (RAN) deficits recognized as persistent; untimed environments provided as default, not an accommodation
 
 ## Audit File Generation (Project Audits)
 

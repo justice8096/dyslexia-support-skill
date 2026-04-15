@@ -1,17 +1,33 @@
 # dyslexia-support-skill
 
+[![CI](https://github.com/justice8096/dyslexia-support-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/justice8096/dyslexia-support-skill/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Evidence-based dyslexia standards compliance, remediation strategies, document generation, and gap analysis — built for developers creating accessibility and EdTech tools.
+
+> **AI-Assisted Development**: This project was built with Claude AI assistance. See [audits/contribution-analysis.md](audits/contribution-analysis.md) for the full human-vs-AI attribution breakdown.
+
+This skill treats dyslexia as a **neurodevelopmental cognitive disorder** — a persistent, brain-based difference in phonological and orthographic processing architecture (left temporoparietal cortex, visual word form area, inferior frontal gyrus) — not merely a learning disability that resolves with sufficient instruction. Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, and Gabrieli et al. neuroimaging evidence.
 
 ## What This Is
 
 A Cowork plugin **and** standalone skill set that provides:
 
-- **Remediation Strategies** — Evidence-based intervention plans grounded in structured literacy, Orton-Gillingham methodology, and IDA standards
-- **Standards Compliance** — Audit programs, IEPs, 504 plans, and tools against IDEA, Section 504, and IDA Knowledge and Practice Standards
+- **Remediation Strategies** — Evidence-based intervention plans grounded in structured literacy, Orton-Gillingham methodology, and IDA standards. Distinguishes between remediation targets (trainable skills) and bypass targets (persistent deficits requiring permanent cognitive prosthetics like text-to-speech, spell-checkers, and audiobooks).
+- **Standards Compliance** — Audit programs, IEPs, 504 plans, and tools against IDEA, Section 504, and IDA Knowledge and Practice Standards. Includes neuroscience-informed Cognitive Disorder Accommodation checklist.
 - **Document Generation** — Create professional IEPs, 504 plans, progress reports, accommodation letters, screening checklists, and evaluation summaries
-- **Gap Analysis & Measure Creation** — Identify what's missing in dyslexia support tooling and create new measures, frameworks, and standards where none exist
+- **Gap Analysis & Measure Creation** — Identify what's missing in dyslexia support tooling and create new measures, frameworks, and standards where none exist. Evaluates gaps against both legal frameworks and cognitive neuroscience evidence, prioritizing gaps where current practice wrongly assumes deficits are temporary.
 
 ## Quick Start
+
+```bash
+git clone https://github.com/justice8096/dyslexia-support-skill.git
+cd dyslexia-support-skill
+npm install
+npm run build        # Build all 6 distribution formats
+npm test             # Run 42 integration tests across 7 suites
+npm run audit        # Security audit
+```
 
 ### As a Cowork Plugin
 Install the plugin in Cowork and the four skills + four commands become available automatically.
@@ -87,29 +103,27 @@ This skill set is grounded in:
 - **Science of Reading** research literature
 - **WCAG 2.1** AA accessibility guidelines (extended for dyslexia-specific needs)
 
+## Platform Support
+
+This skill builds to 6 formats from a single source in `source/`: Claude Code Plugin, MCP Server, OpenAI Functions, n8n Node, Prompt Library, and CLI Audit Tool. Run `npm run build` to generate all formats in `dist/`.
+
 ## Project Structure
 
 ```
 dyslexia-support-skill/
-├── plugin.json                          # Cowork plugin manifest
-├── README.md
-├── LICENSE
-├── skills/
-│   ├── remediation-strategies/
-│   │   └── SKILL.md                     # Remediation skill definition
-│   ├── standards-compliance/
-│   │   └── SKILL.md                     # Standards compliance skill
-│   ├── document-generation/
-│   │   └── SKILL.md                     # Document generation skill
-│   └── gap-analysis/
-│       └── SKILL.md                     # Gap analysis & measure creation
-├── commands/
-│   ├── dyslexia-audit.md               # /dyslexia-audit command
-│   ├── generate-iep.md                 # /generate-iep command
-│   ├── remediation-plan.md             # /remediation-plan command
-│   └── content-accessibility-check.md  # /content-accessibility-check command
-├── templates/                           # Document templates (IEP, 504, etc.)
-└── examples/                            # Example outputs and usage
+├── source/                  # Single source of truth
+│   ├── manifest.json        # Central definition (4 skills, 4 commands)
+│   ├── skills/              # Skill markdown files
+│   ├── commands/            # Command markdown files
+│   └── templates/           # Document templates
+├── build.ts                 # Multi-format build system
+├── test-build.ts            # 42-test integration suite (7 suites)
+├── skills/                  # Cowork plugin skill directories
+├── commands/                # Cowork plugin command files
+├── audits/                  # Security & compliance audit reports
+├── sbom.cdx.json            # CycloneDX SBOM
+├── SECURITY.md              # Vulnerability disclosure policy
+└── .github/workflows/ci.yml # CI pipeline (Node 18/20/22)
 ```
 
 ## Target Audience

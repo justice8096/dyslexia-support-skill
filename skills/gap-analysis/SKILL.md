@@ -3,6 +3,8 @@
 ## Purpose
 Identify gaps in existing dyslexia support tools, assessments, standards, and practices — then create new measures, frameworks, or tools where none exist. This skill fills the "if it doesn't exist, build it" mandate.
 
+> **Framing Note**: This analysis treats dyslexia as a neurodevelopmental cognitive disorder — a persistent difference in phonological and orthographic processing architecture (Shaywitz phonological deficit theory; Dehaene VWFA research; Gabrieli et al.) — not merely a learning disability that resolves with sufficient instruction. Gaps are evaluated against both the legal/educational framework (IDEA, Section 504, IDA KPS) and the cognitive neuroscience evidence. The most critical gaps are those where current practice assumes the deficit is temporary and remediable, when the evidence shows it is persistent and requires lifelong accommodation alongside targeted remediation.
+
 ## When to Use
 Trigger this skill when the user mentions:
 - "what's missing", "gap analysis", "gaps in dyslexia support"

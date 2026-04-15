@@ -3,6 +3,8 @@
 ## Purpose
 Generate professional, standards-compliant documents for dyslexia support — including IEPs, 504 plans, progress reports, accommodation letters, screening checklists, evaluation summaries, and intervention documentation.
 
+> **Cognitive Disorder Framing**: All generated documents frame dyslexia as a neurodevelopmental cognitive disorder — a persistent, brain-based difference in phonological and orthographic processing (left temporoparietal cortex, VWFA, inferior frontal gyrus). Documents distinguish between remediation targets (skills expected to improve with structured literacy instruction) and bypass targets (persistent processing differences requiring permanent accommodation as cognitive prosthetics).
+
 ## When to Use
 Trigger this skill when the user mentions:
 - "generate IEP", "create IEP", "write IEP", "IEP template"
@@ -27,6 +29,7 @@ INDIVIDUALIZED EDUCATION PROGRAM
 Student Information
 ├── Name, DOB, Grade, School
 ├── Disability Category: Specific Learning Disability (Dyslexia)
+│   (Neurodevelopmental cognitive disorder — brain-based phonological/orthographic processing difference)
 ├── IEP Date, Annual Review Date
 └── IEP Team Members (must include dyslexia-knowledgeable member)
 
@@ -37,7 +40,7 @@ Present Levels of Academic Achievement and Functional Performance (PLAAFP)
 │   ├── Classroom performance observations
 │   └── Grade-level comparisons
 ├── Impact of Disability
-│   ├── How dyslexia affects involvement in general education
+│   ├── How dyslexia (as a persistent cognitive processing difference) affects involvement in general education
 │   ├── Specific academic areas affected
 │   └── Functional impact (self-esteem, participation, independence)
 └── Strengths and Interests
@@ -286,6 +289,8 @@ Recommendations:
 
 - All generated documents must align with IDEA requirements and IDA standards.
 - Use person-first or identity-first language based on user preference (default: "student with dyslexia").
+- Frame dyslexia consistently as a neurodevelopmental cognitive disorder — a brain-based difference in phonological/orthographic processing, not a reflection of intelligence, effort, or character.
+- All accommodation sections should frame bypass tools (text-to-speech, spell-checkers, audiobooks, dictation) as permanent cognitive prosthetics, not temporary supports to be withdrawn.
 - Goals must be genuinely measurable — include specific numbers, tools, and timeframes.
 - Never generate a 504 plan when the student profile clearly indicates need for IDEA/IEP services. Flag this to the user.
 - Include all legally required sections. Missing sections create compliance risk.
