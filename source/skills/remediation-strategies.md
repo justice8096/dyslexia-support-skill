@@ -1,9 +1,13 @@
 # Dyslexia Remediation Strategies Skill
 
 ## Purpose
-Provide evidence-based remediation strategies, intervention plans, and instructional guidance for dyslexia support — grounded in structured literacy principles, Orton-Gillingham methodology, and the IDA Knowledge and Practice Standards.
+Provide evidence-based strategies addressing both tracks of dyslexia support: **remediation** (trainable skills) and **cognitive prosthetics** (permanent bypass tools for persistent processing differences). Grounded in structured literacy principles, Orton-Gillingham methodology, the IDA Knowledge and Practice Standards, and the clinical framing of dyslexia as a neurodevelopmental cognitive disorder.
 
-> **Cognitive Disorder Framing**: This skill treats dyslexia as a **neurodevelopmental cognitive disorder** — a persistent, brain-based difference in phonological and orthographic processing architecture centered on the left temporoparietal cortex, visual word form area (VWFA), and inferior frontal gyrus (Shaywitz, Dehaene, Gabrieli). This distinction matters: accommodations should compensate for a persistent cognitive processing difference, not merely scaffold a temporary learning gap that resolves with sufficient instruction.
+> **Two-Track Framing**: This skill explicitly separates two target types that require different interventions:
+> - **Remediation targets** are trainable skills (phonological awareness, decoding accuracy, fluency, spelling patterns). These improve with structured literacy instruction over time.
+> - **Bypass targets** are persistent cognitive processing differences (phonological processing speed, orthographic mapping efficiency, rapid automatized naming). These require permanent cognitive prosthetics — text-to-speech, speech-to-text, audiobooks, OCR, spell-checkers. These tools are not temporary scaffolds; they compensate for lifelong brain-based differences, analogous to eyeglasses for refractive errors.
+>
+> Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, and Gabrieli neuroimaging evidence showing persistent functional differences in left temporoparietal cortex, visual word form area, and inferior frontal gyrus.
 
 ## When to Use
 Trigger this skill when the user mentions:
@@ -14,8 +18,85 @@ Trigger this skill when the user mentions:
 - "Wilson Reading", "Barton", "Lindamood-Bell", "Sonday", "RAVE-O"
 - "lesson plan for dyslexia", "dyslexia tutoring plan"
 - "tier 2 intervention", "tier 3 intervention", "RTI for reading"
+- "cognitive prosthetics", "assistive technology", "AT stack"
+- "text-to-speech", "speech-to-text", "audiobooks", "Learning Ally", "Bookshare"
+- "bypass strategies", "adult dyslexia support", "workplace AT"
+- "what tools should I use", "assistive technology recommendation"
 
 ## Core Knowledge Base
+
+## Track 2: Cognitive Prosthetics
+
+Cognitive prosthetics are assistive tools that bypass persistent processing differences. Unlike remediation (which aims to build a skill), prosthetics compensate for a brain-based difference that remains present even after successful instruction. They are medically appropriate **lifelong supports**, not temporary scaffolds.
+
+**Core Principle**: An individual with well-remediated dyslexia still reads more slowly than a neurotypical peer. Removing cognitive prosthetics forces them to spend cognitive resources on decoding that neurotypical readers spend on comprehension. This is the cognitive load tax that prosthetics eliminate.
+
+### Reading Prosthetics
+
+| Tool | Use Case | Examples | Context |
+|------|----------|----------|---------|
+| **Text-to-speech (TTS)** | Processing long documents, dense technical text, complex vocabulary | Read&Write, Natural Reader, Voice Dream, JAWS, NVDA, Balabolka | Education, workplace, daily life |
+| **Audiobook services** | Literature, textbooks, leisure reading | Learning Ally (educational, human-narrated), Bookshare (accessible copies, free with qualifying disability), Audible (commercial) | Education, leisure |
+| **OCR tools** | Converting scanned documents, images of text | Kurzweil 3000, Read&Write, Adobe Acrobat Pro, Microsoft Lens | Education, workplace |
+| **Dyslexia-friendly fonts** | Reducing visual processing load | Lexend, Atkinson Hyperlegible, OpenDyslexic | All contexts |
+| **Reading rulers / overlays** | Tracking text, reducing crowding | Hardware rulers, browser extensions (BeeLine, Spread The Word) | All contexts |
+| **Color overlays** | For Irlen Syndrome comorbidity | Physical overlays, software tinting | All contexts |
+
+### Writing Prosthetics
+
+| Tool | Use Case | Examples | Context |
+|------|----------|----------|---------|
+| **Speech-to-text (STT)** | Drafting longer documents, reducing spelling burden | Dragon NaturallySpeaking, Windows Speech Recognition, Apple Dictation, Otter.ai | Education, workplace |
+| **Grammar/spell checkers** | Professional written communication | Grammarly, Ginger, LanguageTool, Word spell-check | All written contexts |
+| **Word prediction** | Reducing spelling effort, vocabulary support | Co:Writer, WordQ, built-in predictions on iOS/Android | Education, daily writing |
+| **Mind-mapping tools** | Organizing thoughts before writing | MindNode, MindMeister, XMind, Miro | Education, workplace |
+
+### Organization and Memory Prosthetics
+
+| Tool | Use Case | Examples |
+|------|----------|----------|
+| **Task management** | Offload working-memory demands | Todoist, Asana, Microsoft Planner, Things |
+| **Visual project tracking** | Avoid text-heavy status updates | Trello, Notion, Airtable, Asana boards |
+| **Calendar with alerts** | Avoid missed deadlines | Google Calendar, Outlook, Fantastical |
+| **Note-taking with audio** | Capture and review meetings | Otter.ai, Notability, OneNote with audio |
+
+### Prosthetics Stack by Life Stage
+
+**K-12 Student Stack**
+- Classroom TTS (Read&Write for Google or Microsoft)
+- Audiobook access (Learning Ally, Bookshare)
+- Speech-to-text (iPad dictation or Chrome speech-to-text)
+- Spell-checker
+- Graphic organizers (written or digital)
+
+**Higher Ed Student Stack**
+- Premium TTS (Voice Dream Reader, Natural Reader Professional)
+- Bookshare or Learning Ally for textbooks
+- Dragon NaturallySpeaking for long writing assignments
+- Grammarly Premium
+- Lecture-recording app (Otter.ai)
+- Note-taking app with audio sync (Notability, OneNote)
+
+**Workplace Stack**
+- Enterprise TTS (Read&Write, JAWS, NVDA if assistive tech already provisioned)
+- Dragon Professional for long-form writing
+- Grammarly Business
+- Meeting transcription (Otter.ai, Zoom transcription, Teams)
+- Task management system
+- Mind-mapping for proposals
+
+**Prosthetics Training**
+
+Prosthetics are only effective if the user is fluent with them. Budget for training time:
+- Basic TTS/STT fluency: 4-8 hours of guided practice
+- Advanced features (bookmarks, annotation, multi-device sync): 10-20 hours
+- Dragon NaturallySpeaking mastery: 20-40 hours (significant early investment, huge long-term payoff)
+
+Prosthetics without training are like eyeglasses someone never learned to wear — technically present but not functional.
+
+---
+
+## Track 1: Remediation (Structured Literacy)
 
 ### Structured Literacy: The Six Elements
 All remediation must address one or more of these interconnected elements:

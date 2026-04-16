@@ -1,69 +1,219 @@
 {
   "name": "dyslexia-support-skill",
-  "version": "1.1.0",
-  "description": "Comprehensive dyslexia support system treating dyslexia as a neurodevelopmental cognitive disorder (not merely a learning disability) with brain-based phonological and orthographic processing deficits. Implements structured literacy methodology, cognitive bypass strategies, standards compliance (IDA, IDEA, Section 504), gap analysis, remediation strategies, and IEP document generation. Grounded in Shaywitz phonological deficit theory and left temporoparietal/VWFA research",
+  "version": "1.2.0",
+  "description": "Clinical and accommodation framework treating dyslexia as a neurodevelopmental cognitive disorder across the full lifespan: K-12 (IDEA, Section 504), higher education (Section 504, ADA Title II/III), workplace (ADA Title I), and adult contexts. Implements structured literacy methodology for trainable skills and cognitive prosthetics (text-to-speech, speech-to-text, audiobooks, OCR) for persistent processing differences. Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, Gabrieli neuroimaging evidence, DSM-5 Specific Learning Disorder (315.00), and ICD-11 Developmental Learning Disorder (6A03.0).",
   "author": "Justice",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justice8096/dyslexia-support-skill.git"
+  },
   "keywords": [
     "dyslexia",
     "cognitive-disorder",
+    "neurodevelopmental-disorder",
+    "reading-disorder",
     "structured-literacy",
     "Orton-Gillingham",
     "phonological-processing",
-    "VWFA",
-    "accessibility",
-    "education",
-    "iep",
-    "compliance",
-    "remediation",
-    "standards",
-    "504",
+    "Wilson-Reading",
+    "Barton",
+    "Lindamood-Bell",
+    "DSM-5",
+    "ICD-11",
+    "specific-learning-disorder",
+    "cognitive-prosthetics",
+    "assistive-technology",
+    "text-to-speech",
+    "accommodation",
+    "workplace-accommodation",
+    "higher-education-accommodation",
+    "adult-dyslexia",
+    "IDA",
     "IDEA",
+    "section-504",
+    "ADA",
+    "ADA-title-I",
+    "IEP",
+    "504-plan",
+    "remediation",
     "special-education",
-    "EdTech"
+    "disability-services",
+    "accessibility",
+    "clinical-assessment",
+    "EdTech",
+    "science-of-reading"
   ],
   "skills": [
     {
       "name": "standards-compliance",
-      "description": "Expert knowledge of dyslexia-related educational standards, legal requirements, and best practices for accessibility",
-      "path": "skills/standards-compliance"
+      "path": "skills/standards-compliance/SKILL.md",
+      "description": "Regulatory compliance framework treating dyslexia as a neurodevelopmental cognitive disorder across the full lifespan. Covers clinical frameworks (DSM-5 Specific Learning Disorder 315.00, ICD-11 Developmental Learning Disorder 6A03.0), IDA Knowledge and Practice Standards for Teachers of Reading 2018 (all 5 domains: foundation concepts, reading profiles, assessment, structured literacy teaching, ethics), K-12 special education law (IDEA specific learning disability identification, IEP requirements, FAPE, procedural safeguards), Section 504 (K-12 accommodations, eligibility differences from IDEA, major life activity determinations), higher education (Section 504 at postsecondary institutions, ADA Title II for public colleges, ADA Title III for private colleges, Office for Civil Rights complaint procedures), and workplace (ADA Title I reasonable accommodations, undue hardship analysis, disability disclosure, EEOC procedures). Includes neuroscience-informed Cognitive Disorder Accommodation checklist.",
+      "keywords": [
+        "DSM-5",
+        "ICD-11",
+        "IDA",
+        "IDA-KPS",
+        "IDEA",
+        "section-504",
+        "ADA",
+        "ADA-title-I",
+        "ADA-title-II",
+        "ADA-title-III",
+        "EEOC",
+        "OCR",
+        "FAPE",
+        "specific-learning-disorder",
+        "workplace-accommodation",
+        "higher-education",
+        "compliance",
+        "audit",
+        "reasonable-accommodation"
+      ]
     },
     {
       "name": "gap-analysis",
-      "description": "Methods and frameworks for identifying gaps between current academic performance and dyslexia-appropriate accommodations",
-      "path": "skills/gap-analysis"
+      "path": "skills/gap-analysis/SKILL.md",
+      "description": "Systematic gap identification across the dyslexia cognitive support ecosystem, spanning education, clinical practice, workplace, and consumer technology. Identifies critical gaps including retroactive vs. proactive accessibility, absence of personalized accommodation engines, passive vs. interactive assistive tools, fragmented tool ecosystems, disconnected progress monitoring, assessment-to-instruction pipeline breakdowns, practitioner implementation gaps, missing dyslexia-specific UX standards, workplace accommodation gaps, and clinical-educational framing gaps. Includes Dyslexia-Friendly Content Audit Checklist, Dyslexia UX Heuristics (12 heuristics extending Nielsen's 10), and Cognitive Prosthetics Maturity Model.",
+      "keywords": [
+        "gap-analysis",
+        "ecosystem-assessment",
+        "tool-evaluation",
+        "content-audit",
+        "UX-heuristics",
+        "accommodation-engine",
+        "assistive-technology",
+        "cognitive-prosthetics",
+        "workplace-gaps",
+        "clinical-gaps"
+      ]
     },
     {
       "name": "remediation-strategies",
-      "description": "Evidence-based intervention techniques and learning strategies specifically designed for individuals with dyslexia",
-      "path": "skills/remediation-strategies"
+      "path": "skills/remediation-strategies/SKILL.md",
+      "description": "Evidence-based intervention and cognitive prosthetics framework for dyslexia grounded in structured literacy and Orton-Gillingham methodology. Explicitly distinguishes two target types: (1) Remediation targets (trainable skills improved through structured literacy's six elements and OG principles, implemented via Wilson Reading System, Barton, Lindamood-Bell LiPS, Sonday, RAVE-O, Alphabetic Phonics); and (2) Bypass targets (persistent processing differences requiring permanent cognitive prosthetics: text-to-speech, speech-to-text, audiobook access via Learning Ally and Bookshare, OCR tools, spell/grammar checkers, dyslexia-friendly fonts, reading rulers, extended time as neurological accommodation). Includes lifespan application from K-12 tutoring through adult workplace AT stacks.",
+      "keywords": [
+        "Orton-Gillingham",
+        "structured-literacy",
+        "cognitive-prosthetics",
+        "assistive-technology",
+        "text-to-speech",
+        "speech-to-text",
+        "Learning-Ally",
+        "Bookshare",
+        "Wilson-Reading",
+        "Barton",
+        "Lindamood-Bell",
+        "multisensory",
+        "phonological",
+        "decoding",
+        "fluency",
+        "bypass-strategies",
+        "adult-remediation",
+        "workplace-AT"
+      ]
     },
     {
       "name": "document-generation",
-      "description": "Templates and frameworks for generating IEPs, 504 plans, and formal accommodation documents",
-      "path": "skills/document-generation"
+      "path": "skills/document-generation/SKILL.md",
+      "description": "Professional document templates for the full lifespan of dyslexia accommodation needs. K-12 educational: IEPs (reading-focused with PLAAFP, SMART goals, structured literacy services, cognitive prosthetics accommodations, LRE), Section 504 Accommodation Plans, Progress Monitoring Reports, Prior Written Notice, RTI documentation. Higher education: Section 504/ADA disability services request letters, faculty accommodation letters, testing accommodation requests. Workplace: ADA Title I reasonable accommodation request letters, disability disclosure guidance, interactive process documentation, EEOC charge preparation. Clinical: psychoeducational evaluation summaries with assessment references (CTOPP-2, WRMT-III, GORT-5, KTEA-3, Nelson-Denny for adults), DSM-5 diagnostic summary letters, cognitive prosthetics prescription/recommendation letters. General: dyslexia screening checklists (early childhood, school-age, adult), self-advocacy communication letters.",
+      "keywords": [
+        "IEP",
+        "504-plan",
+        "ADA-request-letter",
+        "workplace-accommodation-letter",
+        "higher-ed-accommodation",
+        "disability-services",
+        "document-templates",
+        "screening",
+        "evaluation",
+        "cognitive-prosthetics-prescription",
+        "PWN",
+        "RTI",
+        "CTOPP",
+        "WRMT",
+        "Nelson-Denny",
+        "DSM-5-summary",
+        "interactive-process"
+      ]
     }
   ],
   "commands": [
     {
       "name": "dyslexia-audit",
-      "description": "Conduct a comprehensive accessibility audit of educational materials, curricula, or programs for dyslexia-appropriateness",
-      "path": "commands/dyslexia-audit.md"
+      "path": "commands/dyslexia-audit.md",
+      "description": "Audit a program, tool, curriculum, workplace policy, or content for compliance with dyslexia cognitive accommodation requirements. Evaluates against IDA Knowledge and Practice Standards, structured literacy fidelity, and the applicable legal framework: IDEA/504 for K-12, Section 504/ADA for higher education, ADA Title I for workplace, ADA Title III for public accommodations. Generates comprehensive audit report with findings, composite score (A-F grade), and remediation roadmap covering structured literacy coverage, cognitive prosthetics availability, accommodation adequacy, and UDL principles. Creates audit files in audits/ subdirectory.",
+      "usage": "/dyslexia-audit <project-name> [--context=k12|higher-ed|workplace|public-accommodation] [--scope=full|materials|assessment|technology|accommodation-policy] [--age-group=elementary|middle|high|college|adult]",
+      "keywords": [
+        "audit",
+        "compliance",
+        "assessment",
+        "standards",
+        "IDA",
+        "structured-literacy",
+        "accessibility",
+        "ADA-audit",
+        "workplace-audit"
+      ]
     },
     {
       "name": "generate-iep",
-      "description": "Generate an IEP or 504 plan with dyslexia-specific accommodations, modifications, and support strategies",
-      "path": "commands/generate-iep.md"
+      "path": "commands/generate-iep.md",
+      "description": "Generate a comprehensive, legally-compliant accommodation document tailored to the individual's life context. Supports four document types: IEP (K-12 special education with PLAAFP, SMART goals, structured literacy-aligned services, cognitive prosthetics, LRE); 504 Plan (K-12 or higher education accommodations); Workplace Accommodation Request (ADA Title I reasonable accommodation letter to employer/HR with functional impact, requested accommodations, and interactive process invitation); Higher Ed Disability Services Request (university disability office documentation with academic accommodations, testing modifications, and assistive technology requests). Includes comorbidity considerations (ADHD, dyscalculia, anxiety, APD, executive function).",
+      "usage": "/generate-iep <person-name> [--context=k12|higher-ed|workplace|adult-general] [--document-type=iep|504|ada-workplace-request|higher-ed-dsr|clinical-summary] [--dyslexia-type=phonological|surface|double-deficit|mixed] [--anxiety=none|mild|moderate|severe]",
+      "keywords": [
+        "iep",
+        "504",
+        "ada-request",
+        "workplace-accommodation",
+        "higher-ed-dsr",
+        "clinical-summary",
+        "accommodations",
+        "cognitive-prosthetics",
+        "interactive-process",
+        "PLAAFP",
+        "SMART-goals",
+        "LRE"
+      ]
     },
     {
       "name": "remediation-plan",
-      "description": "Create a personalized remediation plan with specific intervention strategies, timeline, and progress monitoring approaches",
-      "path": "commands/remediation-plan.md"
+      "path": "commands/remediation-plan.md",
+      "description": "Create a two-track support plan: (1) Remediation track using structured literacy's six elements (phonology, sound-symbol association, syllable instruction, morphology, syntax, semantics) and OG principles, implemented through evidence-based programs (Wilson, Barton, LiPS, Sonday, RAVE-O, Alphabetic Phonics); (2) Cognitive prosthetics track covering permanent assistive technology stack (TTS, STT, audiobook services, OCR, spell/grammar checkers, dyslexia-friendly fonts). Includes lesson templates for remediation track, AT setup and training for prosthetics track, progress monitoring for both, and lifespan adaptations (K-12 through adult/workplace).",
+      "usage": "/remediation-plan <person-name> [--context=k12|higher-ed|workplace|adult-general] [--duration=8-weeks|12-weeks|16-weeks|1-year|ongoing] [--intensity=light|moderate|intensive] [--focus=phonological-awareness|phonics|decoding|fluency|comprehension|writing|cognitive-prosthetics-only] [--program=wilson|barton|lindamood-bell|sonday|rave-o|alphabetic-phonics]",
+      "keywords": [
+        "remediation",
+        "intervention",
+        "cognitive-prosthetics",
+        "assistive-technology",
+        "plan",
+        "strategies",
+        "monitoring",
+        "Orton-Gillingham",
+        "structured-literacy",
+        "workplace-AT",
+        "adult-support"
+      ]
     },
     {
       "name": "content-accessibility-check",
-      "description": "Evaluate content for dyslexia-friendly formatting, readability, and accessibility compliance",
-      "path": "commands/content-accessibility-check.md"
+      "path": "commands/content-accessibility-check.md",
+      "description": "Audit educational, workplace, or consumer content for dyslexia-friendly design across 10 dimensions: typography (font family, size, spacing, weight — dyslexic-friendly fonts like Lexend, Atkinson Hyperlegible, OpenDyslexic), readability (Flesch-Kincaid level, sentence length, cognitive load), color and contrast (WCAG compliance, off-white backgrounds, low-contrast pairs), layout (whitespace, line length 45-65 characters, left-alignment), cognitive load (chunking, scaffolding, working memory demands), navigation predictability, assistive technology compatibility (screen reader semantic HTML, text-to-speech parseability, proper heading hierarchy), multimedia accessibility (captions, transcripts, audio descriptions), UDL principles application, and cognitive accommodation integration. Applies to K-12 textbooks, higher-ed courseware, workplace training, consumer apps, and government/healthcare communications.",
+      "usage": "/content-accessibility-check <content-name> [--content-type=textbook|courseware|website|webapp|mobile-app|document|video|workplace-training|government-form] [--format=pdf|html|text|video|mixed|docx|epub] [--target-audience=elementary|middle|high|college|adult-employee|general-public] [--depth=quick|standard|comprehensive]",
+      "keywords": [
+        "content-audit",
+        "accessibility",
+        "UX",
+        "design",
+        "readability",
+        "typography",
+        "cognitive-load",
+        "UDL",
+        "WCAG",
+        "Lexend",
+        "Atkinson-Hyperlegible",
+        "workplace-content"
+      ]
     }
   ]
 }

@@ -3,20 +3,43 @@
 [![CI](https://github.com/justice8096/dyslexia-support-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/justice8096/dyslexia-support-skill/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Evidence-based dyslexia standards compliance, remediation strategies, document generation, and gap analysis — built for developers creating accessibility and EdTech tools.
+A clinical and accommodation framework treating dyslexia as a **neurodevelopmental cognitive disorder** — a lifelong, brain-based difference in phonological and orthographic processing architecture — across the full lifespan: K-12, higher education, workplace, and adult contexts.
 
 > **AI-Assisted Development**: This project was built with Claude AI assistance. See [audits/contribution-analysis.md](audits/contribution-analysis.md) for the full human-vs-AI attribution breakdown.
 
-This skill treats dyslexia as a **neurodevelopmental cognitive disorder** — a persistent, brain-based difference in phonological and orthographic processing architecture (left temporoparietal cortex, visual word form area, inferior frontal gyrus) — not merely a learning disability that resolves with sufficient instruction. Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, and Gabrieli et al. neuroimaging evidence.
+## Clinical Framing
+
+Dyslexia is a **persistent neurodevelopmental cognitive disorder**, not a learning difficulty that resolves with sufficient instruction. The neuroscience is unambiguous:
+
+- **Neural architecture** — Left temporoparietal cortex, visual word form area (VWFA), and inferior frontal gyrus show structural and functional differences (Shaywitz; Dehaene; Gabrieli et al.)
+- **Clinical classification** — DSM-5 Specific Learning Disorder with impairment in reading (315.00); ICD-11 Developmental Learning Disorder with impairment in reading (6A03.0)
+- **Lifespan persistence** — Phonological processing differences remain detectable into adulthood even after successful remediation
+
+This distinction matters in practice. Accommodations must compensate for a **persistent cognitive processing difference**, not merely scaffold a temporary learning gap. This skill takes the two-track approach:
+
+| Track | Target | Intervention |
+|-------|--------|--------------|
+| **Remediation** | Trainable skills (phonological awareness, decoding accuracy, fluency) | Structured literacy, Orton-Gillingham methodology |
+| **Cognitive Prosthetics** | Persistent processing differences | Permanent assistive technology stack (TTS, STT, audiobooks, OCR) |
 
 ## What This Is
 
 A Cowork plugin **and** standalone skill set that provides:
 
-- **Remediation Strategies** — Evidence-based intervention plans grounded in structured literacy, Orton-Gillingham methodology, and IDA standards. Distinguishes between remediation targets (trainable skills) and bypass targets (persistent deficits requiring permanent cognitive prosthetics like text-to-speech, spell-checkers, and audiobooks).
-- **Standards Compliance** — Audit programs, IEPs, 504 plans, and tools against IDEA, Section 504, and IDA Knowledge and Practice Standards. Includes neuroscience-informed Cognitive Disorder Accommodation checklist.
-- **Document Generation** — Create professional IEPs, 504 plans, progress reports, accommodation letters, screening checklists, and evaluation summaries
-- **Gap Analysis & Measure Creation** — Identify what's missing in dyslexia support tooling and create new measures, frameworks, and standards where none exist. Evaluates gaps against both legal frameworks and cognitive neuroscience evidence, prioritizing gaps where current practice wrongly assumes deficits are temporary.
+- **Remediation & Cognitive Prosthetics** — Evidence-based intervention plans grounded in structured literacy, Orton-Gillingham methodology, and IDA standards. Explicitly distinguishes remediation targets (trainable skills) from bypass targets (persistent deficits requiring permanent cognitive prosthetics: text-to-speech, speech-to-text, audiobooks via Learning Ally/Bookshare, OCR, spell-checkers, dyslexia-friendly fonts).
+- **Standards & Regulatory Compliance** — Audit programs, IEPs, 504 plans, workplace policies, and tools against the applicable legal framework: IDA Knowledge and Practice Standards, IDEA (K-12), Section 504 (K-12 and higher ed), ADA Title I (workplace), ADA Title II (public colleges), ADA Title III (private colleges and public accommodations). Clinical frameworks: DSM-5, ICD-11.
+- **Document Generation** — K-12 IEPs/504s, higher-ed disability services requests, workplace ADA Title I accommodation letters, clinical evaluation summaries, cognitive prosthetics prescriptions, and self-advocacy documentation across the lifespan.
+- **Gap Analysis & Measure Creation** — Identify what's missing in dyslexia support tooling across education, clinical practice, workplace, and consumer technology. Evaluates gaps against legal frameworks, cognitive neuroscience evidence, and adult/workplace outcomes.
+
+## Lifespan Coverage
+
+| Life Stage | Regulatory Framework | Document Types |
+|------------|---------------------|----------------|
+| **K-12** | IDEA, Section 504, state dyslexia mandates | IEP, 504 Plan, PWN, RTI documentation |
+| **Higher Education** | Section 504 (all institutions), ADA Title II (public), ADA Title III (private) | Disability services requests, faculty accommodation letters, testing modifications |
+| **Workplace** | ADA Title I (employers ≥15 employees), Rehabilitation Act (federal contractors) | Reasonable accommodation requests, interactive process documentation, EEOC charges |
+| **Public Services** | ADA Title II, Title III | Access requests, complaint letters to OCR |
+| **Clinical** | DSM-5, ICD-11 | Evaluation summaries, diagnostic summary letters, cognitive prosthetics prescriptions |
 
 ## Quick Start
 
@@ -33,7 +56,6 @@ npm run audit        # Security audit
 Install the plugin in Cowork and the four skills + four commands become available automatically.
 
 ### As a Standalone Skill Set
-Clone this repo and reference the SKILL.md files from your Claude Code or agent configuration:
 
 ```bash
 git clone https://github.com/justice8096/dyslexia-support-skill.git
@@ -45,63 +67,54 @@ Point your skill configuration to any of:
 - `skills/document-generation/SKILL.md`
 - `skills/gap-analysis/SKILL.md`
 
-## Skills
-
-### Remediation Strategies
-Creates intervention plans using structured literacy's six elements (phonology, sound-symbol association, syllable instruction, morphology, syntax, semantics) and Orton-Gillingham principles (multisensory, explicit, diagnostic/prescriptive, sequential/cumulative, individualized).
-
-Includes reference data for: Wilson Reading System, Barton, Lindamood-Bell (LiPS), Sonday, RAVE-O, and Alphabetic Phonics.
-
-### Standards Compliance
-Audits against three standards frameworks:
-- **IDA Knowledge and Practice Standards** (2018) — 5 domains covering foundation concepts, reading profiles, assessment, structured literacy teaching, and ethics
-- **IDEA** — IEP requirements, FAPE, evaluation standards, team composition, procedural safeguards
-- **Section 504** — Accommodation requirements, eligibility differences from IDEA, plan compliance
-
-### Document Generation
-Templates and generators for:
-- Individualized Education Programs (IEPs)
-- Section 504 Accommodation Plans
-- Progress Monitoring Reports
-- Accommodation Letters
-- Dyslexia Screening Checklists
-- Psychoeducational Evaluation Summaries
-- Prior Written Notice (PWN)
-- RTI/Intervention Documentation
-
-### Gap Analysis & Measure Creation
-Identifies 8 major gaps in the current dyslexia support ecosystem and provides frameworks for creating new measures:
-1. Retroactive vs. proactive accessibility
-2. No personalized accommodation engine
-3. Passive vs. interactive assistive tools
-4. Fragmented tool ecosystem
-5. Disconnected progress monitoring
-6. Assessment-to-instruction pipeline
-7. Teacher implementation support
-8. Missing dyslexia-specific UX design standards
-
-Includes pre-built measures: Dyslexia-Friendly Content Audit Checklist and Dyslexia UX Heuristics (12 heuristics extending Nielsen's 10).
-
 ## Commands
 
 | Command | Description |
 |---------|-------------|
-| `/dyslexia-audit` | Run a standards compliance audit on a program, document, or tool |
-| `/generate-iep` | Generate a dyslexia-focused IEP from student profile data |
-| `/remediation-plan` | Create an evidence-based remediation plan |
-| `/content-accessibility-check` | Audit content for dyslexia-friendly design |
+| `/dyslexia-audit` | Audit a program, tool, curriculum, or workplace policy against IDA standards and applicable law (IDEA/504/ADA) |
+| `/generate-iep` | Generate IEP, 504 plan, ADA workplace accommodation request, or higher-ed disability services documentation |
+| `/remediation-plan` | Create a two-track plan: remediation (structured literacy) + cognitive prosthetics (AT stack) |
+| `/content-accessibility-check` | Audit educational, workplace, or consumer content for dyslexia-friendly design across 10 dimensions |
 
 ## Standards & Research Foundation
 
-This skill set is grounded in:
+Grounded in:
 
-- **IDA Knowledge and Practice Standards** (2018 Edition) — [dyslexiaida.org](https://dyslexiaida.org/kps-for-teachers-of-reading/)
-- **Structured Literacy** — The six elements as defined by IDA and the National Center on Improving Literacy
+**Clinical Frameworks**
+- **DSM-5** — Specific Learning Disorder (315.00) with impairment in reading
+- **ICD-11** — Developmental Learning Disorder (6A03.0) with impairment in reading
+
+**Neuroscience**
+- Shaywitz phonological deficit theory
+- Dehaene visual word form area (VWFA) research
+- Gabrieli et al. functional and structural neuroimaging
+- Wolf & Bowers double-deficit hypothesis
+
+**Instructional Standards**
+- **IDA Knowledge and Practice Standards** (2018) — [dyslexiaida.org](https://dyslexiaida.org/kps-for-teachers-of-reading/)
+- **Structured Literacy** — Six elements as defined by IDA and the National Center on Improving Literacy
 - **Orton-Gillingham Approach** — [orton-gillingham.com](https://www.orton-gillingham.com/approach/)
-- **IDEA** (Individuals with Disabilities Education Act) — [ed.gov](https://www.ed.gov/laws-and-policy/individuals-disabilities/idea)
-- **Section 504** of the Rehabilitation Act of 1973
 - **Science of Reading** research literature
-- **WCAG 2.1** AA accessibility guidelines (extended for dyslexia-specific needs)
+
+**Legal Frameworks**
+- **IDEA** (Individuals with Disabilities Education Act) — K-12 special education
+- **Section 504** of the Rehabilitation Act of 1973 — K-12 and higher education
+- **ADA Title I** — Workplace accommodations
+- **ADA Title II** — Public entities including public colleges
+- **ADA Title III** — Private entities including private colleges and public accommodations
+- **WCAG 2.1** AA — Extended for dyslexia-specific needs
+
+## Target Audience
+
+This skill set is designed for anyone supporting dyslexia across the lifespan:
+
+- **Developers** building EdTech, workplace AT, and accessibility tools
+- **Clinicians** — psychologists, speech-language pathologists, reading specialists
+- **Special educators** and reading interventionists
+- **Disability services professionals** in higher education
+- **HR professionals** handling workplace accommodation requests
+- **Self-advocates** navigating disclosure, accommodation requests, and cognitive prosthetics
+- **Policy and compliance teams** auditing educational, workplace, or consumer systems
 
 ## Platform Support
 
@@ -120,34 +133,29 @@ dyslexia-support-skill/
 ├── test-build.ts            # 42-test integration suite (7 suites)
 ├── skills/                  # Cowork plugin skill directories
 ├── commands/                # Cowork plugin command files
+├── examples/                # Sample audit reports
 ├── audits/                  # Security & compliance audit reports
 ├── sbom.cdx.json            # CycloneDX SBOM
 ├── SECURITY.md              # Vulnerability disclosure policy
 └── .github/workflows/ci.yml # CI pipeline (Node 18/20/22)
 ```
 
-## Target Audience
-
-This skill set is designed for **developers and tool builders** creating:
-- EdTech platforms with dyslexia support
-- Accessibility tools and assistive technology
-- IEP/504 management systems
-- Progress monitoring dashboards
-- Content authoring tools with universal design
-- Teacher training and decision support systems
-
 ## Disclaimer
 
-Generated documents (IEPs, 504 plans, evaluation summaries) are professional-quality templates that **require review and approval by qualified professionals**. They are starting points — not substitutes for licensed educators, psychologists, or legal counsel.
+Generated documents (IEPs, 504 plans, ADA accommodation letters, evaluation summaries, clinical summaries) are professional-quality templates that **require review and approval by qualified professionals**. They are starting points — not substitutes for licensed educators, psychologists, disability attorneys, HR professionals, or medical providers. Clinical diagnosis of dyslexia requires a licensed professional.
 
 ## Contributing
 
-Contributions welcome. Areas where help is especially needed:
-- State-specific dyslexia mandate data
+See [CONTRIBUTING.md](CONTRIBUTING.md). Areas where help is especially needed:
+
+- State-specific dyslexia mandate data (US)
+- International framework coverage (UK SpLD, Australian NDIS, EU disability directives)
 - Additional evidence-based program profiles
+- Clinical assessment instrument coverage beyond CTOPP-2/WRMT-III
+- Workplace accommodation case studies
+- Adult dyslexia resources and evidence
 - Translations and multilingual support
 - Validation studies for gap-analysis measures
-- Integration examples with popular EdTech platforms
 
 ## License
 
