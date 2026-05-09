@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Clinical and accommodation framework for dyslexia as a neurodevelopmental cognitive disorder — a lifelong, brain-based difference in phonological and orthographic processing architecture (left temporoparietal cortex, visual word form area, inferior frontal gyrus). Covers the full lifespan: K-12 special education (IDEA, Section 504, IDA standards), higher education (Section 504, ADA Title II/III), workplace (ADA Title I), and adult accommodation. Distinguishes remediation targets (trainable skills) from bypass targets (persistent deficits requiring permanent cognitive prosthetics). Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, Gabrieli neuroimaging evidence, DSM-5 Specific Learning Disorder (315.00), and ICD-11 Developmental Learning Disorder (6A03.0).",
     "author": "Justice",
-    "license": "MIT",
+    "license": "CC0-1.0",
     "repository": "https://github.com/justice8096/dyslexia-support-skill",
     "keywords": [
       "dyslexia",

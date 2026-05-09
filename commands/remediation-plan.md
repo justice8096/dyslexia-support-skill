@@ -1,3 +1,9 @@
+---
+description: Create a two-track support plan — (1) structured-literacy / Orton-Gillingham remediation (Wilson, Barton, LiPS, Sonday, RAVE-O, Alphabetic Phonics) for trainable skills; (2) cognitive-prosthetics stack (TTS, STT, audiobooks, OCR, dyslexia-friendly fonts) for persistent processing differences. Lifespan-aware.
+argument-hint: <person-name> [--context=k12|higher-ed|workplace|adult-general] [--duration=8-weeks|12-weeks|16-weeks|1-year|ongoing] [--intensity=light|moderate|intensive] [--focus=phonological-awareness|phonics|decoding|fluency|comprehension|writing|cognitive-prosthetics-only] [--program=wilson|barton|lindamood-bell|sonday|rave-o|alphabetic-phonics]
+allowed-tools: [Read, Write, Edit]
+---
+
 # /remediation-plan
 
 Create an evidence-based remediation plan for a student with dyslexia.

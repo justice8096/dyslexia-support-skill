@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dyslexia-support-skill",
+  "description": "Single-plugin marketplace for the dyslexia-support-skill plugin.",
+  "owner": {
+    "name": "Justice"
+  },
+  "plugins": [
+    {
+      "name": "dyslexia-support-skill",
+      "description": "Clinical and accommodation framework treating dyslexia as a neurodevelopmental cognitive disorder across the lifespan (K-12, higher ed, workplace, adult). Structured literacy / Orton-Gillingham for trainable skills + cognitive prosthetics for persistent processing differences.",
+      "category": "education",
+      "source": "./",
+      "homepage": "https://github.com/justice8096/dyslexia-support-skill"
+    }
+  ]
+}

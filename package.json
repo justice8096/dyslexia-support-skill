@@ -2,7 +2,7 @@
     "name":  "dyslexia-support-skill",
     "version":  "1.2.0",
     "description":  "Multi-format distribution system for dyslexia cognitive accommodation across K-12, higher education, workplace, and adult contexts",
-    "license":  "MIT",
+    "license":  "CC0-1.0",
     "author":  "Justice",
     "private":  true,
     "type":  "module",
