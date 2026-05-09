@@ -1,3 +1,9 @@
+---
+description: Generate a legally-compliant accommodation document tailored to context — K-12 IEP, K-12/higher-ed 504 plan, ADA Title I workplace accommodation request, higher-ed disability-services request, or clinical summary. Includes structured-literacy services, cognitive prosthetics, and comorbidity considerations.
+argument-hint: <person-name> [--context=k12|higher-ed|workplace|adult-general] [--document-type=iep|504|ada-workplace-request|higher-ed-dsr|clinical-summary] [--dyslexia-type=phonological|surface|double-deficit|mixed] [--anxiety=none|mild|moderate|severe]
+allowed-tools: [Read, Write, Edit]
+---
+
 # /generate-iep
 
 Generate a dyslexia-focused Individualized Education Program (IEP).

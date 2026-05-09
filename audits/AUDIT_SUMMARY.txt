@@ -1,44 +1,53 @@
-POST-COMMIT AUDIT SUMMARY (FIFTH-PASS RE-AUDIT — FINAL)
-=========================================================
-Date: 2026-04-15
-Project: Web Site Audit Skill (dyscalculia-support-skill + dyslexia-support-skill)
-Branch: master (both repos)
+POST-COMMIT AUDIT SUMMARY (SIXTH-PASS RE-AUDIT — v1.2.0)
+==========================================================
+Date: 2026-04-16
+Commit: 34b99356
+Branch: feat/build-system-cli
+Project: dyslexia-support-skill v1.2.0 (Cognitive Disorder Reframe)
 
-1. SAST/DAST Scan:        PASS — 4 findings (0 critical, 0 high, 3 LOW, 1 INFO)
-2. Supply Chain Audit:     PASS — SLSA Level 1+, 0 open MEDIUM items
-3. CWE Mapping:           PASS — 7 CWEs tracked, 3 resolved (security), 3 accepted risk, 1 open LOW
-4. LLM Compliance:        88/100 — GOOD [was 78 → 82 → 88]
+1. SAST/DAST Scan:        PASS — 4 findings (0 critical, 0 high, 3 LOW, 1 INFO) — unchanged from v1.1.0
+2. Supply Chain Audit:     PASS — SLSA Level 1+, 1 new LOW (SBOM timestamp drift), 0 dep changes
+3. CWE Mapping:           PASS — 7 CWEs tracked (3 resolved, 3 accepted risk, 1 open LOW), 0 new CWEs
+4. LLM Compliance:        91/100 — EXCELLENT [was 78 → 82 → 88 → 91]
 5. Contribution Analysis:  30% Human / 70% AI
 
 Overall: PASS
-Action Required: no — all MEDIUM items resolved
+Grade: A
+Action Required: yes (minor) — regenerate SBOM to close LOW-SC-1
 
-Changes This Cycle:
-  Security Fixes:
-  - R1 RESOLVED: MCP SDK ^0.6.0 → ^1.6.0 (CWE-1333 HIGH ReDoS)
-  - R2 RESOLVED: TypeScript type predicate errors (CWE-704)
-  - R3 RESOLVED: tsconfig rootDir mismatch (CWE-710)
-  - Migrated MCP server to server.tool() API (both repos)
+Changes This Cycle (v1.2.0):
+  Content Reframe (no code changes):
+  - Reframed from K-12 educational to neurodevelopmental cognitive disorder
+  - Added DSM-5 315.00 + ICD-11 6A03.0 clinical classification
+  - Added ADA Title I (workplace), Title II/III (higher ed + public)
+  - Added EEOC charge process, OCR complaint procedures, Section 503
+  - Added 5 new document templates (adult clinical eval, higher-ed DSR,
+    workplace ADA letter, interactive process log, cognitive prosthetics Rx)
+  - Promoted cognitive prosthetics to first-class Track 2
+  - Enriched manifest descriptions for MCP/OpenAI/n8n tool discovery
+  - Expanded target audience beyond EdTech developers
 
-  Supply Chain Improvements:
-  - RESOLVED: Added CycloneDX 1.6 SBOMs (sbom.cdx.json) to both repos
-  - RESOLVED: Added GitHub Actions CI/CD pipeline (.github/workflows/ci.yml)
-  - RESOLVED: Added SECURITY.md with vulnerability disclosure policy
-  - Added npm audit + sbom scripts to both package.json files
-  - Cleaned empty test log files from dyslexia repo
+  LLM Compliance Improvements:
+  - Training Data Disclosure: 80 → 90 (clinical codes, named instruments)
+  - Risk Classification: 85 → 90 (precise regulatory citations)
+  - Incident Response: 80 → 88 (structured accommodation-failure procedures)
 
-  Test Results:
-  - 84/84 integration tests passing (42 per repo, 7 suites each)
-  - TypeScript: 0 errors (both repos)
-  - npm audit: 0 vulnerabilities (both repos)
-  - All 6 build formats × 2 repos = 12 artifacts verified
+  No Security Changes:
+  - Zero new dependencies
+  - Zero changes to executable code paths
+  - Zero new CWEs introduced
+  - MCP SDK remains at ^1.6.0 (post-ReDoS fix)
+  - 42 integration tests still passing
 
-Remaining Open (accepted risk only):
+Quick Fix Required:
+  - Run: npm run sbom && git add sbom.cdx.json
+  - Closes LOW-SC-1 (SBOM metadata drift from v1.1.0 → v1.2.0)
+
+Remaining Open (accepted risk only — unchanged):
   - LOW: No signed commits (CWE-345)
   - LOW: Path traversal in MCP loader (CWE-22, trusted input)
   - LOW: Caret dep ranges (CWE-1357, lockfile mitigates)
   - INFO: JSON.parse on local manifest (CWE-502, local build tool)
 
 Quality Grade: A (production-ready)
-
-NOTE: SBOMs need to be extracted from sboms.zip into each repo root before committing.
+LLM Compliance: EXCELLENT (91/100)

@@ -1,3 +1,9 @@
+---
+description: Audit a program, tool, curriculum, workplace policy, or content against IDA Knowledge and Practice Standards, structured-literacy fidelity, and the applicable legal framework (IDEA/504 for K-12, Section 504/ADA for higher ed, ADA Title I for workplace, ADA Title III for public accommodations). Graded report into audits/.
+argument-hint: <project-name> [--context=k12|higher-ed|workplace|public-accommodation] [--scope=full|materials|assessment|technology|accommodation-policy] [--age-group=elementary|middle|high|college|adult]
+allowed-tools: [Read, Glob, Grep, Bash, Write, Edit]
+---
+
 # /dyslexia-audit
 
 Run a comprehensive dyslexia standards compliance audit on a project, program, document, or tool.

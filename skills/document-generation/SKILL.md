@@ -1,3 +1,8 @@
+---
+name: document-generation
+description: Generate dyslexia-related documents across the lifespan — K-12 IEPs / 504 plans, higher-education disability-services request letters and faculty accommodation letters, ADA Title I workplace reasonable-accommodation request letters and EEOC interactive-process documentation, psychoeducational evaluation summaries (CTOPP-2, WRMT-III, GORT-5, KTEA-3, Nelson-Denny for adults), DSM-5 diagnostic summary letters, cognitive-prosthetics prescription letters, and dyslexia screening checklists.
+---
+
 # Dyslexia Document Generation Skill
 
 ## Purpose

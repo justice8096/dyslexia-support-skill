@@ -1,3 +1,9 @@
+---
+description: Audit content for dyslexia-friendly design across 10 dimensions — typography (Lexend, Atkinson Hyperlegible, OpenDyslexic), readability, color/contrast (WCAG), layout, cognitive load, navigation predictability, AT compatibility, multimedia accessibility, UDL, cognitive-accommodation integration. Applies to K-12, higher-ed, workplace, consumer, and government content.
+argument-hint: <content-name> [--content-type=textbook|courseware|website|webapp|mobile-app|document|video|workplace-training|government-form] [--format=pdf|html|text|video|mixed|docx|epub] [--target-audience=elementary|middle|high|college|adult-employee|general-public] [--depth=quick|standard|comprehensive]
+allowed-tools: [Read, Glob, Grep, Bash, Write]
+---
+
 # /content-accessibility-check
 
 Audit digital content for dyslexia-friendly design and readability.

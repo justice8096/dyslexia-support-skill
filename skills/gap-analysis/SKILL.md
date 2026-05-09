@@ -1,3 +1,8 @@
+---
+name: gap-analysis
+description: Gap identification and measure-creation across the dyslexia support ecosystem — education, clinical practice, workplace, consumer technology. Use when auditing tools or content for dyslexia coverage; evaluating cognitive-prosthetics maturity; applying the Dyslexia UX Heuristics or content-audit checklist; or specifying new measures, frameworks, or accommodation-engine designs where gaps exist.
+---
+
 # Dyslexia Gap Analysis & Measure Creation Skill
 
 ## Purpose

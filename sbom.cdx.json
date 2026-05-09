@@ -1,1 +1,4398 @@
-{"$schema":"http://cyclonedx.org/schema/bom-1.6.schema.json","bomFormat":"CycloneDX","specVersion":"1.6","version":1,"metadata":{"tools":{"components":[{"type":"application","name":"npm","version":"10.9.7"},{"type":"library","name":"cyclonedx-library","group":"@cyclonedx","version":"10.0.0"},{"type":"application","name":"cyclonedx-npm","group":"@cyclonedx","version":"4.2.1"}]},"component":{"type":"application","name":"dyslexia-support-skill","version":"1.0.0","bom-ref":"dyslexia-support-skill@1.0.0","author":"Dyslexia Support Team","description":"Multi-format distribution system for dyslexia accessibility and educational support","licenses":[{"license":{"id":"MIT","acknowledgement":"declared"}}],"purl":"pkg:npm/dyslexia-support-skill@1.0.0"},"properties":[{"name":"cdx:reproducible","value":"true"}]},"components":[{"type":"library","name":"@types/js-yaml","version":"4.0.9","purl":"pkg:npm/%40types/js-yaml@4.0.9","licenses":[{"license":{"id":"MIT"}}]},{"type":"library","name":"@types/node","version":"20.19.39","purl":"pkg:npm/%40types/node@20.19.39","licenses":[{"license":{"id":"MIT"}}]},{"type":"library","name":"argparse","version":"2.0.1","purl":"pkg:npm/argparse@2.0.1","licenses":[{"license":{"id":"Python-2.0"}}]},{"type":"library","name":"esbuild","version":"0.27.7","purl":"pkg:npm/esbuild@0.27.7","licenses":[{"license":{"id":"MIT"}}]},{"type":"library","name":"get-tsconfig","version":"4.14.0","purl":"pkg:npm/get-tsconfig@4.14.0","licenses":[{"license":{"id":"MIT"}}]},{"type":"library","name":"glob","version":"10.5.0","purl":"pkg:npm/glob@10.5.0","licenses":[{"license":{"id":"ISC"}}]},{"type":"library","name":"js-yaml","version":"4.1.1","purl":"pkg:npm/js-yaml@4.1.1","licenses":[{"license":{"id":"MIT"}}]},{"type":"library","name":"resolve-pkg-maps","version":"1.0.0","purl":"pkg:npm/resolve-pkg-maps@1.0.0","licenses":[{"license":{"id":"MIT"}}]},{"type":"library","name":"tsx","version":"4.21.0","purl":"pkg:npm/tsx@4.21.0","licenses":[{"license":{"id":"MIT"}}]},{"type":"library","name":"typescript","version":"5.9.3","purl":"pkg:npm/typescript@5.9.3","licenses":[{"license":{"id":"Apache-2.0"}}]},{"type":"library","name":"undici-types","version":"6.21.0","purl":"pkg:npm/undici-types@6.21.0","licenses":[{"license":{"id":"MIT"}}]}],"dependencies":[{"ref":"dyslexia-support-skill@1.0.0","dependsOn":["@types/js-yaml@4.0.9","@types/node@20.19.39","glob@10.5.0","js-yaml@4.1.1","tsx@4.21.0","typescript@5.9.3"]}]}
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "npm",
+          "version": "11.6.1"
+        },
+        {
+          "type": "library",
+          "name": "cyclonedx-library",
+          "group": "@cyclonedx",
+          "version": "10.0.0",
+          "author": "Jan Kowalleck",
+          "description": "Core functionality of CycloneDX for JavaScript (Node.js or WebBrowser).",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-javascript-library.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ]
+        },
+        {
+          "type": "application",
+          "name": "cyclonedx-npm",
+          "group": "@cyclonedx",
+          "version": "4.2.1",
+          "author": "Jan Kowalleck",
+          "description": "Create CycloneDX Software Bill of Materials (SBOM) from NPM projects.",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-npm/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-node-npm.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-npm#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ]
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "dyslexia-support-skill",
+      "version": "1.2.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0",
+      "author": "Justice",
+      "description": "Multi-format distribution system for dyslexia cognitive accommodation across K-12, higher education, workplace, and adult contexts",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/dyslexia-support-skill@1.2.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": ""
+        },
+        {
+          "name": "cdx:npm:package:private",
+          "value": "true"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "cdx:reproducible",
+        "value": "true"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "aix-ppc64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/aix-ppc64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/aix-ppc64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "10a5f74309a1cf578c74426892100baf46220f496140dc03aa43d8c8f8624b02ab87bff82918d0734e2c67c75bfb90d55676752e66cd0c8d6e00c3c45019d03e"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/aix-ppc64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "android-arm",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/android-arm@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/android-arm@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "8db3d7bc1e188f6c8157b1d47c4d8a1dee06257e75429942375a466d88efb320996d09a27acdbd12825b90473ebd8b94e68e3901f427dfbbd99725f2e1827c45"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/android-arm"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "android-arm64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/android-arm64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/android-arm64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/android-arm64/-/android-arm64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "eb674f647a485f3bc285fbdf2c9a30deae5d0ed88d324c224733f295209fae22ef65eab46b56d60a1ac6c7f05b51b3f03abb1628c9fc89d4a5964973072f9d81"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/android-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "android-x64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/android-x64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/android-x64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/android-x64/-/android-x64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "c7956930e0e77950dbef43d85765503a621452206d6370f798f046f0dc559390a882779886447b326337c91fee31d2132eb0b59a5fcd575ae3e1b309bb2f4c0a"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/android-x64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "darwin-arm64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/darwin-arm64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/darwin-arm64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "e6572476a7ae04f94a530be80972202360fdfc00663eadd1769ec87cbef4dfddd881a012b7bb5b8eedc073e78f562dca0c7e8dd91a9e3df1e75e4683b58f5f93"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/darwin-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "darwin-x64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/darwin-x64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/darwin-x64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "ad89d7aca717b93ed9f962f92bdf348d515dbd52a1087854c2277e743610a47faabbe4de7dca2688c009a48882d84337463b6ad2c3b74ad315ffedf0dcccb2a9"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/darwin-x64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "freebsd-arm64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/freebsd-arm64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/freebsd-arm64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/freebsd-arm64/-/freebsd-arm64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "078f0fa9e0ac1203adccc13619b34cdaba14dbd00c4ee38837dd5db0c3b7d2df98762b37cffdcd8288f98619ec3924b03734bee89a69a96b2e853a7a13cda5db"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/freebsd-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "freebsd-x64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/freebsd-x64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/freebsd-x64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/freebsd-x64/-/freebsd-x64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "8ce0432b95c48c0e26e4824addba40405f7f2de96efd9f5971d85344b7f871a8e507ef151211454635a07f2dccd4ee2b3b6190fdbd9d2f00941a9885fde01335"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/freebsd-x64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-arm",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-arm@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-arm@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-arm/-/linux-arm-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "4644ff6176014d250ba37f9a7fc21bd32907f2ed8c061e7ba3babf0c0b37953265c95424810be5acf4e78c8cf344f4326afc6d3ed7e0d04a29bc3c88b748f5ac"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-arm"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-arm64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-arm64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-arm64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "4593c7068c57b8d9cf40ef6bbe38798dd9119958b392d913ed3083903990d16d92c07227282015f79191baf752bc0ef0e153307c28d488fc038b464ee8d7def4"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-ia32",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-ia32@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-ia32@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-ia32/-/linux-ia32-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "180e3c68a364c900db7772ad929958593d74d82e6c9ff1194d8e1744e93138d82bb873d4ef697e816f857c5f2d7f67058de1da45b5a93986bfb91073fd7ab53e"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-ia32"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-loong64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-loong64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-loong64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "6b83ceaee34cda85ac0f858abc148428622259017c7d9380b327073ade8906967e24dda7d891fd580bf9e923b2bbd5f922a023a9220f4da264a8df05ed7390e5"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-loong64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-mips64el",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-mips64el@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-mips64el@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-mips64el/-/linux-mips64el-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "29a6d3e48e92b62ac67c8cf414c825d48f91d47ef71a9d287cbf40de71b78bf718149cca1e1a2e055e5558ad424a02af55a1b8ab544da424d1d8bb93541ddf23"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-mips64el"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-ppc64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-ppc64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-ppc64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-ppc64/-/linux-ppc64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "811b0be31eb0b061c646a86d23e89fa4dfefa4e15342d9dbb2ea54179479613020fb2fe529e9584758576e705dcc38c66cc6235492c94ddd8e16631ec0083095"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-ppc64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-riscv64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-riscv64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-riscv64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-riscv64/-/linux-riscv64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "84bdb92dbc4ed503a7806ceed94e71797b715dc5befc6bcc3777a300da9793167fa29c9201932b73ef4b63f5b28c06a7e35ba7ad1dd8ae6b53b14a704fae889d"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-riscv64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-s390x",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-s390x@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-s390x@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-s390x/-/linux-s390x-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "da4f20a3c61cbb529be3abc47a586ed6fa843fe51e4558f6cd8d694ae3dd82f6dde72900c3cd8baeba36f2f5d4ad19b312c515d0dcc27f9e3201120af2bd1f77"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-s390x"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "linux-x64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-x64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/linux-x64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "873ce79800cfb7e3a6b18cf0d44137ddc700f873dd22a88246aedc41e2f5265ab681bd7e3b258190c0ab606049facc55cef7b664911579e3db2ccda2108652c4"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/linux-x64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "netbsd-arm64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/netbsd-arm64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/netbsd-arm64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/netbsd-arm64/-/netbsd-arm64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "6faa6ab6b41d8a0641c19c409f55296b3122b2fc1a203bdd6cc6e6ae5cbb7034cc167c3ffb7955c7109318eae43d59ec608a2c2495c0b082c6f577104be62eeb"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/netbsd-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "netbsd-x64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/netbsd-x64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/netbsd-x64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/netbsd-x64/-/netbsd-x64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "39f6ad90ba23afa53e58de440d8ba8421b4cfb5c5ca3effa152cc9267b96894c3979572271bc8adddab911e57f4074f5bb2e86a038466c5a69ad4887518820af"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/netbsd-x64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "openbsd-arm64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/openbsd-arm64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/openbsd-arm64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/openbsd-arm64/-/openbsd-arm64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "005ba88cc413c40cfbe45a3c89d55caa84161072171516ce7354eb55c15280266d41f49d735457801ded8ce9ff92b44710d501e23d346df1a3ca5da626b537ec"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/openbsd-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "openbsd-x64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/openbsd-x64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/openbsd-x64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/openbsd-x64/-/openbsd-x64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "f80d4d2667ccf16343bf908b550609e4fb21b919bfe1c23a58c6518356f2d46c0f2103c24ecd462c4507c22890193e730ddc8b89133f9751b43efe7882fb4a22"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/openbsd-x64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "openharmony-arm64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/openharmony-arm64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/openharmony-arm64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/openharmony-arm64/-/openharmony-arm64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "f8aaef61bfc2f3303d094fe0d2c47ac36441c3b20673927604f9dcddd61ce552711c2485d7234cc535792d0ec6b8ab5e41766db298c56e2b96e7f74e8fb1f863"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/openharmony-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "sunos-x64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/sunos-x64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/sunos-x64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/sunos-x64/-/sunos-x64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "8a492d221141cd036dfd00f238be7cd2d8bdfb998bfd865e50f294da2bc6b468dd4d8a2acfa8ce6e3ea738c7e1012a52e0653843f0a587542dc5602f71829a98"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/sunos-x64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "win32-arm64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-arm64@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/win32-arm64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/win32-arm64/-/win32-arm64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "ef24616c7bcfa92a51515ed0db456e0f06e35b99083304c7a69b6e53357e000e3a9223f37b967baa0b7a08b08ade9585ac778d7c377554a8323f83be9e0d7b08"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/win32-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "win32-ia32",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-ia32@0.27.7",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/win32-ia32@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/win32-ia32/-/win32-ia32-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "4a6c0a5dee951c8c9961b04b26b84ea0225107f675b5c9339a04cb7c560e7e9300c7adc124468bf44c48f31eefd2800edd987a0ff3a2d60571118af9a1408587"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/win32-ia32"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "win32-x64",
+      "group": "@esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-x64@0.27.7",
+      "description": "The Windows 64-bit binary for esbuild, a JavaScript bundler.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/win32-x64@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "e7a8620093e1c10d51e22fb6d45545ed5f24483e73653747715b9114c5b4867ef9def55f40df31971e2e38f4f8c68187d19fe85404ee47cd808aa4930c8a5a1e"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/evanw/esbuild.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@esbuild/win32-x64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "cliui",
+      "group": "@isaacs",
+      "version": "8.0.2",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@isaacs/cliui@8.0.2",
+      "author": "Ben Coe",
+      "description": "easily create complex multi-column command-line-interfaces",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40isaacs/cliui@8.0.2",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@isaacs/cliui/-/cliui-8.0.2.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "3bc8dc8da6d76a578e1bd0d0d3e0115d66414df9cfe16340ab3ba224aee5978e009b118abff2763384cf8f18d8df39c109fbc15c5cee726d6dc1dc85c9b16a10"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/yargs/cliui/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/yargs/cliui.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/yargs/cliui#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@isaacs/cliui"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "parseargs",
+      "group": "@pkgjs",
+      "version": "0.11.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@pkgjs/parseargs@0.11.0",
+      "description": "Polyfill of future proposal for `util.parseArgs()`",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40pkgjs/parseargs@0.11.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@pkgjs/parseargs/-/parseargs-0.11.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "fb55648dd0f44012cfa1d1ab2547aa6ab1fc54022f40e0c86f087d5e93f94b28ac7fb628420b0928f345a2aa8b425bbe550fed552b21311ea5a0f327f14f9d3e"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/pkgjs/parseargs/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+ssh://git@github.com/pkgjs/parseargs.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/pkgjs/parseargs#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@pkgjs/parseargs"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "js-yaml",
+      "group": "@types",
+      "version": "4.0.9",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@types/js-yaml@4.0.9",
+      "description": "TypeScript definitions for js-yaml",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40types/js-yaml@4.0.9",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@types/js-yaml/-/js-yaml-4.0.9.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "9383066909794c6a3f8a2a6a6f65031b65308d7ce2496921d2ecac41e953949a57d6a1a5a546589bc3e73b80f11b5a81a26b4951d609eaa47ac5d21a875d092e"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git#types/js-yaml",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/js-yaml",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@types/js-yaml"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "node",
+      "group": "@types",
+      "version": "20.19.39",
+      "bom-ref": "dyslexia-support-skill@1.2.0|@types/node@20.19.39",
+      "description": "TypeScript definitions for node",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40types/node@20.19.39",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/@types/node/-/node-20.19.39.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "a2baeb0fbe0c054c8af233800ffaf4fa57dad48d8c3ba23ebc0926016ccc61b09c82b378942ae62b9da044542afc94717d83dfa2792be1bd23718ece96a76a6f"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git#types/node",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/@types/node"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ansi-regex",
+      "version": "6.2.2",
+      "bom-ref": "dyslexia-support-skill@1.2.0|ansi-regex@6.2.2",
+      "author": "Sindre Sorhus",
+      "description": "Regular expression for matching ANSI escape codes",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ansi-regex@6.2.2",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-6.2.2.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "06add2992a721476968cf93c21ff7273ab2f33c739e9d079040b56e106f0e631d3c305d77132e844c9290c9a7a54bd17ce559a0874d7ae415444c6260f4b0baa"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/chalk/ansi-regex/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/chalk/ansi-regex.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/ansi-regex#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/ansi-regex"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ansi-styles",
+      "version": "6.2.3",
+      "bom-ref": "dyslexia-support-skill@1.2.0|ansi-styles@6.2.3",
+      "author": "Sindre Sorhus",
+      "description": "ANSI escape codes for styling strings in the terminal",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ansi-styles@6.2.3",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-6.2.3.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "e038fa336f0907ea001fc9059132d4a3e6b68f038592ea9bdf2b9c53408035c45151bc52d1c3f49d96021a371cdc1357c1122c5159831a0cdac267bbcef247be"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/chalk/ansi-styles/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/chalk/ansi-styles.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/ansi-styles#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/ansi-styles"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "argparse",
+      "version": "2.0.1",
+      "bom-ref": "dyslexia-support-skill@1.2.0|argparse@2.0.1",
+      "description": "CLI arguments parser. Native port of python's argparse.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Python-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/argparse@2.0.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "f3ef56a9e6db173a57f4e47e59ae8edbd6ac22881e44ccdc1ad00835da4c1c7c80835d1fd3969215505b704a867ff3d7c35123019faadbf6c4060dc3beeacadd"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/nodeca/argparse/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/nodeca/argparse.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/nodeca/argparse#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/argparse"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "balanced-match",
+      "version": "1.0.2",
+      "bom-ref": "dyslexia-support-skill@1.2.0|balanced-match@1.0.2",
+      "author": "Julian Gruber",
+      "description": "Match balanced character pairs, like \"{\" and \"}\"",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/balanced-match@1.0.2",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "de849e50ed13315ebb84dd4099b5ec2b8c9aa94eed8e21e56f144364ea47d0a5bdf82797e1b440697d009f1b74b71d8cae94695b041a3f02252121098585393f"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/juliangruber/balanced-match/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git://github.com/juliangruber/balanced-match.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/juliangruber/balanced-match",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/balanced-match"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "brace-expansion",
+      "version": "2.1.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|brace-expansion@2.1.0",
+      "author": "Julian Gruber",
+      "description": "Brace expansion as known from sh/bash",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/brace-expansion@2.1.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.1.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "4cdd64099020760c1e261596a60298ad068c34770350b1e45b0408b2976d8d5e18e5abab45d6698c0aa7eb25f714fa9303d9e01c2738849c4c00c8067ef7bce7"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/juliangruber/brace-expansion/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git://github.com/juliangruber/brace-expansion.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/juliangruber/brace-expansion",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/brace-expansion"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "color-convert",
+      "version": "2.0.1",
+      "bom-ref": "dyslexia-support-skill@1.2.0|color-convert@2.0.1",
+      "author": "Heather Arthur",
+      "description": "Plain color conversion functions",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color-convert@2.0.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "4511023ec8fb8aeff16f9a0a61cb051d2a6914d9ec8ffe763954d129be333f9a275f0545df3566993a0d70e7c60be0910e97cafd4e7ce1f320dfc64709a12529"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/Qix-/color-convert/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/Qix-/color-convert.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/Qix-/color-convert#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/color-convert"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "color-name",
+      "version": "1.1.4",
+      "bom-ref": "dyslexia-support-skill@1.2.0|color-name@1.1.4",
+      "author": "DY",
+      "description": "A list of color names and its values",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color-name@1.1.4",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "74ecbedc0b96ddadb035b64722e319a537208c6b8b53fb812ffb9b71917d3976c3a3c7dfe0ef32569e417f479f4bcb84a18a39ab8171edd63d3a04065e002c40"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/colorjs/color-name/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+ssh://git@github.com/colorjs/color-name.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/colorjs/color-name",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/color-name"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "bom-ref": "dyslexia-support-skill@1.2.0|cross-spawn@7.0.6",
+      "author": "André Cruz",
+      "description": "Cross platform child_process#spawn and child_process#spawnSync",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/cross-spawn@7.0.6",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "b95d903963f69d6ceccb668ca7c69189b862f5d9731791e0879487681f4e893184c834e2249cb1d2ecb9d505ddc966ed00736e6b85c9cd429c6b73b3294777bc"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/moxystudio/node-cross-spawn/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+ssh://git@github.com/moxystudio/node-cross-spawn.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/moxystudio/node-cross-spawn",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/cross-spawn"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eastasianwidth",
+      "version": "0.2.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|eastasianwidth@0.2.0",
+      "author": "Masaki Komagata",
+      "description": "Get East Asian Width from a character.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/eastasianwidth@0.2.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/eastasianwidth/-/eastasianwidth-0.2.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "23cf1361959cf578981d1438ff7739ae38df8248e12f25b696e18885e18445b350e8e63bc93c9b6a74a90d765af32ed550ff589837186be7b2ab871aee22ea58"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/komagata/eastasianwidth/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git://github.com/komagata/eastasianwidth.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/komagata/eastasianwidth#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/eastasianwidth"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "emoji-regex",
+      "version": "9.2.2",
+      "bom-ref": "dyslexia-support-skill@1.2.0|emoji-regex@9.2.2",
+      "author": "Mathias Bynens",
+      "description": "A regular expression to match all Emoji-only symbols as per the Unicode Standard.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/emoji-regex@9.2.2",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-9.2.2.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "2f5f03689b17494936fb8da9bfc98bb398c94f686a164144e23db5c0e9a06d4aac67684bef636c514efce60f515e0a37b3464d815978d93887a7766d3affd5ca"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/mathiasbynens/emoji-regex/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/mathiasbynens/emoji-regex.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://mths.be/emoji-regex",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/emoji-regex"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "esbuild",
+      "version": "0.27.7",
+      "bom-ref": "dyslexia-support-skill@1.2.0|esbuild@0.27.7",
+      "description": "An extremely fast JavaScript and CSS bundler and minifier.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/esbuild@0.27.7",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/esbuild/-/esbuild-0.27.7.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "231a626d38f25679ab210a396aa3690a0a00080fdd4ca2d39613078a154785d9312b23ced6e041b61ba64f4add1e672c93db8ca272164b49b81658d6cc82e1df"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/evanw/esbuild.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/esbuild"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "foreground-child",
+      "version": "3.3.1",
+      "bom-ref": "dyslexia-support-skill@1.2.0|foreground-child@3.3.1",
+      "author": "Isaac Z. Schlueter",
+      "description": "Run a child as if it's the foreground process. Give it stdio. Exit when it exits.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/foreground-child@3.3.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/foreground-child/-/foreground-child-3.3.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "8085e32aab45b96120cc544903d58241e4892d90e380950e302333c6dbc5abfdfb2a88ccd41146b9faac0b2d2be2a4909982ec65831ec91ab321638cba9d37b3"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/tapjs/foreground-child/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/tapjs/foreground-child.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/tapjs/foreground-child#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/foreground-child"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fsevents",
+      "version": "2.3.3",
+      "bom-ref": "dyslexia-support-skill@1.2.0|fsevents@2.3.3",
+      "scope": "excluded",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fsevents@2.3.3",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "e71a037d7f9f2fb7da0139da82658fa5b16dc21fd1efb5a630caaa1c64bae42defbc1d181eb805f81d58999df8e35b4c8f99fade4d36d765cda09c339617df43"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/fsevents"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "get-tsconfig",
+      "version": "4.14.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|get-tsconfig@4.14.0",
+      "author": "Hiroki Osame",
+      "description": "Find and parse the tsconfig.json file from a directory path",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/get-tsconfig@4.14.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.14.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "c936fef035f30d113382f62687ab3dbc7b125421de0b41b73c8e5b1173411ed9ac84f9cef92e4eeea80b10e9f423942f332ea4a5937c2b534a1b28a52dbf77c0"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/privatenumber/get-tsconfig/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/privatenumber/get-tsconfig.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/privatenumber/get-tsconfig#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/get-tsconfig"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "glob",
+      "version": "10.5.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|glob@10.5.0",
+      "author": "Isaac Z. Schlueter",
+      "description": "the most correct and second fastest glob implementation in JavaScript",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/glob@10.5.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/glob/-/glob-10.5.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "0df5cdf037e127b347dce7bb7059aedcd0aed7029b911789f13a2bcd20056d22ab94d69048a7c8cea62a558f3395bb3634b05b5a9462539d865f63db68154d92"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/node-glob/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git://github.com/isaacs/node-glob.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/node-glob#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/glob"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-fullwidth-code-point",
+      "version": "3.0.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|is-fullwidth-code-point@3.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Check if the character represented by a given Unicode code point is fullwidth",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-fullwidth-code-point@3.0.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "cf29a6e7ebbeb02b125b20fda8d69e8d5dc316f84229c94a762cd868952e1c0f3744b8dbee74ae1a775d0871afd2193e298ec130096c59e2b851e83a115e9742"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/is-fullwidth-code-point/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/sindresorhus/is-fullwidth-code-point.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/is-fullwidth-code-point#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/is-fullwidth-code-point"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "isexe",
+      "version": "2.0.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|isexe@2.0.0",
+      "author": "Isaac Z. Schlueter",
+      "description": "Minimal module to check if a file is executable.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/isexe@2.0.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "447c4c2e9f659ca1c61d19e0f5016144231b600715a67ebdb2648672addfdfac638155564e18f8aaa2db4cb96aed2b23f01f9f210d44b8210623694ab3241e23"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/isexe/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/isaacs/isexe.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/isexe#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/isexe"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "jackspeak",
+      "version": "3.4.3",
+      "bom-ref": "dyslexia-support-skill@1.2.0|jackspeak@3.4.3",
+      "author": "Isaac Z. Schlueter",
+      "description": "A very strict and proper argument parser.",
+      "licenses": [
+        {
+          "license": {
+            "id": "BlueOak-1.0.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/jackspeak@3.4.3",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/jackspeak/-/jackspeak-3.4.3.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "386959429cf6c9f6a103f45dd58f0277d48812caaf5e42d5a12c3f720c219e114c0dbb1015e658a0927b6c86414bd05c6a6516f7a6acabf9e93d6ba033e45007"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/jackspeak/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/isaacs/jackspeak.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/jackspeak#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/jackspeak"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "js-yaml",
+      "version": "4.1.1",
+      "bom-ref": "dyslexia-support-skill@1.2.0|js-yaml@4.1.1",
+      "author": "Vladimir Zapparov",
+      "description": "YAML 1.2 parser and serializer",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/js-yaml@4.1.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "a90293e334315e5f252f006d1cc5b06937067c5399be23897addcecbfc661a4da0647ebbec224cf44bed7dd4a48167004d9863ff9e49674ae6cb79b2093e65b0"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/nodeca/js-yaml/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/nodeca/js-yaml.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/nodeca/js-yaml#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/js-yaml"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "lru-cache",
+      "version": "10.4.3",
+      "bom-ref": "dyslexia-support-skill@1.2.0|lru-cache@10.4.3",
+      "author": "Isaac Z. Schlueter",
+      "description": "A cache object that deletes the least-recently-used items.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/lru-cache@10.4.3",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/lru-cache/-/lru-cache-10.4.3.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "24d03365c5eb0ade365462ee633d337c0cc37c0bc9596e807d8943050c835790c2948da6e6c0262be3883bbb39f577ec46c587a74da3009ad169d3d1193b7a49"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/node-lru-cache/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git://github.com/isaacs/node-lru-cache.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/node-lru-cache#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/lru-cache"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "minimatch",
+      "version": "9.0.9",
+      "bom-ref": "dyslexia-support-skill@1.2.0|minimatch@9.0.9",
+      "author": "Isaac Z. Schlueter",
+      "description": "a glob matcher in javascript",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minimatch@9.0.9",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/minimatch/-/minimatch-9.0.9.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "381c0137d00be1daa61139694b6cdab31faf4de59c956ce46e57d993b2930398f78de38e373fed4429d9a26532bcd83cdf02f966ff52b3a1cc2570202fc47662"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/minimatch/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git://github.com/isaacs/minimatch.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/minimatch#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/minimatch"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "minipass",
+      "version": "7.1.3",
+      "bom-ref": "dyslexia-support-skill@1.2.0|minipass@7.1.3",
+      "author": "Isaac Z. Schlueter",
+      "description": "minimal implementation of a PassThrough stream",
+      "licenses": [
+        {
+          "license": {
+            "id": "BlueOak-1.0.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minipass@7.1.3",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/minipass/-/minipass-7.1.3.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "b44047a839c8a0cff5ad7304d738246bd83a43695ca029311cbb9cece0c9e41c5b3f977873667970682d5c092ee7ddb4d02c7b762b874ce61f4810fc9fa9a6f0"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/minipass/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/isaacs/minipass.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/minipass#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/minipass"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "package-json-from-dist",
+      "version": "1.0.1",
+      "bom-ref": "dyslexia-support-skill@1.2.0|package-json-from-dist@1.0.1",
+      "author": "Isaac Z. Schlueter",
+      "description": "Load the local package.json from either src or dist folder",
+      "licenses": [
+        {
+          "license": {
+            "id": "BlueOak-1.0.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/package-json-from-dist@1.0.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/package-json-from-dist/-/package-json-from-dist-1.0.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "5046484b7fdbcb8382f2f2f73f67535d1113a5e6cb236362239bc8ae3683ff952dae4157fed35bc234d2440182ffeec2028da921c05a4605a670104772c68223"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/package-json-from-dist/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/isaacs/package-json-from-dist.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/package-json-from-dist#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/package-json-from-dist"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "path-key",
+      "version": "3.1.1",
+      "bom-ref": "dyslexia-support-skill@1.2.0|path-key@3.1.1",
+      "author": "Sindre Sorhus",
+      "description": "Get the PATH environment variable key cross-platform",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/path-key@3.1.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "a2399e374a9dfb2d23b3312da18e3caf43deab97703049089423aee90e5fe3595f92cc17b8ab58ae18284e92e7c887079b6e1486ac7ee53aa6d889d2c0b844e9"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/path-key/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/sindresorhus/path-key.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/path-key#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/path-key"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "path-scurry",
+      "version": "1.11.1",
+      "bom-ref": "dyslexia-support-skill@1.2.0|path-scurry@1.11.1",
+      "author": "Isaac Z. Schlueter",
+      "description": "walk paths fast and efficiently",
+      "licenses": [
+        {
+          "license": {
+            "id": "BlueOak-1.0.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/path-scurry@1.11.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/path-scurry/-/path-scurry-1.11.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "5dae0dc35ec54bd02940527dba62e2252e28ac68e6ed9cf052bc1a99c190b874b30f2b61f5ba0a0dac9c61d0dc643baa6004d7c381c55e06aa59372d5bfbf51c"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/path-scurry/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/isaacs/path-scurry.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/path-scurry#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/path-scurry"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "resolve-pkg-maps",
+      "version": "1.0.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|resolve-pkg-maps@1.0.0",
+      "author": "Hiroki Osame",
+      "description": "Resolve package.json exports & imports maps",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/resolve-pkg-maps@1.0.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "b1e4b64e3dba4c154e0b6348736ace7b6cb664eede7f1213b4b65c1923a71c734e43b0a489405fc34230d9c93ac642213f02e128d2d2f013be844a6781096acf"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/privatenumber/resolve-pkg-maps/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/privatenumber/resolve-pkg-maps.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/privatenumber/resolve-pkg-maps#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/resolve-pkg-maps"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|shebang-command@2.0.0",
+      "author": "Kevin Mårtensson",
+      "description": "Get the command from a shebang",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/shebang-command@2.0.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "907c6bdb366962d766acdd6a0e3aeb5ff675ad1d641bc0f1fa09292b51b87979af5ecc26704d614d6056614ce5ada630d7fc99a7a62e0d8efb62dbdb3747660c"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/kevva/shebang-command/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/kevva/shebang-command.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/kevva/shebang-command#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/shebang-command"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|shebang-regex@3.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Regular expression for matching a shebang line",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/shebang-regex@3.0.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "efef9d161b5cc77df9dee05aabc0c347836ec417ad0730bb6503a19934089c711de9b4ab5dd884cb30af1b4ed9e3851874b4a1594c97b7933fca1cfc7a471bd4"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/shebang-regex/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/sindresorhus/shebang-regex.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/shebang-regex#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/shebang-regex"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "signal-exit",
+      "version": "4.1.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|signal-exit@4.1.0",
+      "author": "Ben Coe",
+      "description": "when you want to fire an event no matter how a process exits.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/signal-exit@4.1.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/signal-exit/-/signal-exit-4.1.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "6f3c99d5ef3cc3d3b588d25b2a73a5bd84eb58f0e5e3a3b56c6d03dd7227bfef6d90faf1acdf235144e21650e4926296827d4ce827c8035dd2b86a8e6bd2a8af"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/tapjs/signal-exit/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/tapjs/signal-exit.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/tapjs/signal-exit#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/signal-exit"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "string-width",
+      "version": "4.2.3",
+      "bom-ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3",
+      "author": "Sindre Sorhus",
+      "description": "Get the visual width of a string - the number of columns required to display it",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/string-width@4.2.3",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "c0ac90450a63274b08a7ad84ad265d1ac8cc256b1aa79a1136284786ee86ec954effd8c807a5327af2feb57b8eaab9e0f23fdcc4a4d6c96530bd24eb8a2673fe"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/string-width/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/sindresorhus/string-width.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/string-width#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/string-width-cjs"
+        }
+      ],
+      "components": [
+        {
+          "type": "library",
+          "name": "ansi-regex",
+          "version": "5.0.1",
+          "bom-ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|ansi-regex@5.0.1",
+          "author": "Sindre Sorhus",
+          "description": "Regular expression for matching ANSI escape codes",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/ansi-regex@5.0.1",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "aae2505e54d25062f62c7f52517a3c570b18e2ca1a9e1828e8b3529bce04d4b05c13cb373b4c29762473c91f73fd9649325316bf7eea38e6fda5d26531410a15"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/chalk/ansi-regex/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/chalk/ansi-regex.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/chalk/ansi-regex#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/string-width-cjs/node_modules/ansi-regex"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "emoji-regex",
+          "version": "8.0.0",
+          "bom-ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|emoji-regex@8.0.0",
+          "author": "Mathias Bynens",
+          "description": "A regular expression to match all Emoji-only symbols as per the Unicode Standard.",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/emoji-regex@8.0.0",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "3128d8cdc58d380d1ec001e9cf4331a5816fc20eb28f2d4d1b7c6d7a8ab3eb8e150a8fd13e09ebd7f186b7e89cde2253cd0f04bb74dd335e126b09d5526184e8"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/mathiasbynens/emoji-regex/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/mathiasbynens/emoji-regex.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://mths.be/emoji-regex",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/string-width-cjs/node_modules/emoji-regex"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "strip-ansi",
+          "version": "6.0.1",
+          "bom-ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|strip-ansi@6.0.1",
+          "author": "Sindre Sorhus",
+          "description": "Strip ANSI escape codes from a string",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/strip-ansi@6.0.1",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "637f153d21dcaa416b0a916743dbee4979aabaebf9a1738aa46793e9a1abaf7a3719cf409556ba2417d448e0a76f1186645fbfd28a08ecaacfb944b3b54754e4"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/chalk/strip-ansi/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/chalk/strip-ansi.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/chalk/strip-ansi#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/string-width-cjs/node_modules/strip-ansi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "string-width",
+      "version": "5.1.2",
+      "bom-ref": "dyslexia-support-skill@1.2.0|string-width@5.1.2",
+      "author": "Sindre Sorhus",
+      "description": "Get the visual width of a string - the number of columns required to display it",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/string-width@5.1.2",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/string-width/-/string-width-5.1.2.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "1e72ce091def8dc63c6dea0d2ed723679fe7c67d9a7e6304ea586b0eb79ba24a8c6a9f976de5bc9fd4d7a4f0cea9d18ae6a708de84f418a4d6eb00bb10c895a8"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/string-width/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/sindresorhus/string-width.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/string-width#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/string-width"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "strip-ansi",
+      "version": "6.0.1",
+      "bom-ref": "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1",
+      "author": "Sindre Sorhus",
+      "description": "Strip ANSI escape codes from a string",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/strip-ansi@6.0.1",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "637f153d21dcaa416b0a916743dbee4979aabaebf9a1738aa46793e9a1abaf7a3719cf409556ba2417d448e0a76f1186645fbfd28a08ecaacfb944b3b54754e4"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/chalk/strip-ansi/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/chalk/strip-ansi.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/strip-ansi#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/strip-ansi-cjs"
+        }
+      ],
+      "components": [
+        {
+          "type": "library",
+          "name": "ansi-regex",
+          "version": "5.0.1",
+          "bom-ref": "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1|ansi-regex@5.0.1",
+          "author": "Sindre Sorhus",
+          "description": "Regular expression for matching ANSI escape codes",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/ansi-regex@5.0.1",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "aae2505e54d25062f62c7f52517a3c570b18e2ca1a9e1828e8b3529bce04d4b05c13cb373b4c29762473c91f73fd9649325316bf7eea38e6fda5d26531410a15"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/chalk/ansi-regex/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/chalk/ansi-regex.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/chalk/ansi-regex#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/strip-ansi-cjs/node_modules/ansi-regex"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "strip-ansi",
+      "version": "7.2.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0",
+      "author": "Sindre Sorhus",
+      "description": "Strip ANSI escape codes from a string",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/strip-ansi@7.2.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-7.2.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "c833cc363a785b27d80641e78c844b7dc6b58ba28cc860adb1582829eff3d7eeafba481a10d76018166df9998a3dce206afbc46793a01df1ddadace180dc86ef"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/chalk/strip-ansi/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/chalk/strip-ansi.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/strip-ansi#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/strip-ansi"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "tsx",
+      "version": "4.21.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|tsx@4.21.0",
+      "author": "Hiroki Osame",
+      "description": "TypeScript Execute (tsx): Node.js enhanced with esbuild to run TypeScript & ESM files",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/tsx@4.21.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "e42d6c838512b3595f1b41856f644b5ec7695ea05212101a03fd243cbd35c31ce932a2c82cdc48c4838a8882f3f9c760fe92e7394c4560e479ca11d4ebaeb06f"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/privatenumber/tsx/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/privatenumber/tsx.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://tsx.is",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/tsx"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "5.9.3",
+      "bom-ref": "dyslexia-support-skill@1.2.0|typescript@5.9.3",
+      "author": "Microsoft Corp.",
+      "description": "TypeScript is a language for application scale JavaScript development",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/typescript@5.9.3",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "8e5d6f6733c38a72ebf5e52ddc9feded5e8580d130f508ef04f772b33f4a7d00c3e357d0ac2d98e2f290762694a454f86d795bd511e12e9a7cc2d9ba3394e04b"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/microsoft/TypeScript/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/microsoft/TypeScript.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://www.typescriptlang.org/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/typescript"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "undici-types",
+      "version": "6.21.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|undici-types@6.21.0",
+      "description": "A stand-alone types package for Undici",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/undici-types@6.21.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "8b00d9aa0d10006ae0f516afe47e27d0ceb87379a4479f5c27ac10a7eec2e2723482c984c5a79d6982cd3b8e1e4f802d041c236d38863cc96dd8c7744fd1fd25"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/nodejs/undici/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/nodejs/undici.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://undici.nodejs.org",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/undici-types"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "which",
+      "version": "2.0.2",
+      "bom-ref": "dyslexia-support-skill@1.2.0|which@2.0.2",
+      "author": "Isaac Z. Schlueter",
+      "description": "Like which(1) unix command. Find the first instance of an executable in the PATH.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/which@2.0.2",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/which/-/which-2.0.2.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "04b2374e5d535b73ef97bd25df2ab763ae22f9ac29c17aac181616924a8cb676d782b303fb28fbae15b492e103c7325a6171a3116e6881aa4a34c10a34c8e26c"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/isaacs/node-which/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git://github.com/isaacs/node-which.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/node-which#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/which"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "wrap-ansi",
+      "version": "7.0.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Wordwrap a string with ANSI escape codes",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/wrap-ansi@7.0.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "6151888f691a98b493c70e8db198e80717d2c2c9f4c9c75eb26738a7e436d5ce733ee675a65f8d7f155dc4fb5d1ef98d54e43a5d2606e0052dcadfc58bb0f5e9"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/chalk/wrap-ansi/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/chalk/wrap-ansi.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/wrap-ansi#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/wrap-ansi-cjs"
+        }
+      ],
+      "components": [
+        {
+          "type": "library",
+          "name": "ansi-regex",
+          "version": "5.0.1",
+          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-regex@5.0.1",
+          "author": "Sindre Sorhus",
+          "description": "Regular expression for matching ANSI escape codes",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/ansi-regex@5.0.1",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "aae2505e54d25062f62c7f52517a3c570b18e2ca1a9e1828e8b3529bce04d4b05c13cb373b4c29762473c91f73fd9649325316bf7eea38e6fda5d26531410a15"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/chalk/ansi-regex/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/chalk/ansi-regex.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/chalk/ansi-regex#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/wrap-ansi-cjs/node_modules/ansi-regex"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "ansi-styles",
+          "version": "4.3.0",
+          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
+          "author": "Sindre Sorhus",
+          "description": "ANSI escape codes for styling strings in the terminal",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/ansi-styles@4.3.0",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "cdb07dac22404f5adb8e25436f686a2851cd60bc60b64f0d511c59dc86700f717a36dc5b5d94029e74a2d4b931f880e885d3e5169db6db05402c885e64941212"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/chalk/ansi-styles/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/chalk/ansi-styles.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/chalk/ansi-styles#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/wrap-ansi-cjs/node_modules/ansi-styles"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "emoji-regex",
+          "version": "8.0.0",
+          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|emoji-regex@8.0.0",
+          "author": "Mathias Bynens",
+          "description": "A regular expression to match all Emoji-only symbols as per the Unicode Standard.",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/emoji-regex@8.0.0",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "3128d8cdc58d380d1ec001e9cf4331a5816fc20eb28f2d4d1b7c6d7a8ab3eb8e150a8fd13e09ebd7f186b7e89cde2253cd0f04bb74dd335e126b09d5526184e8"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/mathiasbynens/emoji-regex/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/mathiasbynens/emoji-regex.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://mths.be/emoji-regex",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/wrap-ansi-cjs/node_modules/emoji-regex"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "string-width",
+          "version": "4.2.3",
+          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|string-width@4.2.3",
+          "author": "Sindre Sorhus",
+          "description": "Get the visual width of a string - the number of columns required to display it",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/string-width@4.2.3",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "c0ac90450a63274b08a7ad84ad265d1ac8cc256b1aa79a1136284786ee86ec954effd8c807a5327af2feb57b8eaab9e0f23fdcc4a4d6c96530bd24eb8a2673fe"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/sindresorhus/string-width/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/sindresorhus/string-width.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/sindresorhus/string-width#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/wrap-ansi-cjs/node_modules/string-width"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "strip-ansi",
+          "version": "6.0.1",
+          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|strip-ansi@6.0.1",
+          "author": "Sindre Sorhus",
+          "description": "Strip ANSI escape codes from a string",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT",
+                "acknowledgement": "declared"
+              }
+            }
+          ],
+          "purl": "pkg:npm/strip-ansi@6.0.1",
+          "externalReferences": [
+            {
+              "url": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
+              "type": "distribution",
+              "hashes": [
+                {
+                  "alg": "SHA-512",
+                  "content": "637f153d21dcaa416b0a916743dbee4979aabaebf9a1738aa46793e9a1abaf7a3719cf409556ba2417d448e0a76f1186645fbfd28a08ecaacfb944b3b54754e4"
+                }
+              ],
+              "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+            },
+            {
+              "url": "https://github.com/chalk/strip-ansi/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            },
+            {
+              "url": "git+https://github.com/chalk/strip-ansi.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/chalk/strip-ansi#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:development",
+              "value": "true"
+            },
+            {
+              "name": "cdx:npm:package:path",
+              "value": "node_modules/wrap-ansi-cjs/node_modules/strip-ansi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "wrap-ansi",
+      "version": "8.1.0",
+      "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@8.1.0",
+      "author": "Sindre Sorhus",
+      "description": "Wordwrap a string with ANSI escape codes",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/wrap-ansi@8.1.0",
+      "externalReferences": [
+        {
+          "url": "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-8.1.0.tgz",
+          "type": "distribution",
+          "hashes": [
+            {
+              "alg": "SHA-512",
+              "content": "b22ed0588eb350cab9e9b11216f6a0b66ccc7463ada317d1f927b3d753286df73bb66f9591472493d6d6d9479f7d319551b3a4b31992c34000da0b3c83bd4d09"
+            }
+          ],
+          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
+        },
+        {
+          "url": "https://github.com/chalk/wrap-ansi/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "git+https://github.com/chalk/wrap-ansi.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/wrap-ansi#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:development",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/wrap-ansi"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "dyslexia-support-skill@1.2.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|@types/js-yaml@4.0.9",
+        "dyslexia-support-skill@1.2.0|@types/node@20.19.39",
+        "dyslexia-support-skill@1.2.0|glob@10.5.0",
+        "dyslexia-support-skill@1.2.0|js-yaml@4.1.1",
+        "dyslexia-support-skill@1.2.0|tsx@4.21.0",
+        "dyslexia-support-skill@1.2.0|typescript@5.9.3"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/aix-ppc64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/android-arm@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/android-arm64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/android-x64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/darwin-arm64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/darwin-x64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/freebsd-arm64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/freebsd-x64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-arm@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-arm64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-ia32@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-loong64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-mips64el@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-ppc64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-riscv64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-s390x@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-x64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/netbsd-arm64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/netbsd-x64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/openbsd-arm64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/openbsd-x64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/openharmony-arm64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/sunos-x64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-arm64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-ia32@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-x64@0.27.7"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@isaacs/cliui@8.0.2",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|string-width@4.2.3",
+        "dyslexia-support-skill@1.2.0|string-width@5.1.2",
+        "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1",
+        "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0",
+        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0",
+        "dyslexia-support-skill@1.2.0|wrap-ansi@8.1.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@pkgjs/parseargs@0.11.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@types/js-yaml@4.0.9"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|@types/node@20.19.39",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|undici-types@6.21.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|ansi-regex@6.2.2"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|ansi-styles@6.2.3"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|argparse@2.0.1"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|balanced-match@1.0.2"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|brace-expansion@2.1.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|balanced-match@1.0.2"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|color-convert@2.0.1",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|color-name@1.1.4"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|color-name@1.1.4"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|cross-spawn@7.0.6",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|path-key@3.1.1",
+        "dyslexia-support-skill@1.2.0|shebang-command@2.0.0",
+        "dyslexia-support-skill@1.2.0|which@2.0.2"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|eastasianwidth@0.2.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|emoji-regex@9.2.2"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|esbuild@0.27.7",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|@esbuild/aix-ppc64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/android-arm@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/android-arm64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/android-x64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/darwin-arm64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/darwin-x64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/freebsd-arm64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/freebsd-x64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-arm@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-arm64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-ia32@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-loong64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-mips64el@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-ppc64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-riscv64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-s390x@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/linux-x64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/netbsd-arm64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/netbsd-x64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/openbsd-arm64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/openbsd-x64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/openharmony-arm64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/sunos-x64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/win32-arm64@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/win32-ia32@0.27.7",
+        "dyslexia-support-skill@1.2.0|@esbuild/win32-x64@0.27.7"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|foreground-child@3.3.1",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|cross-spawn@7.0.6",
+        "dyslexia-support-skill@1.2.0|signal-exit@4.1.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|fsevents@2.3.3"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|get-tsconfig@4.14.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|resolve-pkg-maps@1.0.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|glob@10.5.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|foreground-child@3.3.1",
+        "dyslexia-support-skill@1.2.0|jackspeak@3.4.3",
+        "dyslexia-support-skill@1.2.0|minimatch@9.0.9",
+        "dyslexia-support-skill@1.2.0|minipass@7.1.3",
+        "dyslexia-support-skill@1.2.0|package-json-from-dist@1.0.1",
+        "dyslexia-support-skill@1.2.0|path-scurry@1.11.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|is-fullwidth-code-point@3.0.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|isexe@2.0.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|jackspeak@3.4.3",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|@isaacs/cliui@8.0.2",
+        "dyslexia-support-skill@1.2.0|@pkgjs/parseargs@0.11.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|js-yaml@4.1.1",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|argparse@2.0.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|lru-cache@10.4.3"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|minimatch@9.0.9",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|brace-expansion@2.1.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|minipass@7.1.3"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|package-json-from-dist@1.0.1"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|path-key@3.1.1"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|path-scurry@1.11.1",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|lru-cache@10.4.3",
+        "dyslexia-support-skill@1.2.0|minipass@7.1.3"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|resolve-pkg-maps@1.0.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|shebang-command@2.0.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|shebang-regex@3.0.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|shebang-regex@3.0.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|signal-exit@4.1.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|is-fullwidth-code-point@3.0.0",
+        "dyslexia-support-skill@1.2.0|string-width@4.2.3|emoji-regex@8.0.0",
+        "dyslexia-support-skill@1.2.0|string-width@4.2.3|strip-ansi@6.0.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|ansi-regex@5.0.1"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|emoji-regex@8.0.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|strip-ansi@6.0.1",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|string-width@4.2.3|ansi-regex@5.0.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|string-width@5.1.2",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|eastasianwidth@0.2.0",
+        "dyslexia-support-skill@1.2.0|emoji-regex@9.2.2",
+        "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1|ansi-regex@5.0.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1|ansi-regex@5.0.1"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|ansi-regex@6.2.2"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|tsx@4.21.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|esbuild@0.27.7",
+        "dyslexia-support-skill@1.2.0|fsevents@2.3.3",
+        "dyslexia-support-skill@1.2.0|get-tsconfig@4.14.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|typescript@5.9.3"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|undici-types@6.21.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|which@2.0.2",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|isexe@2.0.0"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
+        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|string-width@4.2.3",
+        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|strip-ansi@6.0.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-regex@5.0.1"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|color-convert@2.0.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|emoji-regex@8.0.0"
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|string-width@4.2.3",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|is-fullwidth-code-point@3.0.0",
+        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|emoji-regex@8.0.0",
+        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|strip-ansi@6.0.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|strip-ansi@6.0.1",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-regex@5.0.1"
+      ]
+    },
+    {
+      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@8.1.0",
+      "dependsOn": [
+        "dyslexia-support-skill@1.2.0|ansi-styles@6.2.3",
+        "dyslexia-support-skill@1.2.0|string-width@5.1.2",
+        "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0"
+      ]
+    }
+  ]
+}
