@@ -1,3 +1,8 @@
+---
+name: remediation-strategies
+description: Two-track dyslexia support — structured literacy / Orton-Gillingham remediation for trainable skills (Wilson Reading System, Barton, Lindamood-Bell LiPS, Sonday, RAVE-O, Alphabetic Phonics) plus cognitive prosthetics (text-to-speech, speech-to-text, audiobooks via Learning Ally / Bookshare, OCR, dyslexia-friendly fonts, reading rulers, extended time) for persistent processing differences. Lifespan: K-12 through adult workplace AT stacks.
+---
+
 # Dyslexia Remediation Strategies Skill
 
 ## Purpose

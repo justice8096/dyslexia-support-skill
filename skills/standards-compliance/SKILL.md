@@ -1,3 +1,8 @@
+---
+name: standards-compliance
+description: Regulatory compliance framework treating dyslexia as a neurodevelopmental cognitive disorder across the lifespan. Use when the user mentions IDA Knowledge and Practice Standards (KPS), IDEA, Section 504, ADA Title I / II / III, DSM-5 Specific Learning Disorder (315.00), ICD-11 Developmental Learning Disorder (6A03.0), FAPE, OCR complaints, EEOC reasonable-accommodation procedures, or wants to audit programs for K-12, higher-education, or workplace dyslexia accommodation compliance.
+---
+
 # Dyslexia Standards Compliance Skill
 
 ## Purpose

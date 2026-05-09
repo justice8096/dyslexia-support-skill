@@ -1,7 +1,7 @@
 # dyslexia-support-skill
 
 [![CI](https://github.com/justice8096/dyslexia-support-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/justice8096/dyslexia-support-skill/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: CC0-1.0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 A clinical and accommodation framework treating dyslexia as a **neurodevelopmental cognitive disorder** — a lifelong, brain-based difference in phonological and orthographic processing architecture — across the full lifespan: K-12, higher education, workplace, and adult contexts.
 
@@ -116,6 +116,17 @@ This skill set is designed for anyone supporting dyslexia across the lifespan:
 - **Self-advocates** navigating disclosure, accommodation requests, and cognitive prosthetics
 - **Policy and compliance teams** auditing educational, workplace, or consumer systems
 
+## Install via Claude Code
+
+This repo is a self-hosted Claude Code plugin marketplace. Add it once, then install the plugin:
+
+```text
+/plugin marketplace add justice8096/dyslexia-support-skill
+/plugin install dyslexia-support-skill@dyslexia-support-skill
+```
+
+Once installed, the four skills (`standards-compliance`, `remediation-strategies`, `document-generation`, `gap-analysis`) auto-trigger on relevant prompts, and the four slash commands become available: `/dyslexia-audit`, `/generate-iep`, `/remediation-plan`, `/content-accessibility-check`.
+
 ## Platform Support
 
 This skill builds to 6 formats from a single source in `source/`: Claude Code Plugin, MCP Server, OpenAI Functions, n8n Node, Prompt Library, and CLI Audit Tool. Run `npm run build` to generate all formats in `dist/`.
@@ -159,4 +170,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Areas where help is especially needed:
 
 ## License
 
-MIT
+[CC0 1.0 Universal](LICENSE) — public-domain dedication. Fork it, rebrand it, fold it into commercial products, build derivative work — no attribution required, no friction. The full legal text is in [LICENSE](LICENSE).
