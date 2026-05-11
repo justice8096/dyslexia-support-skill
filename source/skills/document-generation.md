@@ -16,6 +16,14 @@ Trigger this skill when the user mentions:
 - "intervention documentation", "RTI documentation"
 - "prior written notice", "PWN template"
 - "parent letter", "parent communication"
+- "PAP template", "Plan d'Accompagnement Personnalisé", "remplir PAP", "modèle PAP"
+- "PPS template", "Projet Personnalisé de Scolarisation", "dossier MDPH", "demande PPS"
+- "aménagements d'examens", "demande tiers-temps", "Circulaire 2023-033"
+- "RQTH application", "dossier RQTH", "demande de reconnaissance travailleur handicapé"
+- "ACNS template", "Adaptaciones Curriculares No Significativas", "PTI template", "Plan de Trabajo Individualizado"
+- "informe psicopedagógico", "ACNEAE classification", "DEA documentation"
+- "EBAU adaptation request", "EvAU adaptación"
+- "locale=fr", "locale=es", "generate document in French", "generate document in Spanish"
 
 ## Document Templates
 
@@ -644,19 +652,601 @@ Provider Signature: _____________________    Date: _______
 License #: _____________________    State: _______
 ```
 
+---
+
+## French Document Templates (Locale: fr)
+
+### 12. PAP — Plan d'Accompagnement Personnalisé (K-12)
+
+The PAP follows a standardized template defined by Circulaire n° 2015-016. There are four versions (one per school cycle). Use the appropriate cycle version: **maternelle**, **élémentaire**, **collège**, or **lycée**.
+
+```
+PLAN D'ACCOMPAGNEMENT PERSONNALISÉ (PAP)
+Circulaire n° 2015-016 du 22 janvier 2015
+
+Cycle: ☐ Maternelle  ☐ Élémentaire  ☐ Collège  ☐ Lycée
+École / Établissement: [Nom]
+Année scolaire: [XXXX–XXXX]
+
+─── IDENTIFICATION DE L'ÉLÈVE ───────────────────────────────
+Nom, Prénom: [Nom Prénom]
+Date de naissance: [JJ/MM/AAAA]
+Classe: [Classe]
+
+─── TROUBLE(S) IDENTIFIÉ(S) ─────────────────────────────────
+☐ Dyslexie          ☐ Dyscalculie        ☐ Dysorthographie
+☐ Dysgraphie        ☐ Dysphasie          ☐ Dyspraxie
+☐ Autre: [Préciser]
+
+Documents médicaux / bilans en appui:
+├── Bilan orthophonique: [Date, Professionnel]
+├── Bilan neuropsychologique: [Date si disponible]
+└── Autre évaluation: [Préciser]
+
+─── PROFESSIONNELS EXTÉRIEURS IMPLIQUÉS ─────────────────────
+Orthophoniste: [Nom, fréquence des séances]
+Neuropsychologue: [Nom, si applicable]
+Autre: [Préciser]
+
+─── AMÉNAGEMENTS ET ADAPTATIONS ─────────────────────────────
+
+Langage oral:
+├── Reformulation des consignes à l'oral
+├── Questions posées oralement
+├── Autorisation de réponse orale à la place de l'écrit
+└── Autre: [Préciser]
+
+Langage écrit (lecture / écriture):
+├── Temps supplémentaire pour les activités de lecture et d'écriture
+├── Documents adaptés: police ≥ 14pt (Arial ou OpenDyslexic), interligne 1,5 à 2
+├── Texte aligné à gauche, pas de justification complète
+├── Non-pénalisation des erreurs d'orthographe dans les matières non linguistiques
+├── Autorisation d'un ordinateur avec logiciel de synthèse vocale
+├── Accès aux notes de cours / plans de séquence à l'avance
+├── Réduction de la quantité d'écrit (même exigences, moins de volume)
+└── Autre: [Préciser]
+
+Mathématiques / logique:
+├── Utilisation d'une calculatrice non programmable
+├── Autorisation de la table de multiplication et d'une ligne numérique
+├── Présentation adaptée: une opération par ligne, papier quadrillé
+├── Temps supplémentaire pour les activités de calcul
+└── Autre: [Préciser]
+
+Autres domaines cognitifs:
+├── Instructions segmentées (une étape à la fois)
+├── Rappels visuels des consignes
+├── Place préférentielle en classe
+└── Autre: [Préciser]
+
+Prothèses cognitives (cognitive prosthetics — supports permanents):
+├── Synthèse vocale (TTS): Vocale Presse, Balabolka avec voix française
+├── Reconnaissance vocale (STT): Dragon NaturallySpeaking français
+├── Correcteur orthographique avancé: Antidote, Cordial
+├── Lecteur d'écran ou loupe de lecture pour textes denses
+└── Polices spécifiques: OpenDyslexic, Lexend, Atkinson Hyperlegible
+
+─── RÉVISION ANNUELLE ───────────────────────────────────────
+Date de la prochaine révision: [JJ/MM/AAAA]
+Observations / suivi: [Notes]
+
+─── SIGNATURES ──────────────────────────────────────────────
+Famille: _________________________ Date: ___________
+Médecin de l'Éducation nationale: _ Date: ___________
+Directeur/Proviseur: ______________ Date: ___________
+Enseignant(s) référent(s): ________ Date: ___________
+```
+
+**PAP compliance notes:**
+- Medical validation by the médecin de l'Éducation nationale is mandatory — a PAP without this signature is not legally valid.
+- The PAP is reviewed annually; document the review date.
+- Cannot coexist with a PPS for the same student.
+- The student does NOT need MDPH recognition for a PAP.
+- The cognitive prosthetics section (added per v1.2.0 framing) frames AT as permanent supports, not temporary scaffolds.
+
+### 13. PPS — Projet Personnalisé de Scolarisation (MDPH Support Dossier)
+
+The PPS is created by the MDPH/CDAPH, not by the school. Schools receive the PPS after the CDAPH decision. When generating PPS-related documentation, produce the **MDPH application support package** rather than the PPS itself (which is an official government document).
+
+```
+DOSSIER D'APPUI — DEMANDE DE PPS AUPRÈS DE L'MDPH
+
+Élève: [Nom Prénom]
+Date de naissance: [JJ/MM/AAAA]
+École / Établissement: [Nom]
+Département: [Numéro et nom du département]
+
+─── DOCUMENTS REQUIS POUR LE DOSSIER MDPH ───────────────────
+☐ Cerfa n° 15692*01 — Formulaire de demande (rempli par la famille)
+☐ Cerfa n° 15695*01 — Certificat médical (moins de 6 mois)
+     Médecin prescripteur: [Nom]
+     Date du certificat: [JJ/MM/AAAA]
+☐ Bilan orthophonique: [Date, Orthophoniste]
+☐ Bilan neuropsychologique: [Date si disponible]
+☐ Rapport scolaire / observations de l'enseignant
+
+─── MOTIFS DE LA DEMANDE ────────────────────────────────────
+Trouble(s) identifié(s): [Préciser]
+Besoin(s) spécifique(s) nécessitant la voie PPS:
+☐ Assistance humaine (AESH — Accompagnant d'Élève en Situation de Handicap)
+☐ Placement en ULIS (Unité Localisée pour l'Inclusion Scolaire)
+☐ Matériel pédagogique adapté financé par l'État
+☐ Allocation d'Éducation de l'Enfant Handicapé (AEEH)
+☐ Autre: [Préciser]
+
+─── DESCRIPTION DES BESOINS ─────────────────────────────────
+Impacts fonctionnels du trouble sur la scolarité:
+[Description des impacts observés sur les apprentissages, la participation, l'autonomie. Cadrer comme trouble cognitif neuro-développemental persistant, non comme retard d'apprentissage temporaire.]
+
+Mesures déjà en place (PAP/PPRE antérieurs):
+[Résumé des aménagements déjà mis en œuvre et leurs effets]
+
+Besoins qui dépassent ce que le PAP peut offrir:
+[Justification de la nécessité de la voie PPS — typiquement: nécessité d'AESH, placement ULIS, équipement financé par l'État]
+
+─── COORDONNÉES DE L'ÉQUIPE SCOLAIRE ────────────────────────
+Directeur/Proviseur: [Nom, contact]
+Enseignant principal: [Nom, contact]
+Médecin de l'Éducation nationale: [Nom, contact]
+```
+
+**Note**: Once the CDAPH grants recognition and issues the PPS, an **enseignant référent** is assigned. Schools implement the PPS as directed. The ESS (Équipe de Suivi de Scolarisation) meets at least annually to review progress.
+
+### 14. Demande d'Aménagements d'Examens (K-12 Final Exams)
+
+```
+DEMANDE D'AMÉNAGEMENTS D'EXAMENS POUR ÉLÈVE AVEC TROUBLES DYS
+Circulaire n° 2023-033 du 23 février 2023
+
+Examen concerné: ☐ Brevet  ☐ Baccalauréat  ☐ BTS  ☐ Autre: ___
+Session: [Année]
+Établissement: [Nom]
+Académie: [Nom]
+
+─── IDENTIFICATION DU CANDIDAT ──────────────────────────────
+Nom, Prénom: [Nom Prénom]
+Date de naissance: [JJ/MM/AAAA]
+Classe: [Classe]
+INE: [Numéro si connu]
+
+─── AMÉNAGEMENTS DEMANDÉS ───────────────────────────────────
+☐ Tiers-temps (temps majoré d'un tiers)
+   Justification: [Référence au PAP/PPS documentant l'usage en classe]
+☐ Secrétaire lecteur (lecture des sujets)
+☐ Secrétaire scripteur (dictée des réponses)
+☐ Temps de pause (temps de repos autorisé, chronomètre arrêté)
+☐ Salle séparée
+☐ Utilisation d'un ordinateur
+   ☐ Avec correcteur orthographique  ☐ Sans correcteur orthographique
+☐ Calculatrice pour toutes les épreuves (y compris épreuves sans calculatrice)
+☐ Sujets adaptés: ☐ Police agrandie  ☐ Interligne augmenté  ☐ Fond de couleur
+☐ Épreuve orale de remplacement: [Préciser la matière]
+☐ Dispense d'épreuve: [Préciser — justification détaillée requise]
+☐ Autre: [Préciser]
+
+─── PIÈCES JUSTIFICATIVES JOINTES ───────────────────────────
+☐ Certificat médical récent (moins de 6 mois) avec diagnostic précis
+☐ Bilan orthophonique avec date
+☐ Bilan neuropsychologique si disponible
+☐ Copie du PAP ou PPS en cours montrant les aménagements utilisés en classe
+☐ Attestation de l'établissement confirmant l'usage habituel des aménagements
+
+─── ATTESTATION DE L'ÉTABLISSEMENT ──────────────────────────
+Je soussigné(e), [Directeur/Proviseur], atteste que l'élève [Nom Prénom] bénéficie
+des aménagements suivants dans le cadre de sa scolarité ordinaire:
+[Lister les aménagements effectivement utilisés en classe]
+
+Ces aménagements sont en place depuis: [Date]
+Ils sont documentés dans: ☐ PAP (en vigueur depuis ___) ☐ PPS (en vigueur depuis ___)
+
+Signature: _________________ Date: ___________
+
+─── DÉCISION ────────────────────────────────────────────────
+(À compléter par l'autorité académique)
+Décision du recteur: ☐ Accordé  ☐ Partiellement accordé  ☐ Refusé
+Aménagements accordés: [Détail]
+Date de la décision: [JJ/MM/AAAA]
+Recours possible: Défenseur des Droits (www.defenseurdesdroits.fr)
+```
+
+**Critical compliance note**: Exam accommodations must match what the student actually uses in class. If tiers-temps is not documented in the PAP/PPS as a regular classroom accommodation, the recteur may refuse it for the exam. Document classroom accommodation use early and consistently.
+
+### 15. Demande de RQTH (Adult / Workplace)
+
+For adult workers with dyslexia, the RQTH (Reconnaissance de la Qualité de Travailleur Handicapé) is the workplace equivalent of the K-12 PPS pathway. Issued by CDAPH; opens AGEFIPH (private) / FIPHFP (public) accommodation funding.
+
+```
+DOSSIER D'APPUI — DEMANDE DE RQTH
+
+Demandeur: [Nom Prénom]
+Date de naissance: [JJ/MM/AAAA]
+Adresse: [Adresse complète]
+Département: [Numéro et nom du département]
+Téléphone: [N°]    Email: [Adresse]
+
+─── SITUATION PROFESSIONNELLE ────────────────────────────────
+☐ Salarié(e) en CDI / CDD chez: [Employeur]
+☐ Demandeur(euse) d'emploi inscrit(e) à Pôle Emploi
+☐ Travailleur(euse) indépendant(e) / profession libérale
+☐ En reconversion / formation
+☐ Étudiant(e) en CFA ou alternance
+
+Poste actuel / souhaité: [Description]
+Difficultés rencontrées dans l'exercice du métier dues à la dyslexie:
+[Description fonctionnelle: lecture lente de documents, écrits clients, lecture
+de procédures techniques, examens internes, etc. Cadrer comme trouble cognitif
+persistant nécessitant prothèses cognitives permanentes.]
+
+─── DOCUMENTS REQUIS ─────────────────────────────────────────
+☐ Cerfa n° 15692*01 — Formulaire principal MDPH
+☐ Cerfa n° 15695*01 — Certificat médical récent
+☐ Bilan orthophonique adulte
+☐ Bilan neuropsychologique adulte (WAIS-IV) si disponible
+☐ Diagnostic ICD-11 / CIM-11 (6A03) ou DSM-5
+☐ Attestation employeur sur l'impact fonctionnel (si applicable)
+☐ Lettre de motivation du demandeur
+
+─── AMÉNAGEMENTS / ÉQUIPEMENTS SOLLICITÉS ────────────────────
+Logiciels et prothèses cognitives (financement AGEFIPH/FIPHFP):
+☐ Synthèse vocale professionnelle (Vocale Presse Pro, etc.)
+☐ Reconnaissance vocale (Dragon NaturallySpeaking français)
+☐ Correcteur orthographique avancé (Antidote, Cordial)
+☐ OCR pour documents papier / scannés
+☐ Logiciel de prise de notes structurée
+
+Aménagements de poste:
+☐ Adaptation du temps de lecture sur documents longs
+☐ Documents reçus en amont pour préparation
+☐ Bureau séparé / environnement calme pendant tâches de lecture intensive
+☐ Réunions accompagnées de compte-rendus écrits structurés
+☐ Formation continue à durée allongée / supports en format alternatif
+
+Accompagnement humain (le cas échéant):
+☐ Coach professionnel (Job coach) financé AGEFIPH
+☐ Tuteur(trice) interne désigné(e)
+☐ Référent handicap entreprise (firmes ≥250 salariés, Loi Avenir Pro 2018)
+
+─── SIGNATURES ───────────────────────────────────────────────
+Demandeur(euse): _____________________ Date: ___________
+Médecin certificateur: _______________ Date: ___________
+```
+
+**RQTH notes:**
+- The RQTH is voluntary. The worker decides whether to disclose status to the employer.
+- Once granted, the RQTH opens AGEFIPH (private) / FIPHFP (public) funding pathways for assistive technology and workplace adaptations.
+- Anti-discrimination protections under Art. L1132-1 Code du travail apply with or without RQTH.
+
+---
+
+## Spanish Document Templates (Locale: es)
+
+### 16. ACNS — Adaptaciones Curriculares No Significativas (K-12)
+
+The ACNS is the primary support document for students with dyslexia/dyscalculia in Spain. Terminology varies by region (ACI no significativa, PTI, Plan de Apoyo — verify the term used in the relevant Comunidad Autónoma).
+
+```
+ADAPTACIONES CURRICULARES NO SIGNIFICATIVAS (ACNS)
+[Comunidad Autónoma: _______________]
+[Denominación regional equivalente: PTI / ACI / Plan de Apoyo / ___]
+
+Centro educativo: [Nombre]
+Curso escolar: [XXXX–XXXX]
+
+─── IDENTIFICACIÓN DEL ALUMNO/A ─────────────────────────────
+Nombre y apellidos: [Nombre Apellidos]
+Fecha de nacimiento: [DD/MM/AAAA]
+Curso: [Curso]
+Tutor/a: [Nombre]
+
+─── CLASIFICACIÓN ───────────────────────────────────────────
+Categoría ACNEAE: DEA — Dificultades Específicas de Aprendizaje
+Dificultad específica:
+☐ Dislexia          ☐ Discalculia        ☐ Disgrafía
+☐ Disortografía     ☐ Combinación: [Especificar]
+
+Informe Psicopedagógico de referencia:
+Fecha: [DD/MM/AAAA]    Elaborado por: [Orientador/a / EOEP]
+
+Nota: Este alumno/a NO tiene clasificación NEE. Las ACNS (no significativas) son
+el instrumento de apoyo correcto para DEA. No corresponde el Dictamen de Escolarización
+ni las ACS (Adaptaciones Curriculares Significativas) salvo comorbilidad con NEE.
+
+Encuadre clínico-neurocientífico (v1.2.0): la dislexia/discalculia son trastornos
+neurodesarrollales cognitivos persistentes — diferencias cerebrales en el
+procesamiento fonológico/ortográfico (córtex temporoparietal izquierdo, VWFA,
+giro frontal inferior). Las adaptaciones no son apoyos temporales sino
+prótesis cognitivas permanentes.
+
+─── ÁREAS DE DIFICULTAD IDENTIFICADAS ───────────────────────
+[Resumen de las principales dificultades según el Informe Psicopedagógico]
+
+─── ADAPTACIONES METODOLÓGICAS ──────────────────────────────
+Organización del aula:
+☐ Asiento preferente (cerca del profesor, lejos de distracciones)
+☐ Instrucciones segmentadas (una indicación cada vez)
+☐ Recordatorios visuales de tareas y objetivos
+☐ Acceso a apuntes / esquemas de la lección con antelación
+☐ Permiso para grabar las explicaciones
+
+Presentación de materiales:
+☐ Texto en Arial o fuente similar ≥ 14pt; interlineado ≥ 1,5
+☐ Fuente OpenDyslexic disponible como alternativa
+☐ Texto alineado a la izquierda; sin justificación completa
+☐ Documentos con alto contraste (fondo claro o crema, no blanco puro)
+☐ Sin penalización de errores ortográficos atribuibles a la dislexia
+
+Metodología de enseñanza:
+☐ Metodología multisensorial cuando sea posible
+☐ Apoyo visual en las explicaciones verbales
+☐ Acceso a tecnología asistiva (prótesis cognitivas permanentes):
+   ☐ Lectura por voz (TTS): Vozme, ReadSpeaker español, etc.
+   ☐ Dictado por voz (STT): Dragon español, dictado nativo iOS/Android
+   ☐ Corrector ortográfico avanzado: StilusNet, Microsoft español
+   ☐ OCR para documentos impresos: FineReader español
+
+─── ADAPTACIONES EN LA EVALUACIÓN ───────────────────────────
+☐ Tiempo adicional: [Especificar porcentaje o minutos: ___]
+☐ Lectura de los enunciados por el/la docente o permitida por TTS
+☐ Respuesta oral permitida como alternativa a la escrita
+☐ No penalización de errores ortográficos en todas las materias
+☐ Formato de texto ampliado (Arial 14-16pt, interlineado 1,5)
+☐ Reducción de la cantidad de ítems (misma dificultad, menor volumen)
+☐ Uso de respuesta de opción múltiple en lugar de pregunta abierta
+☐ Acceso a herramientas tecnológicas durante evaluaciones: [Especificar]
+☐ Evaluación en sala separada si es necesario
+
+Para discalculia:
+☐ Uso de calculadora y tabla de multiplicar
+☐ Auxiliares visuales / materiales manipulativos
+☐ Descomposición paso a paso de problemas
+
+─── RESPONSABLES Y COORDINACIÓN ─────────────────────────────
+Tutor/a responsable de coordinación: [Nombre]
+Orientador/a de referencia: [Nombre]
+PT / AL implicado/a: [Nombre si aplicable]
+EOEP de sector: [Nombre si aplicable]
+
+─── ACUERDO FAMILIAR ────────────────────────────────────────
+La familia ha sido informada de las presentes adaptaciones y da su conformidad.
+
+Firma de la familia: _________________ Fecha: ___________
+Firma del/la tutor/a: ________________ Fecha: ___________
+Firma del/la orientador/a: ___________ Fecha: ___________
+V.º B.º del/la director/a: ___________ Fecha: ___________
+
+─── REVISIÓN ────────────────────────────────────────────────
+Fecha de revisión prevista: [DD/MM/AAAA]
+Observaciones de seguimiento: [Notas]
+```
+
+### 17. Informe Psicopedagógico (DEA) — Compliance Checklist
+
+The Informe Psicopedagógico is prepared by the orientador/a or EOEP and serves as the basis for ACNS. It is not generated by Claude — use this as a review checklist to verify that an existing report meets compliance requirements.
+
+```
+INFORME PSICOPEDAGÓGICO — VERIFICACIÓN DE CUMPLIMIENTO
+Dificultades Específicas de Aprendizaje (DEA)
+
+Alumno/a: [Nombre]     Fecha del informe: [DD/MM/AAAA]
+Elaborado por: [Orientador/a / EOEP]     Centro: [Nombre]
+
+─── SECCIONES REQUERIDAS (MARCAR PRESENCIA) ─────────────────
+☐ Datos de identificación del alumno/a
+☐ Motivo de la evaluación / derivación
+☐ Historial escolar relevante (cursos repetidos, intervenciones previas)
+☐ Instrumentos de evaluación utilizados:
+   ☐ Prueba cognitiva (CI / funcionamiento intelectual) — WISC-V español o equivalente
+   ☐ Prueba de lectura normalizada (PROLEC-R, percentil documentado)
+   ☐ Prueba de escritura / ortografía (PROESC u otra, si aplica)
+   ☐ Prueba de matemáticas (TEDI-MATH español, si discalculia sospechada)
+   ☐ Criterios de exclusión verificados: sin discapacidad intelectual,
+     sin déficit sensorial no corregido, instrucción adecuada recibida
+☐ Clasificación: ACNEAE – DEA (con especificación: dislexia / discalculia / otra)
+☐ NO clasificado como NEE (o justificación de comorbilidad si aplica)
+☐ Descripción de las necesidades educativas identificadas
+☐ Propuesta de ACNS (adaptaciones curriculares no significativas recomendadas)
+☐ Coordinación recomendada (PT, AL, EOEP)
+☐ Orientaciones para la familia
+☐ Firmas: orientador/a + director/a del centro
+☐ Fecha y próxima revisión prevista
+
+─── ALERTAS DE CUMPLIMIENTO ─────────────────────────────────
+⚠ Si el informe clasifica al alumno/a como NEE por dislexia/discalculia sin
+  comorbilidad con discapacidad o trastorno severo: CLASIFICACIÓN INCORRECTA.
+  La dislexia y discalculia son DEA, no NEE.
+⚠ Si recomienda ACS (adaptaciones significativas) para dislexia/discalculia
+  sin comorbilidad NEE: INADECUADO. El instrumento correcto es ACNS.
+⚠ Si no documenta percentil en prueba normalizada: CRITERIO DE IDENTIFICACIÓN
+  INCOMPLETO en regiones que requieren umbral Pc < 25.
+⚠ Si describe la dislexia como retraso o falta de esfuerzo: ENCUADRE
+  INADECUADO. Debe describirse como trastorno neurodesarrollal persistente.
+```
+
+### 18. ACNEAE Detection and Intake Form (Pre-Evaluation)
+
+```
+FORMULARIO DE DETECCIÓN E INICIO DEL PROCESO ACNEAE
+Protocolo de detección inicial — DEA (Dificultades Específicas de Aprendizaje)
+
+Centro: [Nombre]     Curso escolar: [XXXX–XXXX]
+Alumno/a: [Nombre]    Curso: [___]    Tutor/a: [Nombre]
+Fecha: [DD/MM/AAAA]
+
+─── INDICADORES DE DETECCIÓN (PRODISLEX / SCREENING) ────────
+
+Indicadores en lectura (dislexia):
+☐ Lectura lenta y/o laboriosa para su nivel de curso
+☐ Errores frecuentes en decodificación de palabras desconocidas
+☐ Confusión de letras similares visualmente (b/d, p/q)
+☐ Sustitución o inversión de letras, sílabas o palabras al leer
+☐ Dificultad para leer en voz alta aunque comprende al escuchar
+☐ Lectura silenciosa significativamente mejor que oral
+☐ Historial familiar de dificultades de lectura
+
+Indicadores de ortografía (disortografía):
+☐ Errores ortográficos persistentes a pesar de instrucción adecuada
+☐ Dificultad para aplicar reglas ortográficas aprendidas
+☐ Errores inconsistentes (misma palabra escrita de formas diferentes)
+
+Indicadores en matemáticas (discalculia):
+☐ Dificultad persistente con el sentido numérico y aritmética básica
+☐ Confusión con símbolos matemáticos o dígitos
+☐ Dificultad para memorizar las tablas de multiplicar
+☐ Errores frecuentes en operaciones básicas
+
+─── INTERVENCIONES PREVIAS APLICADAS ────────────────────────
+☐ Refuerzo educativo ordinario en clase
+☐ Apoyo PT / AL
+☐ Trabajo con materiales adaptados
+☐ Coordinación con familia
+☐ Otras medidas: [Especificar]
+
+Resultado de las intervenciones previas:
+☐ Mejora significativa (no procede evaluación)
+☐ Mejora parcial insuficiente
+☐ Sin mejora
+
+─── SOLICITUD DE EVALUACIÓN PSICOPEDAGÓGICA ─────────────────
+Solicito evaluación psicopedagógica por parte del/la orientador/a o EOEP
+para determinar si el/la alumno/a presenta DEA y requiere ACNS.
+
+Firma del/la tutor/a: _________________ Fecha: ___________
+V.º B.º del/la director/a: ____________ Fecha: ___________
+Recibido por orientador/a: ____________ Fecha: ___________
+```
+
+### 19. EBAU/EvAU Exam Accommodation Request (University Entrance)
+
+```
+SOLICITUD DE ADAPTACIONES PARA LA EBAU/EvAU
+(University Entrance Exam Accommodations — Comunidad Autónoma: __________)
+
+Centro: [Nombre del IES]      Convocatoria: [Año]
+Comunidad Autónoma: [Indicar]
+Alumno/a: [Nombre]      Curso: 2.º Bachillerato
+
+─── DIAGNÓSTICO Y DOCUMENTACIÓN ─────────────────────────────
+Diagnóstico: ☐ Dislexia  ☐ Discalculia  ☐ Disgrafía  ☐ Disortografía
+☐ Informe Psicopedagógico adjunto (Fecha: ___)
+☐ Historial de ACNS durante Bachillerato adjunto
+☐ Otros documentos clínicos: [Especificar]
+
+─── ADAPTACIONES SOLICITADAS ────────────────────────────────
+☐ Tiempo adicional (30 minutos adicionales por examen es habitual)
+☐ Texto ampliado: Arial 16pt, interlineado 1,5
+☐ Fuente OpenDyslexic
+☐ Lectura oral de los enunciados a petición
+☐ Aula separada / tribunal específico
+☐ Reducción de penalización ortográfica
+☐ Uso de calculadora (incluido en pruebas donde normalmente no se permite)
+☐ Otras: [Especificar]
+
+─── CONSISTENCIA CON EL HISTORIAL ACNS ──────────────────────
+Adaptaciones documentadas en ACNS durante Bachillerato:
+[Listar las adaptaciones que el/la alumno/a ha utilizado en clase y exámenes
+internos durante 1.º y 2.º de Bachillerato. Las adaptaciones EBAU deben
+ser consistentes con este historial.]
+
+─── FIRMAS ───────────────────────────────────────────────────
+Familia/Alumno/a mayor de edad: _______ Fecha: ___________
+Orientador/a del centro: _____________ Fecha: ___________
+Director/a del centro: _______________ Fecha: ___________
+```
+
+**EBAU/EvAU notes:**
+- Each Comunidad Autónoma has its own procedure; verify regional deadlines (typically March-April of 2.º Bachillerato).
+- Madrid Resolution 27/04/2023, Cataluña Decret 150/2017, Andalucía Instrucciones 12/12/2014 are reference regional procedures.
+- Without documented ACNS during Bachillerato, EBAU accommodations are typically refused. Consistency between classroom and exam accommodations is enforced.
+
+### 20. Workplace Accommodation Request (RDL 1/2013, Spain)
+
+For adult workers with dyslexia in Spain, workplace accommodation operates under Real Decreto Legislativo 1/2013 (Ley General de Discapacidad).
+
+```
+SOLICITUD DE ADAPTACIÓN DEL PUESTO DE TRABAJO
+Real Decreto Legislativo 1/2013 (Ley General de Discapacidad)
+
+A la atención del departamento de RR.HH. de [Empresa]
+De: [Nombre Apellidos]    Fecha: [DD/MM/AAAA]
+Puesto: [Descripción]
+
+─── ESTADO ACREDITATIVO ─────────────────────────────────────
+☐ Certificado de discapacidad ≥ 33% emitido por Centro Base
+   Fecha: [DD/MM/AAAA]    Comunidad Autónoma: [Nombre]
+☐ Diagnóstico clínico actualizado (DSM-5 / ICD-11)
+☐ Informe funcional sobre el impacto en el desempeño laboral
+
+─── DESCRIPCIÓN FUNCIONAL ───────────────────────────────────
+La dislexia es un trastorno neurodesarrollal cognitivo persistente — diferencia
+cerebral en el procesamiento fonológico/ortográfico. Impacta principalmente:
+[Descripción específica de cómo afecta al desempeño del puesto concreto:
+lectura de procedimientos, redacción de informes, gestión de correo, etc.]
+
+─── ADAPTACIONES SOLICITADAS ────────────────────────────────
+Prótesis cognitivas (tecnología asistiva permanente):
+☐ Lectura por voz (TTS) en estación de trabajo: Vozme Pro, ReadSpeaker
+☐ Dictado por voz (STT): Dragon Naturally Speaking español
+☐ Corrector ortográfico avanzado: StilusNet, Microsoft Editor español
+☐ OCR para documentos en papel: FineReader español
+☐ Lector de pantalla (cuando aplique)
+☐ Fuentes accesibles en documentos internos: Lexend, Atkinson Hyperlegible
+
+Adaptaciones del puesto:
+☐ Tiempo adicional para tareas de lectura intensiva
+☐ Recepción anticipada de documentación para preparación
+☐ Espacio tranquilo / sala separada durante lectura crítica
+☐ Resúmenes escritos de reuniones verbales
+☐ Documentación interna en formato accesible (digital antes que impreso)
+☐ Formación continua con apoyos de duración alargada
+
+─── REFERENCIA LEGAL ────────────────────────────────────────
+La presente solicitud se ampara en:
+- RDL 1/2013, Ley General de Discapacidad (art. 35-37 — adaptaciones razonables)
+- Estatuto de los Trabajadores, art. 17 (no discriminación)
+- Ley Orgánica 3/2018 de Protección de Datos (LOPD-GDD) — confidencialidad
+  del proceso de adaptación
+
+─── FIRMA ────────────────────────────────────────────────────
+Firma del/la trabajador/a: ____________ Fecha: ___________
+```
+
+**Spanish workplace notes:**
+- The 2% reserved-employment quota applies to firms with ≥50 employees (RDL 1/2013).
+- Centros Especiales de Empleo are specialized workplaces employing ≥70% workers with disability.
+- Recourse via Inspección de Trabajo or Tribunales de lo Social.
+
 ## Behavior Guidelines
 
-- All generated documents must align with IDEA requirements and IDA standards.
-- Use person-first or identity-first language based on user preference (default: "student with dyslexia").
-- Frame dyslexia consistently as a neurodevelopmental cognitive disorder — a brain-based difference in phonological/orthographic processing, not a reflection of intelligence, effort, or character.
-- All accommodation sections should frame bypass tools (text-to-speech, spell-checkers, audiobooks, dictation) as permanent cognitive prosthetics, not temporary supports to be withdrawn.
+- All generated documents must align with IDEA requirements and IDA standards (US), or the applicable French (Loi 2005-102 / Circulaire 2015-016 / Circulaire 2023-033) or Spanish (LOE/LOMLOE / RDL 1/2013) legal frameworks.
+- Use person-first or identity-first language based on user preference (default: "student with dyslexia" / "estudiante con dislexia" / "élève dyslexique").
+- Frame dyslexia consistently as a neurodevelopmental cognitive disorder — a brain-based difference in phonological/orthographic processing, not a reflection of intelligence, effort, or character. Carry this framing into FR/ES documents (the cognitive prosthetics sections in PAP / ACNS templates make this explicit).
+- All accommodation sections should frame bypass tools (text-to-speech, spell-checkers, audiobooks, dictation) as permanent cognitive prosthetics, not temporary supports to be withdrawn. Apply locale-appropriate tools: US (Read&Write, Voice Dream, Grammarly), FR (Vocale Presse, Antidote, Dragon FR), ES (Vozme, StilusNet, Dragon ES).
 - Goals must be genuinely measurable — include specific numbers, tools, and timeframes.
 - Never generate a 504 plan when the student profile clearly indicates need for IDEA/IEP services. Flag this to the user.
 - Include all legally required sections. Missing sections create compliance risk.
-- Accommodate state-specific requirements when the user specifies their state.
+- Accommodate state-specific requirements when the user specifies their state (US), académie/département (FR), or Comunidad Autónoma (ES).
 - Use clear, jargon-free language in parent-facing documents.
 - Mark all templates clearly as templates requiring professional review — these are starting points, not substitutes for qualified professional judgment.
 - Progress monitoring reports should include visual data representation when possible.
+
+**French document guidelines (locale=fr):**
+- The PAP template must match the correct school cycle (maternelle / élémentaire / collège / lycée) — there are four distinct versions.
+- The médecin de l'Éducation nationale signature is legally required to validate the PAP. Flag if missing.
+- A PAP cannot coexist with a PPS. If generating a PAP, note that MDPH recognition is NOT required and should NOT be pursued for the PAP pathway.
+- Exam accommodation requests must cite the specific PAP/PPS entries showing that accommodations are already used in class. A request without this linkage is likely to be refused.
+- The Défenseur des Droits is the appropriate body to cite for appeal if accommodations are refused.
+- For adult/workplace contexts, transition from PAP/PPS framing to RQTH framing; cite Code du travail Art. L1132-1 for anti-discrimination protections.
+- Write French documents in French unless the user requests otherwise.
+
+**Spanish document guidelines (locale=es):**
+- Verify and use the correct regional terminology for the Comunidad Autónoma before generating ACNS documents (e.g., PTI in Castilla-La Mancha, ACI in some other regions).
+- Always include the explicit statement that the student is classified as DEA (not NEE) and that ACNS is the appropriate instrument (not ACS/Dictamen).
+- Family agreement signature is required on ACNS documents.
+- ACNS must be applied across all subjects where difficulties manifest — not only in language class.
+- When generating ACNS for dyscalculia, include spelling/orthographic accommodation wording even if the primary concern is mathematics, as comorbid orthographic difficulty is common.
+- For EBAU/EvAU accommodation requests: verify documented ACNS history during Bachillerato, otherwise the request is likely to be refused.
+- For adult/workplace contexts, cite RDL 1/2013 and reference the 33% certificado de discapacidad threshold where applicable.
+- Write Spanish documents in Castilian Spanish unless the user requests another regional language (Catalan, Basque, Galician).
 
 ## Output Formats
 - Markdown (.md) for quick review
