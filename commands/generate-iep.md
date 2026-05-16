@@ -1,9 +1,8 @@
 ---
-description: Generate a legally-compliant accommodation document tailored to context — K-12 IEP, K-12/higher-ed 504 plan, ADA Title I workplace accommodation request, higher-ed disability-services request, or clinical summary. Includes structured-literacy services, cognitive prosthetics, and comorbidity considerations.
+description: Generate a comprehensive, legally-compliant accommodation document tailored to the individual's context and jurisdiction. **United States**: (1) IEP — K-12 special education with PLAAFP, SMART goals for phonological awareness/decoding/fluency/comprehension/writing, structured literacy-aligned services, cognitive prosthetics accommodations, LRE documentation; (2) 504 Plan — K-12 or higher education accommodations; (3) Workplace Accommodation Request — ADA Title I reasonable accommodation letter to employer/HR with documentation of functional impact, specific requested accommodations, and interactive process invitation; (4) Higher Ed Disability Services Request — university disability office documentation. **France**: PAP (Plan d'Accompagnement Personnalisé per Circulaire 2015-016 — four cycle templates), MDPH dossier support package for PPS request (Cerfa forms + bilans), demande d'aménagements d'examens (Brevet/Baccalauréat per Circulaire 2023-033), RQTH application support for adults entering workplace. **Spain**: Informe Psicopedagógico, ACNS documentation, EBAU/EvAU exam accommodation request, ACNEAE classification documentation. **Cross-jurisdiction**: clinical summary letters citing DSM-5/ICD-11 diagnoses. Includes comorbidity considerations (ADHD, dyscalculia, anxiety, APD, executive function).
 argument-hint: <person-name> [--context=k12|higher-ed|workplace|adult-general] [--document-type=iep|504|ada-workplace-request|higher-ed-dsr|clinical-summary] [--dyslexia-type=phonological|surface|double-deficit|mixed] [--anxiety=none|mild|moderate|severe]
 allowed-tools: [Read, Write, Edit]
 ---
-
 # /generate-iep
 
 Generate a dyslexia-focused Individualized Education Program (IEP).

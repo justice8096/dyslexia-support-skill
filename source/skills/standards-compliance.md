@@ -265,6 +265,8 @@ Federal contractors with contracts ≥ $10,000 must comply with Section 503 of t
 
 ### 7. French Legal Framework (Locale: fr)
 
+> *Sources current as of 2026-05. Authority-version pins: Loi n° 2005-102 (11 février 2005), Circulaire n° 2015-016 (PAP, 22 janvier 2015), Circulaire n° 2023-033 (aménagements d'examens, 23 février 2023), Code de l'éducation Art. L321-4, Code du travail Art. L5213-1. CAPPEI certification for ULIS coordinators; orthophonie nomenclature per décret n° 2002-721.*
+
 #### 7.1 Key Laws
 
 | Law / Regulation | Subject |
@@ -411,6 +413,8 @@ For adults with dyslexia in the workplace, the framework shifts from PAP/PPS (K-
 | Défenseur des Droits | OCR complaint / due process / EEOC charge | Different escalation bodies depending on context |
 
 ### 8. Spanish Legal Framework (Locale: es)
+
+> *Sources current as of 2026-05. Authority-version pins: LOE — Ley Orgánica 2/2006, LOMLOE — Ley Orgánica 3/2020 (Art. 71/72/79 bis), Real Decreto 157/2022 (Primary curriculum), Real Decreto Legislativo 1/2013 (workplace ≥33% certificado de discapacidad threshold), ICD-11 6A03.0 / DSM-5 315.00 diagnostic criteria. 17-CCAA regional decrees vary; always verify against the specific Comunidad Autónoma. PRODISLEX referenced as screening pattern, not diagnostic instrument.*
 
 #### 8.1 Key Laws
 

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "Dyslexia Support Skill",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "Clinical and accommodation framework for dyslexia as a neurodevelopmental cognitive disorder — a lifelong, brain-based difference in phonological and orthographic processing architecture (left temporoparietal cortex, visual word form area, inferior frontal gyrus). Covers the full lifespan: K-12 special education, higher education, workplace, and adult accommodation across three legal jurisdictions. Distinguishes remediation targets (trainable skills) from bypass targets (persistent deficits requiring permanent cognitive prosthetics). Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, Gabrieli neuroimaging evidence, DSM-5 Specific Learning Disorder (315.00), and ICD-11 Developmental Learning Disorder (6A03.0). Multi-jurisdiction legal framework support: United States (IDEA, Section 504, ADA Title I/II/III), France (Loi n° 2005-102, Code de l'éducation, PAP/PPS via MDPH/CDAPH, RQTH for workplace), and Spain (LOE/LOMLOE, ACNEAE/DEA framework, ACNS pathway, 17-Comunidad Autónoma regional implementations).",
     "author": "Justice",
     "license": "CC0-1.0",
@@ -238,24 +238,52 @@
           },
           "context": {
             "type": "string",
-            "enum": ["k12-education", "higher-education", "workplace", "public-accommodation", "consumer-software", "healthcare"],
+            "enum": [
+              "k12-education",
+              "higher-education",
+              "workplace",
+              "public-accommodation",
+              "consumer-software",
+              "healthcare"
+            ],
             "default": "k12-education",
             "description": "Regulatory and population context for audit"
           },
           "scope": {
             "type": "string",
-            "enum": ["full", "curriculum", "materials", "assessment", "technology", "intervention", "accommodation-policy", "hiring-process"],
+            "enum": [
+              "full",
+              "curriculum",
+              "materials",
+              "assessment",
+              "technology",
+              "intervention",
+              "accommodation-policy",
+              "hiring-process"
+            ],
             "default": "full",
             "description": "Scope of audit"
           },
           "age_group": {
             "type": "string",
-            "enum": ["early-childhood", "elementary", "middle", "high", "college", "adult", "general"],
+            "enum": [
+              "early-childhood",
+              "elementary",
+              "middle",
+              "high",
+              "college",
+              "adult",
+              "general"
+            ],
             "description": "Target population age group"
           },
           "locale": {
             "type": "string",
-            "enum": ["us", "fr", "es"],
+            "enum": [
+              "us",
+              "fr",
+              "es"
+            ],
             "default": "us",
             "description": "Legal-framework locale: 'us' (IDEA/504/IDA/ADA), 'fr' (France: Loi 2005-102, PAP/PPS, RQTH for workplace), or 'es' (Spain: LOE/LOMLOE, ACNEAE/DEA, ACNS)"
           },
@@ -264,7 +292,9 @@
             "description": "For locale=es: Comunidad Autónoma (e.g. 'madrid', 'cataluna', 'andalucia', 'pais-vasco', 'valencia', 'galicia') to apply region-specific legislation. Ignored for locale=us and locale=fr."
           }
         },
-        "required": ["project_name"]
+        "required": [
+          "project_name"
+        ]
       },
       "keywords": [
         "audit",
@@ -297,7 +327,12 @@
           },
           "context": {
             "type": "string",
-            "enum": ["k12", "higher-ed", "workplace", "adult-general"],
+            "enum": [
+              "k12",
+              "higher-ed",
+              "workplace",
+              "adult-general"
+            ],
             "default": "k12",
             "description": "Life context determining regulatory framework"
           },
@@ -307,13 +342,30 @@
           },
           "document_type": {
             "type": "string",
-            "enum": ["iep", "504", "ada-workplace-request", "higher-ed-dsr", "clinical-summary", "pap", "pps-dossier", "fr-exam-accommodation", "rqth-application", "informe-psicopedagogico", "acns", "es-exam-accommodation"],
+            "enum": [
+              "iep",
+              "504",
+              "ada-workplace-request",
+              "higher-ed-dsr",
+              "clinical-summary",
+              "pap",
+              "pps-dossier",
+              "fr-exam-accommodation",
+              "rqth-application",
+              "informe-psicopedagogico",
+              "acns",
+              "es-exam-accommodation"
+            ],
             "default": "iep",
             "description": "Type of document to generate. US: iep, 504, ada-workplace-request, higher-ed-dsr, clinical-summary. France: pap, pps-dossier, fr-exam-accommodation, rqth-application. Spain: informe-psicopedagogico, acns, es-exam-accommodation."
           },
           "locale": {
             "type": "string",
-            "enum": ["us", "fr", "es"],
+            "enum": [
+              "us",
+              "fr",
+              "es"
+            ],
             "default": "us",
             "description": "Jurisdiction. Selects native-language document vocabulary and legal references. Must be consistent with document_type (e.g. document_type=pap requires locale=fr)."
           },
@@ -323,23 +375,41 @@
           },
           "fr_cycle": {
             "type": "string",
-            "enum": ["maternelle", "elementaire", "college", "lycee"],
+            "enum": [
+              "maternelle",
+              "elementaire",
+              "college",
+              "lycee"
+            ],
             "description": "For locale=fr K-12 documents: school cycle. PAP template version varies by cycle."
           },
           "dyslexia_type": {
             "type": "string",
-            "enum": ["phonological", "surface", "double-deficit", "mixed", "unspecified"],
+            "enum": [
+              "phonological",
+              "surface",
+              "double-deficit",
+              "mixed",
+              "unspecified"
+            ],
             "default": "unspecified",
             "description": "Dyslexia subtype classification"
           },
           "comorbidities": {
             "type": "array",
-            "items": { "type": "string" },
+            "items": {
+              "type": "string"
+            },
             "description": "Associated conditions: 'dyscalculia', 'dysgraphia', 'dyspraxia', 'adhd', 'anxiety', 'apd', 'executive-function'"
           },
           "anxiety_level": {
             "type": "string",
-            "enum": ["none", "mild", "moderate", "severe"],
+            "enum": [
+              "none",
+              "mild",
+              "moderate",
+              "severe"
+            ],
             "default": "none",
             "description": "Reading or disclosure anxiety level"
           },
@@ -347,12 +417,28 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": ["text-to-speech", "speech-to-text", "audiobooks", "ocr", "spell-checker", "grammar-checker", "reading-ruler", "dyslexic-font", "real-time-captions", "extended-time", "private-room", "note-taker", "recording-permission"]
+              "enum": [
+                "text-to-speech",
+                "speech-to-text",
+                "audiobooks",
+                "ocr",
+                "spell-checker",
+                "grammar-checker",
+                "reading-ruler",
+                "dyslexic-font",
+                "real-time-captions",
+                "extended-time",
+                "private-room",
+                "note-taker",
+                "recording-permission"
+              ]
             },
             "description": "Cognitive prosthetics to include in accommodations"
           }
         },
-        "required": ["person_name"]
+        "required": [
+          "person_name"
+        ]
       },
       "keywords": [
         "iep",
@@ -390,13 +476,22 @@
           },
           "context": {
             "type": "string",
-            "enum": ["k12", "higher-ed", "workplace", "adult-general"],
+            "enum": [
+              "k12",
+              "higher-ed",
+              "workplace",
+              "adult-general"
+            ],
             "default": "k12",
             "description": "Life context for plan customization"
           },
           "locale": {
             "type": "string",
-            "enum": ["us", "fr", "es"],
+            "enum": [
+              "us",
+              "fr",
+              "es"
+            ],
             "default": "us",
             "description": "Locale: drives program-pool selection (US: Wilson/Barton/LiPS; FR: Borel-Maisonny/Chassymo/ITECO; ES: PRODISLEX/fluency-focused) and orthographic-context defaults"
           },
@@ -406,18 +501,30 @@
           },
           "target_goals": {
             "type": "array",
-            "items": { "type": "string" },
+            "items": {
+              "type": "string"
+            },
             "description": "Specific learning or accommodation goals"
           },
           "intervention_duration": {
             "type": "string",
-            "enum": ["8-weeks", "12-weeks", "16-weeks", "1-year", "ongoing"],
+            "enum": [
+              "8-weeks",
+              "12-weeks",
+              "16-weeks",
+              "1-year",
+              "ongoing"
+            ],
             "default": "12-weeks",
             "description": "Intervention duration (use 'ongoing' for adult cognitive prosthetics plans)"
           },
           "intensity": {
             "type": "string",
-            "enum": ["light", "moderate", "intensive"],
+            "enum": [
+              "light",
+              "moderate",
+              "intensive"
+            ],
             "default": "moderate",
             "description": "Intensity level (Tier 1/2/3 for K-12, session frequency for adult). Note: French orthophonie default 1-2x/week is often insufficient for moderate-severe — flag intensity gap explicitly when locale=fr."
           },
@@ -425,18 +532,46 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": ["phonological-awareness", "phonics", "decoding", "fluency", "comprehension", "vocabulary", "writing", "spelling", "morphology", "cognitive-prosthetics-only"]
+              "enum": [
+                "phonological-awareness",
+                "phonics",
+                "decoding",
+                "fluency",
+                "comprehension",
+                "vocabulary",
+                "writing",
+                "spelling",
+                "morphology",
+                "cognitive-prosthetics-only"
+              ]
             },
             "description": "Focus areas. 'morphology' especially relevant for FR (semi-opaque). 'fluency' especially relevant for ES (transparent). 'cognitive-prosthetics-only' for adults where remediation is not the primary goal."
           },
           "program": {
             "type": "string",
-            "enum": ["wilson", "barton", "lindamood-bell", "sonday", "rave-o", "alphabetic-phonics", "ortongillingham-general", "adult-literacy-focused", "borel-maisonny", "chassymo", "ercole", "iteco", "prodislex", "lectoescritura"],
+            "enum": [
+              "wilson",
+              "barton",
+              "lindamood-bell",
+              "sonday",
+              "rave-o",
+              "alphabetic-phonics",
+              "ortongillingham-general",
+              "adult-literacy-focused",
+              "borel-maisonny",
+              "chassymo",
+              "ercole",
+              "iteco",
+              "prodislex",
+              "lectoescritura"
+            ],
             "description": "Evidence-based program. US: wilson, barton, lindamood-bell, sonday, rave-o, alphabetic-phonics, ortongillingham-general, adult-literacy-focused. France: borel-maisonny, chassymo, ercole, iteco. Spain: prodislex, lectoescritura."
           },
           "prosthetics_stack": {
             "type": "array",
-            "items": { "type": "string" },
+            "items": {
+              "type": "string"
+            },
             "description": "Assistive technology stack: TTS tools, STT tools, audiobook services, OCR, etc."
           },
           "anxiety_considerations": {
@@ -445,7 +580,9 @@
             "description": "Include reading or disclosure anxiety management strategies"
           }
         },
-        "required": ["person_name"]
+        "required": [
+          "person_name"
+        ]
       },
       "keywords": [
         "remediation",
@@ -479,35 +616,75 @@
           },
           "content_type": {
             "type": "string",
-            "enum": ["textbook", "courseware", "website", "webapp", "mobile-app", "assessment", "lesson", "document", "video", "workplace-training", "government-form", "healthcare-material"],
+            "enum": [
+              "textbook",
+              "courseware",
+              "website",
+              "webapp",
+              "mobile-app",
+              "assessment",
+              "lesson",
+              "document",
+              "video",
+              "workplace-training",
+              "government-form",
+              "healthcare-material"
+            ],
             "default": "document",
             "description": "Type of content"
           },
           "format": {
             "type": "string",
-            "enum": ["pdf", "html", "text", "video", "mixed", "docx", "epub", "native-app"],
+            "enum": [
+              "pdf",
+              "html",
+              "text",
+              "video",
+              "mixed",
+              "docx",
+              "epub",
+              "native-app"
+            ],
             "default": "text",
             "description": "Content format"
           },
           "target_audience": {
             "type": "string",
-            "enum": ["elementary", "middle", "high", "college", "adult-employee", "general-public", "healthcare-patient"],
+            "enum": [
+              "elementary",
+              "middle",
+              "high",
+              "college",
+              "adult-employee",
+              "general-public",
+              "healthcare-patient"
+            ],
             "description": "Target audience"
           },
           "depth": {
             "type": "string",
-            "enum": ["quick", "standard", "comprehensive"],
+            "enum": [
+              "quick",
+              "standard",
+              "comprehensive"
+            ],
             "default": "standard",
             "description": "Analysis depth"
           },
           "locale": {
             "type": "string",
-            "enum": ["us", "fr", "es"],
+            "enum": [
+              "us",
+              "fr",
+              "es"
+            ],
             "default": "us",
             "description": "Locale for typography, diacritics, readability-formula, and orthographic checks. 'fr' applies French diacritic + ligature rendering checks and PAP/Circulaire 2015-016 standards. 'es' applies Spanish tilde rendering and EBAU/EvAU standards (Arial 16pt + 1.5 line spacing)."
           }
         },
-        "required": ["content_name"]
+        "required": [
+          "content_name"
+        ]
       },
       "keywords": [
         "content-audit",

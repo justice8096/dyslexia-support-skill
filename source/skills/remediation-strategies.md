@@ -177,6 +177,8 @@ When generating a remediation plan, include:
 
 ## French Remediation Context (Locale: fr)
 
+> *Sources current as of 2026-05. Authority-version pins: ODÉDYS-2 (Cogni-Sciences, Université Grenoble Alpes), BALE / EVALEC / EVALEO (Orthomotus), Alouette test (Lefavrais — adapted edition), orthophonie nomenclature per décret n° 2002-721 / Code de la santé publique Art. R4341-1. Sécurité Sociale prescription pathway for remediation; CRTLA (Centre de Référence pour les Troubles du Langage et des Apprentissages) for severe cases.*
+
 ### FR Orthographic Profile: Semi-Opaque Orthography
 
 French has a **semi-opaque** (moderately inconsistent) orthography. This fundamentally shapes where intervention effort must go:
@@ -248,6 +250,8 @@ When generating a remediation plan for a French student, add these French-specif
 ---
 
 ## Spanish Remediation Context (Locale: es)
+
+> *Sources current as of 2026-05. Authority-version pins: PROLEC-R (Cuetos et al. — TEA Ediciones), DST-J / EDIL-1 / TALE / BIL (TEA Ediciones), PRODISLEX (school-network screening protocol), Método Glifing (private digital intervention). Public coverage via convenios with Sistema Nacional de Salud; logopedia via Colegio Profesional de Logopedas (regional colegios). Transparent Spanish orthography means fluency-focused remediation (speed deficits dominate accuracy deficits).*
 
 ### ES Orthographic Profile: Transparent Orthography
 

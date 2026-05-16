@@ -656,6 +656,8 @@ License #: _____________________    State: _______
 
 ## French Document Templates (Locale: fr)
 
+> *Sources current as of 2026-05. Template structures derived from Circulaire n° 2015-016 (PAP, four cycle versions: maternelle / élémentaire / collège / lycée), Circulaire n° 2023-033 (aménagements d'examens), MDPH/CDAPH PPS procédure standard (Code de l'action sociale et des familles), RQTH dossier per Code du travail Art. L5213-2. AESH role per Circulaire n° 2017-084.*
+
 ### 12. PAP — Plan d'Accompagnement Personnalisé (K-12)
 
 The PAP follows a standardized template defined by Circulaire n° 2015-016. There are four versions (one per school cycle). Use the appropriate cycle version: **maternelle**, **élémentaire**, **collège**, or **lycée**.
@@ -919,6 +921,8 @@ Médecin certificateur: _______________ Date: ___________
 ---
 
 ## Spanish Document Templates (Locale: es)
+
+> *Sources current as of 2026-05. Template structures aligned with LOMLOE (Ley Orgánica 3/2020) ACNEAE/DEA framework, ACNS procedures per regional implementing decrees (Andalucía Instrucciones 12/12/2014, Cataluña Decret 150/2017, Madrid Orden 19/01/2021, País Vasco Decreto 236/2015), Informe Psicopedagógico standard per CCAA guidance. Workplace certification per Real Decreto Legislativo 1/2013 (≥33% certificado de discapacidad threshold).*
 
 ### 16. ACNS — Adaptaciones Curriculares No Significativas (K-12)
 
