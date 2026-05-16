@@ -1,11 +1,27 @@
 # Dyslexia Standards Compliance Audit Report
 
+## Provenance Block (required — do not omit)
+
+This block is the linchpin of the addendum-filing workflow under the [Skill Versioning and Addendum Framework](https://github.com/justice8096/SecondBrainData/blob/main/SoftwarePractices/Skill-Versioning-and-Addendum-Framework.md). Every generated artifact must capture skill version, commit hash, source currency, and changelog URL so prior outputs can be identified for addendum filings when authorities, evidence, defects, structure, or voice change downstream.
+
+| Field | Value |
+|-------|-------|
+| **Skill Version** | dyslexia-support-skill v[X.Y.Z] |
+| **Commit Hash** | `[git-short-hash]` |
+| **Generated** | {{YYYY-MM-DD}} |
+| **Sources Current As Of** | {{YYYY-MM}} (except where individual sections note otherwise) |
+| **Locale** | {{us \| fr \| es}} |
+| **Region** | {{Comunidad Autónoma if locale=es, else N/A}} |
+| **Changelog** | https://github.com/justice8096/dyslexia-support-skill/blob/main/CHANGELOG.md |
+
+---
+
 | Field | Value |
 |-------|-------|
 | **Project** | {{PROJECT_NAME}} |
 | **Audit Date** | {{YYYY-MM-DD}} |
 | **Auditor** | Claude (automated analysis) |
-| **Standards** | IDA KPS 2018, IDEA, Section 504, Structured Literacy |
+| **Standards** | IDA KPS 2018, IDEA, Section 504, Structured Literacy (US) / Loi 2005-102, PAP, PPS, Circulaire 2023-033 (FR) / LOE/LOMLOE, ACNEAE/DEA, ACNS (ES) |
 | **Scope** | {{SCOPE_DESCRIPTION}} |
 | **Type** | {{Initial audit / Re-audit of prior findings}} |
 

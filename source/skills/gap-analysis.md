@@ -16,6 +16,12 @@ Trigger this skill when the user mentions:
 - "dyslexia in tech", "developer accessibility"
 - "measure doesn't exist", "need a new checklist"
 - "content accessibility audit", "readability for dyslexia"
+- "cross-linguistic", "multilingual dyslexia", "assessment in French", "assessment in Spanish"
+- "French assessment tools", "Spanish assessment tools", "outils d'évaluation", "herramientas de evaluación"
+- "international comparison", "France US comparison", "Spain US comparison"
+- "PROLEC-R", "BELEC", "L2MA-2", "Timé3", "BMT-i", "TEDI-MATH"
+- "fluency norms French Spanish", "palabras por minuto", "mots par minute"
+- "international family", "expat dyslexia", "moving with IEP", "PAP to IEP", "ACNS to 504"
 
 ## Known Gaps in the Dyslexia Support Ecosystem
 
@@ -82,6 +88,107 @@ Trigger this skill when the user mentions:
 - Dyslexia UX Design Checklist (typography, layout, navigation, color, interaction)
 - Dyslexia Usability Heuristics (extending Nielsen's for dyslexic users)
 - Font and Typography Accessibility Scoring for dyslexia
+
+### Gap 9: Cross-Linguistic Assessment Tool Availability
+**Problem:** The dominant dyslexia assessment instruments (CTOPP-2, WRMT, DIBELS, RAVE-O) are normed on English-speaking populations and cannot be validly applied to French or Spanish learners. French- and Spanish-normed instruments are less widely known by practitioners and under-integrated in EdTech.
+**Opportunity:** Cross-linguistic assessment tool libraries; automatic locale-detection in EdTech platforms to surface the appropriate normed measures.
+**Assessment tool gap by locale:**
+
+| Assessment Domain | US (English) | France | Spain |
+|------------------|-------------|--------|-------|
+| Phonological processing | CTOPP-2 (strong, wide use) | Batterie phonologique (less standardized); BMT-i screening | PRODISLEX protocols; no nationally standardized phonological processing battery equivalent to CTOPP-2 |
+| Reading accuracy | WRMT-III, WJ-IV | BELEC, L2MA-2, Timé3 (less widely available commercially) | PROLEC-R (widely used; good norms) |
+| Reading fluency | DIBELS, ORF probes | No widely adopted national fluency norm set; significant gap | PROLEC-R (includes fluency); LEE; TECLE |
+| Cognitive/IQ | WISC-V (US norms) | WISC-V (French norms available) | WISC-V (Spanish norms available) |
+| Spelling/writing | TWS, WIAT-III | ORTHO-3, EO3 | PROESC |
+| Dyscalculia | KeyMath-3, WIAT-III | TEDI-MATH, Zareki-R | TEDI-MATH (Spanish adaptation); fewer validated options |
+| Adult assessment | Nelson-Denny, TOWRE-2, WAIS-IV | Alouette adult version, ECLA-16+, WAIS-IV FR | PROLEC-SE for older students; few adult-normed dyslexia batteries |
+
+**Potential Measures to Create:**
+- Cross-Linguistic Assessment Tool Selector (locale-aware guide to appropriate instruments)
+- Fluency Norm Database for French and Spanish (palabras por minuto / mots par minute grade-level norms)
+- International Dyslexia Assessment Equivalency Matrix (mapping FR/ES assessments to CTOPP-2/WRMT equivalents for cross-border practitioners)
+
+### Gap 10: Fluency-First Intervention Programs for Transparent Orthographies
+**Problem:** Most commercially available structured literacy programs (Wilson, Barton, LiPS, Sonday) are designed for English — an opaque orthography where accuracy is the primary deficit. Spanish (and to a lesser extent Portuguese and Italian) requires fluency-first intervention, but validated fluency-focused programs in these languages are scarce commercially.
+**Opportunity:** Fluency-focused intervention curriculum for Spanish and other transparent orthographies; repeated reading program banks with Spanish-normed wpm targets.
+**Potential Measures to Create:**
+- Transparent Orthography Fluency Intervention Framework (program design principles for Spanish, Italian, Portuguese)
+- Spanish Reading Fluency Goal Bank (SMART goals with palabras por minuto targets by grade and term)
+- Fluency Progress Monitoring Probe Set — Spanish (equivalent to DIBELS in English)
+
+### Gap 11: EdTech Locale-Awareness for Dyslexia
+**Problem:** EdTech tools for dyslexia (TTS, font customization, phonics apps) are predominantly built for English. French and Spanish users encounter English-centric default settings, English-normed readability algorithms, and English-optimized phonics sequences. The cognitive prosthetics layer (v1.2.0 framing) suffers from the same English bias.
+**Opportunity:** Locale-aware dyslexia EdTech: language-specific phonics sequences, locale-appropriate TTS voices, readability indices calibrated for French/Spanish, UI in the target language, cognitive-prosthetic AT stacks adapted per locale (FR: Antidote, Vocale Presse; ES: StilusNet, Vozme).
+**Potential Measures to Create:**
+- Dyslexia EdTech Locale-Readiness Scorecard (does the product support FR/ES adequately?)
+- French/Spanish Phonics Sequence Standard (the correct instructional sequence for each language's grapheme-phoneme correspondences)
+- Multilingual Readability Index for Dyslexia (extending Flesch-Kincaid concepts to French/Spanish learner needs)
+- Locale-Aware Cognitive Prosthetics AT-Stack Standard
+
+### Gap 12: Legal Framework Crosswalk Tool for Internationally Mobile Families
+**Problem:** Families who move between countries (e.g., US expats in France, Spanish families in the US, French-Spanish families in the EU) have no systematic tool for understanding how their child's existing plans (IEP, PAP, ACNS) translate into the new country's framework and what steps are needed to re-establish equivalent supports. The same applies to adults moving between workplaces under different disability regimes (ADA Title I vs. RQTH vs. RDL 1/2013 certificado de discapacidad).
+**Opportunity:** International SEN (Special Educational Needs) and workplace-accommodation portability guide with country-specific action plans.
+**Potential Measures to Create:**
+- International DYS Plan Portability Guide (US → FR, FR → US, ES → US, FR → ES, etc.)
+- Cross-Country Accommodation Equivalency Matrix (which accommodations survive a move, which need to be re-established)
+- New Country Onboarding Checklist for Families Moving Internationally with a DYS Child
+- Adult Workplace Disability Status Portability Map (ADA, RQTH, certificado de discapacidad)
+
+---
+
+## Cross-Linguistic Gap Analysis
+
+When conducting a gap analysis across locales (US, FR, ES), apply this extended workflow on top of the base Gap Analysis Process below.
+
+### Cross-Linguistic Scope Questions
+- **Orthographic depth**: What is the orthographic transparency of the target language? (English: opaque; French: semi-opaque; Spanish: transparent) — this determines which deficits dominate and which interventions are appropriate.
+- **Assessment norm availability**: Are validated, locally-normed assessment instruments available for the target language and population? (See Gap 9 above)
+- **Intervention program availability**: Are evidence-based intervention programs available in the target language? Are they normed appropriately?
+- **Legal framework adequacy**: Does the local legal framework require and support the level of intervention appropriate for the student's orthographic context?
+- **Professional training**: Are there trained specialists (orthophonistes, PT specialists, reading specialists) with language-specific expertise available?
+- **Cognitive prosthetics layer**: Are locale-appropriate AT tools available (Antidote/StilusNet vs Grammarly; Vocale Presse/Vozme vs Read&Write)?
+- **Adult/workplace coverage**: Does the legal framework extend persistent supports beyond K-12 (ADA Title I + ADA III in US; RQTH + AGEFIPH/FIPHFP in FR; RDL 1/2013 in ES)?
+
+### Cross-Linguistic Comparison Matrix
+
+When comparing a program or EdTech product across locales, assess:
+
+| Dimension | US (English) | France (French) | Spain (Spanish) |
+|-----------|-------------|----------------|----------------|
+| Primary deficit targeted | Accuracy (decoding) | Both accuracy and spelling | Fluency (speed) |
+| Phonological instruction focus | Phoneme manipulation | Phoneme + syllable; nasal vowels; silent letters | Syllable-level; onset-rime less central |
+| Morphological instruction need | Moderate | High (opaque spelling requires morphology) | Moderate |
+| Fluency instruction priority | Secondary | Secondary | PRIMARY |
+| Spelling instruction complexity | High | Very high (many homophone/morphological rules) | Moderate (mainly b/v, c/s/z, h, tilde) |
+| TTS effectiveness | High (English TTS mature) | Moderate (French TTS adequate) | High (Spanish TTS good) |
+| Assessment tool availability | Extensive | Limited | Moderate |
+| Intervention program availability | Extensive | Moderate | Limited |
+| K-12 legal framework | IDEA + 504 (federal) | Loi 2005-102 + PAP/PPS | LOE/LOMLOE + ACNS |
+| Higher-ed legal framework | 504 + ADA II/III | Service handicap (institution-level) | Oficina de atención a la diversidad |
+| Workplace legal framework | ADA Title I (anti-discrimination) | RQTH + AGEFIPH/FIPHFP (funded accommodations) | RDL 1/2013 (quota + non-discrimination) |
+
+### Known Assessment Tool Gaps by Locale
+
+**France-specific gaps:**
+- No French equivalent of DIBELS (oral reading fluency norms) with national standardization
+- No single widely-adopted phonological processing battery equivalent to CTOPP-2 for French
+- Limited availability of French-normed dyscalculia batteries outside clinical settings (TEDI-MATH is available but less widely used in schools than in clinical settings)
+- BMT-i is useful for screening but not designed for detailed intervention planning
+- Adult-normed dyslexia batteries are limited; clinicians often adapt children's tools or use Alouette adult version
+
+**Spain-specific gaps:**
+- No nationally standardized phonological processing battery equivalent to CTOPP-2 (PRODISLEX protocols partially fill this for screening)
+- Limited fluency norm data outside research settings — practitioners often rely on informal wpm estimates
+- Dyscalculia assessment is less well-defined nationally; significant regional variation in diagnostic criteria
+- Assessment tools for bilingual/trilingual students (Catalan-Castilian, Basque-Castilian) are limited; practitioners often default to Castilian-only assessment
+- Adult-normed dyslexia tools are limited; certificado de discapacidad assessment relies on functional impact rather than dyslexia-specific batteries
+
+**Cross-locale gaps:**
+- No validated instrument for comparing reading profiles across English/French/Spanish for internationally mobile students
+- No consensus on how to interpret a WISC-V profile obtained in one country when the student moves to another (standardization sample differences)
+- No formal protocol for translating an IEP (US) into a PAP (FR) or ACNS (ES) — families navigate this independently
+- No standardized workplace-accommodation portability guide for adults moving between ADA / RQTH / RDL 1/2013 regimes
 
 ## Gap Analysis Process
 
