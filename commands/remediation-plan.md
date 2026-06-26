@@ -48,6 +48,19 @@ The command will prompt for student profile information.
    - RAVE-O as a fluency supplement for accurate-but-slow readers
    - Sonday for digital or traditional settings
 
+## Linguistic analysis support (optional)
+
+When the `linguistics` MCP server is available, use its tools to generate and level
+the plan's materials objectively (maps to the six Structured-Literacy elements):
+- **Phonology/Phonics:** `pronounce` (rhymes, phonemes), `decodability` (flags irregular words by letter:phoneme ratio).
+- **Syllable instruction:** `syllabify` (written-syllable division; multilingual en/fr/es).
+- **Morphology/Semantics:** `analyze` (lemma/morphology), `wordnet` (families, sense-grouped synonyms), `frequency` (rarity bands).
+- **Text leveling:** `readability` to match decodable/connected text to the student's instructional level.
+
+Generated items are **remediation-track** materials — keep the bypass/cognitive-prosthetic track separate.
+Full workflows (passage leveling, PA word banks, multisyllabic lists): `D:\linguistics-mcp\INTEGRATION-literacy-numeracy.md` (§1–2).
+English-only tools; FR/ES caveats in §4.
+
 ## Output
 A comprehensive remediation plan document (Markdown, DOCX, or PDF).
 
