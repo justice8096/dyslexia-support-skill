@@ -4,12 +4,13 @@
 Ensure dyslexia-related programs, tools, documents, workplaces, and practices align with clinical frameworks (DSM-5, ICD-11), and the legal frameworks of three jurisdictions:
 
 - **United States** — IDEA (K-12), Section 504 (K-12 and higher ed), ADA Title I (workplace), ADA Title II/III (public entities and private accommodations), IDA Knowledge and Practice Standards, and structured literacy research.
-- **France** — Loi n° 2005-102 (Loi Handicap), Code de l'éducation Art. L321-4, PAP (K-12 pedagogical accommodation, Circulaire 2015-016), PPS via MDPH/CDAPH (K-12 with state-funded support), aménagements d'examens (Circulaire 2023-033), RQTH for adult/workplace contexts.
-- **Spain** — LOE/LOMLOE (Art. 71-72, 79 bis), ACNEAE/DEA framework (DEA, *not* NEE, for dyslexia/dyscalculia), ACNS (Adaptaciones Curriculares No Significativas) as primary K-12 tool, EBAU/EvAU exam accommodations, 17-Comunidad Autónoma regional implementations, plus Real Decreto Legislativo 1/2013 (Ley General de Discapacidad) for adult/workplace.
+- **France** — Loi n° 2005-102 (Loi Handicap), Code de l'éducation Art. L321-4, PAP (K-12 pedagogical accommodation, Circulaire 2015-016, now entered in the Livret de parcours inclusif), PPS via MDPH/CDAPH (K-12 with state-funded support), pôles d'appui à la scolarité (PAS, first-level support replacing PIAL since rentrée 2025), aménagements d'examens (circulaire du 14 mars 2022 with annexes replaced by the circulaire du 17 juillet 2025 for school exams; circulaire du 6 février 2023 for the cross-ministry framework), RQTH for adult/workplace contexts.
+- **Spain** — LOE/LOMLOE (Art. 71-72, 79 bis), ACNEAE/DEA framework (DEA, *not* NEE, for dyslexia/dyscalculia), ACNS (Adaptaciones Curriculares No Significativas) as primary K-12 tool, PAU exam accommodations (formerly EBAU/EvAU; national floor in Real Decreto 534/2024), 17-Comunidad Autónoma regional implementations, plus Real Decreto Legislativo 1/2013 (Ley General de Discapacidad) and Orden PJC/804/2025 (public-employment selection processes) for adult/workplace.
+- **European Union layer (FR and ES)** — European Accessibility Act (Directive 2019/882) in application since 28 June 2025 for consumer digital products and services including e-books and e-commerce; EN 301 549 v3.2.1 (WCAG 2.1 AA) remains the harmonised benchmark until the Commission cites v4.1.1 (WCAG 2.2) in the Official Journal.
 
 Identify compliance gaps and generate actionable recommendations across educational, clinical, and workplace contexts in any of the three jurisdictions.
 
-> **Clinical Framing**: This skill uses a dual-framing approach. For IDEA/Section 504 legal compliance, dyslexia is classified as a Specific Learning Disorder (DSM-5) or Developmental Learning Disorder (ICD-11). However, the neuroscience evidence (Shaywitz, Dehaene, Gabrieli et al.) establishes dyslexia as a **neurodevelopmental cognitive disorder** — a brain-based difference in phonological and orthographic processing architecture centered on the left temporoparietal cortex, visual word form area (VWFA), and inferior frontal gyrus. This distinction matters: accommodations should compensate for a persistent cognitive processing difference, not merely scaffold a temporary learning gap.
+> **Clinical Framing**: This skill uses a dual-framing approach. For IDEA/Section 504 legal compliance, dyslexia is classified as a Specific Learning Disorder (DSM-5-TR) or Developmental Learning Disorder (ICD-11). The **2025 IDA definition** (see section 0) describes dyslexia as a specific learning disability characterised by difficulties in word reading and/or spelling, in accuracy, speed, or both, that persist despite instruction effective for peers, with causes that combine genetic, neurobiological and environmental influences. The neuroscience evidence (Shaywitz, Dehaene, Gabrieli et al.) locates the processing difference in the left temporoparietal cortex, visual word form area (VWFA), and inferior frontal gyrus. This skill therefore treats dyslexia as a **neurodevelopmental cognitive disorder**: accommodations compensate for a persistent processing difference, not a temporary learning gap. Phonological and morphological processing difficulties are common but not universal, so audits must not require a phonological deficit as a gate to eligibility.
 
 ## When to Use
 Trigger this skill when the user mentions:
@@ -29,11 +30,12 @@ Trigger this skill when the user mentions:
 - "workplace dyslexia", "adult dyslexia", "disability disclosure"
 - "PAP", "PPS", "MDPH", "CDAPH", "Plan d'Accompagnement Personnalisé", "Projet Personnalisé de Scolarisation"
 - "aménagements d'examens", "tiers-temps", "trouble DYS", "Loi Handicap"
-- "Code de l'éducation", "Loi du 11 février 2005", "Circulaire 2015-016", "Circulaire 2023-033"
-- "RQTH", "AGEFIPH", "FIPHFP", "AESH", "ULIS", "orthophoniste"
+- "Code de l'éducation", "Loi du 11 février 2005", "Circulaire 2015-016", "circulaire du 14 mars 2022", "circulaire du 17 juillet 2025", "circulaire du 6 février 2023", "Incluscol"
+- "RQTH", "AGEFIPH", "FIPHFP", "AESH", "ULIS", "orthophoniste", "PAS", "pôle d'appui à la scolarité", "PIAL", "LPI", "livret de parcours inclusif", "France Travail"
 - "ACNEAE", "DEA", "dislexia", "ACNS", "ACS", "LOE", "LOMLOE"
 - "Adaptaciones Curriculares", "EOEP", "orientador", "Informe Psicopedagógico"
-- "EBAU", "EvAU", "PRODISLEX", "Pedagogía Terapéutica"
+- "PAU", "EBAU", "EvAU", "Real Decreto 534/2024", "Orden PJC/804/2025", "oposiciones", "PRODISLEX", "Pedagogía Terapéutica"
+- "European Accessibility Act", "EAA", "EN 301 549", "Ley 11/2023", "A.J.T. v. Osseo", "Title II web rule"
 - "French locale", "Spanish locale", "locale=fr", "locale=es"
 
 ## Locale Selection
@@ -43,31 +45,43 @@ This skill supports three legal-framework locales. Specify the locale when reque
 | Locale Code | Jurisdiction | Primary Legal Framework | Adult/Workplace Layer |
 |-------------|-------------|------------------------|----------------------|
 | `us` (default) | United States | IDEA, Section 504, IDA Knowledge and Practice Standards | ADA Title I (workplace), ADA Title II/III (public/private accommodations) |
-| `fr` | France | Loi 2005-102, Code de l'éducation, PAP/PPS system, Circulaire 2015-016 | RQTH via MDPH/CDAPH; AGEFIPH (private) / FIPHFP (public) accommodation funding; aménagements in CFA / higher ed via service handicap |
-| `es` | Spain | LOE/LOMLOE, ACNEAE/DEA framework, ACNS pathway (17 regional implementations) | Real Decreto Legislativo 1/2013 (Ley General de Discapacidad); certificado de discapacidad ≥33%; Centros Especiales de Empleo |
+| `fr` | France | Loi 2005-102, Code de l'éducation, PAP/PPS system, Circulaire 2015-016, PAS (circulaire du 1er septembre 2025) | RQTH via MDPH/CDAPH; AGEFIPH (private) / FIPHFP (public) accommodation funding; France Travail registration; aménagements in CFA / higher ed via service handicap |
+| `es` | Spain | LOE/LOMLOE, ACNEAE/DEA framework, ACNS pathway (17 regional implementations), PAU under RD 534/2024 | Real Decreto Legislativo 1/2013 (Ley General de Discapacidad); certificado de discapacidad ≥33%; Centros Especiales de Empleo; Orden PJC/804/2025 for public-employment exams |
 
 When no locale is specified, `us` is assumed. Locale selection changes which legal standards are audited against, which compliance checklists are applied, and which crosswalk references appear in the report. **Lifespan note**: all three locales have distinct frameworks for K-12, higher education, and adult/workplace; the locale flag selects jurisdiction, while the existing `context` parameter (k12-education / higher-education / workplace / etc.) selects which lifespan layer applies.
 
 ## Core Standards Framework
 
-### 0. Clinical Classification (DSM-5, ICD-11)
+### 0. Clinical Classification (DSM-5-TR, ICD-11) and the 2025 IDA Definition
 
 Dyslexia has formal clinical classifications that drive eligibility determinations, accommodation requests, and legal protections. These frameworks matter because:
 
 - **Workplace accommodation requests** under ADA Title I typically require clinical documentation
-- **Higher education disability services** typically require DSM-5 or equivalent clinical diagnosis
+- **Higher education disability services** typically require DSM-5-TR or equivalent clinical diagnosis
 - **Insurance coverage** for assessment and intervention depends on clinical coding
 
-**DSM-5 (2013, text revision 2022) — 315.00**
-- **Specific Learning Disorder With Impairment in Reading** (dyslexia)
+**DSM-5-TR (2022) — Specific Learning Disorder With Impairment in Reading, coded F81.0 (ICD-10-CM)**
+- The billable code on US claims, IEP evaluation reports and higher-ed documentation is **F81.0** (ICD-10-CM, in force since October 2015). The legacy ICD-9-CM code **315.00** still appears in older evaluations and some state forms; treat it as an alias, never as the current code.
 - Specifiers: word reading accuracy, reading rate or fluency, reading comprehension
 - Severity: mild, moderate, severe
 - Diagnosis requires: (1) persistent difficulties ≥6 months despite intervention; (2) substantially below expected for chronological age; (3) onset during school-age; (4) not better explained by intellectual disability, sensory impairment, or lack of instruction.
 
 **ICD-11 (effective 2022) — 6A03.0**
 - **Developmental Learning Disorder With Impairment in Reading**
-- Replaces ICD-10 F81.0 (Specific Reading Disorder)
+- Successor to ICD-10 F81.0 (Specific Reading Disorder); the US still codes clinically in ICD-10-CM, so F81.0 remains the code that appears on US paperwork
 - Diagnosis requires: significant and persistent difficulty learning academic skills related to reading (word reading accuracy, fluency, or comprehension) substantially below expected for age; onset during school years; not attributable to intellectual development disorder, sensory impairment, neurological disorder, lack of adequate instruction, or psychosocial adversity.
+
+**IDA definition of dyslexia (2025)**
+
+The International Dyslexia Association replaced its 2002 definition in 2025. Audits and documents generated by this skill cite the 2025 text. In substance it states that dyslexia is a specific learning disability characterised by difficulties in word reading and/or spelling, in accuracy, speed, or both, with features that depend on the writing system; that the difficulties sit on a continuum of severity and persist despite instruction that is effective for peers; that the causes combine genetic, neurobiological and environmental influences interacting across development; that phonological and morphological processing difficulties are common but not universal, with early oral-language weakness a frequent precursor; that secondary consequences include reading comprehension, reduced reading experience, written expression, academic achievement, psychological well-being and employment; and that identification and targeted instruction help at any age, most powerfully before and during early schooling.
+
+What changed from 2002, and what it means for audits:
+- The "other cognitive abilities" clause is gone, so **IQ-achievement discrepancy is not a valid identification criterion**. Flag any program, evaluation template or state form that still requires it.
+- "Fluency" is replaced by **accuracy and/or speed**. Evaluations should report the two separately (see Shechter, Share et al. 2026 in the remediation-strategies skill), which also makes the criteria portable to transparent orthographies such as Spanish.
+- **Morphology** is named alongside phonology; a phonological deficit is no longer a required gate.
+- **Persistence despite effective peer-level instruction** is the operative criterion, which aligns the definition with RTI/MTSS data and with IDEA's exclusion of lack of appropriate instruction.
+- ADHD, developmental language disorder and dyscalculia are explicitly distinct conditions, not part of the definition; document them as comorbidities.
+- Psychological well-being and employment are named consequences, which supports lifespan and workplace accommodation as part of the clinical picture rather than an extension of it.
 
 **Clinical Diagnostic Instruments (Adult)**
 - **Nelson-Denny Reading Test** — Adult reading comprehension and rate
@@ -80,10 +94,12 @@ Dyslexia has formal clinical classifications that drive eligibility determinatio
 
 ### 1. IDA Knowledge and Practice Standards (2018)
 
+The 2018 edition remains the current KPS as of 2026-10; IDA has not announced a revision to align the standards with the 2025 definition. Where the two differ (the standards still speak of a phonological core and of fluency), the 2025 definition governs identification criteria and the standards govern teacher competencies.
+
 **Five Major Standards:**
 
 **Standard 1: Foundation Concepts**
-- Practitioners understand reading development theory and the nature of dyslexia as a neurodevelopmental cognitive disorder — a brain-based difference in phonological and orthographic processing, not a reflection of intelligence or effort.
+- Practitioners understand reading development theory and the nature of dyslexia as a neurodevelopmental cognitive disorder — a brain-based difference in phonological, morphological and orthographic processing, not a reflection of intelligence or effort.
 - Knowledge of language structure (phonology, morphology, orthography) is foundational.
 
 **Standard 2: Knowledge of Diverse Reading Profiles**
@@ -124,6 +140,15 @@ Dyslexia has formal clinical classifications that drive eligibility determinatio
 - **Prior Written Notice**: Required before any IEP changes.
 - **Parent Rights**: Procedural safeguards, right to independent evaluation, due process.
 
+**Federal administration (status 2026-10)**
+- Through interagency agreements announced in November 2025 and on 16 June 2026, the Department of Education moved IDEA grant administration, compliance monitoring and annual state performance determinations to the Department of Health and Human Services. OSERS retains policy, technical assistance and stakeholder outreach; FY2026 IDEA grants stay in ED's grant system and later allocations move to HHS. The statute, the regulations at 34 CFR Part 300 and every individual IEP right are unchanged. Audits should name HHS as the monitoring agency for state-level IDEA compliance going forward and ED/OSERS for policy guidance.
+- **State dyslexia laws**: 49 states have dyslexia legislation; California's universal K-2 screening took effect in 2025-26 and Michigan's K-3 screening is due 2027-28. Hu, Sayeski and Morgan (Annals of Dyslexia, 2025; NAEP 2003-2022, 47 states) found no significant change in SLD identification in 55% of states after a dyslexia law passed and improved SLD reading achievement in only four (Arizona, Mississippi, Nevada, Oklahoma). A screening mandate without funded instruction is therefore a documented compliance pattern, not a presumed success: audit whether screening results feed into structured literacy services with specified intensity.
+
+**A.J.T. v. Osseo Area Schools (U.S. Supreme Court, 12 June 2025, unanimous)**
+- Students bringing ADA Title II or Section 504 discrimination claims about their education are held to the same standard as any other disability-discrimination plaintiff. The Eighth Circuit's "bad faith or gross misjudgment" requirement is rejected.
+- A prior IDEA due-process finding does not bar a later ADA/504 action for damages or injunctive relief.
+- Audit consequence: a documented failure to deliver an accommodation that appears in an IEP or 504 plan is now actionable without proof of intent. Treat accommodation-fidelity findings (accommodation listed but not implemented) as HIGH severity at minimum.
+
 ### 3. Section 504 (Rehabilitation Act of 1973)
 
 **Key Differences from IDEA:**
@@ -150,6 +175,12 @@ Dyslexia has formal clinical classifications that drive eligibility determinatio
 - Note-taking assistance
 
 **Critical Compliance Note:** A 504 plan alone is typically insufficient for students who are behind academically. These students need IDEA services (structured literacy instruction of sufficient intensity) in addition to accommodations.
+
+**Regulatory status (2026-10)**
+- Schools and districts remain governed by the Department of Education's Section 504 regulations at 34 CFR Part 104 (1977). ED opened a request for information in May 2022 but never proposed a rule, and none is expected.
+- HHS issued its own Section 504 rule on 9 May 2024 (89 FR 40066) for HHS-funded entities (hospitals, Medicaid providers, child-welfare agencies). It updates the disability definition to the ADA Amendments Act standard and adds web and mobile accessibility requirements. Do not cite it against a school; do cite it against a pediatric clinic or a Medicaid-funded evaluator.
+- Texas v. Kennedy (formerly Texas v. Becerra, 17 states, filed September 2024) is narrowed and stayed; HHS published a Federal Register notice in April 2025 that the preamble language on gender dysphoria has no force of law. The rule's accessibility provisions stand.
+- Since 16 June 2026 the ED Office for Civil Rights refers complaint evaluation and investigation to the Department of Justice Civil Rights Division. OCR keeps intake, final enforcement decisions, mediation, technical assistance and the Civil Rights Data Collection. Complaints are still filed with OCR within 180 days.
 
 ### 4. Section 504 & ADA Title II/III in Higher Education
 
@@ -185,7 +216,10 @@ Students typically must submit:
 - Prior accommodation history (IEP/504 from K-12 is supporting evidence but not always sufficient)
 
 **OCR Complaint Process**
-If a college denies appropriate accommodations, students can file a complaint with the U.S. Department of Education Office for Civil Rights (OCR) within 180 days of the alleged discrimination.
+If a college denies appropriate accommodations, students can file a complaint with the U.S. Department of Education Office for Civil Rights (OCR) within 180 days of the alleged discrimination. Since June 2026 OCR refers investigations to the Department of Justice Civil Rights Division while retaining intake and final enforcement decisions; a private ADA/504 action remains available in parallel, and after A.J.T. v. Osseo (2025) no showing of bad faith is required.
+
+**Digital accessibility of courseware (ADA Title II web rule)**
+Public colleges and universities, and public K-12 districts, are Title II entities covered by the 2024 web and mobile accessibility rule (28 CFR Part 35, Subpart H): WCAG 2.1 Level AA for websites, LMS content, course PDFs and mobile apps. A DOJ interim final rule published in April 2026 moved the compliance dates to **26 April 2027** for entities serving 50,000 or more people and **26 April 2028** for smaller entities and special districts. Audit courseware against WCAG 2.1 AA as the legal floor and WCAG 2.2 AA as the recommended target.
 
 ### 5. ADA Title I: Workplace Accommodations
 
@@ -205,8 +239,7 @@ If a college denies appropriate accommodations, students can file a complaint wi
 - Text-to-speech software (JAWS, NVDA, Read&Write, Natural Reader, Voice Dream)
 - Audio versions of training materials and documents
 - OCR tools for scanned documents (Kurzweil 3000, Read&Write, Adobe)
-- Dyslexia-friendly fonts in company documents (Lexend, Atkinson Hyperlegible, OpenDyslexic)
-- Larger font size and modified line spacing for printed materials
+- Legible typography in company documents: sans-serif body text, 12-14pt or larger, 1.5 line spacing, left-aligned, no full justification, and the employee's own font choice honoured. Specialty "dyslexia fonts" (OpenDyslexic, Dyslexie) show no pooled benefit on reading speed or accuracy (Azzarello et al., Annals of Dyslexia, 2026, 15 studies, N=688, g = -0.04), so they are an option on request, not an evidence-based requirement
 - Reading rulers or focus overlays for dense documents
 
 *Writing-related:*
@@ -263,9 +296,15 @@ Federal contractors with contracts ≥ $10,000 must comply with Section 503 of t
 - Professional licensure exams (bar, medical boards, CPA) must provide accommodations
 - Healthcare providers must provide effective communication (written materials in accessible formats, plain-language explanations)
 
+**Title II web and mobile accessibility rule (28 CFR Part 35, Subpart H)**
+- Final rule April 2024; technical standard WCAG 2.1 Level AA for web content and mobile apps of state and local governments, including public schools, districts, public universities and libraries.
+- DOJ interim final rule (April 2026) extended the compliance dates: **26 April 2027** for public entities with a population of 50,000 or more; **26 April 2028** for smaller entities and special districts. Substantive requirements are unchanged.
+- Exceptions (archived web content, pre-existing conventional electronic documents, third-party content, password-protected course content for a specific student on request) are narrow; an LMS course used by a student with a 504 plan is not exempt.
+- For dyslexia this is the lever that makes text-to-speech parseability, semantic headings, reflowable text and alternative formats legally required rather than best practice.
+
 ### 7. French Legal Framework (Locale: fr)
 
-> *Sources current as of 2026-05. Authority-version pins: Loi n° 2005-102 (11 février 2005), Circulaire n° 2015-016 (PAP, 22 janvier 2015), Circulaire n° 2023-033 (aménagements d'examens, 23 février 2023), Code de l'éducation Art. L321-4, Code du travail Art. L5213-1. CAPPEI certification for ULIS coordinators; orthophonie nomenclature per décret n° 2002-721.*
+> *Sources current as of 2026-10. Authority-version pins: Loi n° 2005-102 (11 février 2005), Circulaire n° 2015-016 (PAP, 22 janvier 2015), circulaire du 14 mars 2022 (NOR MENE2204112C, aménagements d'examens de l'enseignement scolaire, modifying the circulaire du 8 décembre 2020) with its annexes replaced by the circulaire du 17 juillet 2025 (NOR MENE2506522C, BO n° 31 du 21 août 2025, applicable from session 2026), circulaire du 6 février 2023 (NOR ESRS2234137C, BO n° 10 du 9 mars 2023, cross-ministry framework replacing circulaire n° 2011-220), circulaire du 1er septembre 2025 (NOR MENE2520651C, pôles d'appui à la scolarité), Code de l'éducation Art. L321-4, Code du travail Art. L5213-1. CAPPEI certification for ULIS coordinators; orthophonie nomenclature per décret n° 2002-721. Pôle emploi became France Travail on 1er janvier 2024 (loi n° 2023-1196). Earlier releases of this skill cited a "Circulaire n° 2023-033 du 23 février 2023"; no BO entry carries that number or date, and the citation has been replaced.*
 
 #### 7.1 Key Laws
 
@@ -276,7 +315,10 @@ Federal contractors with contracts ≥ $10,000 must comply with Section 503 of t
 | **Code de l'éducation, Art. L311-7 / D311-13** | Legal basis for the PAP; students whose difficulties stem from a learning disorder may receive a PAP after consultation with school physician. |
 | **Code de l'éducation, Art. L321-4** | Schools **must** provide specific accommodations for students with oral/written language disorders (dyslexia explicitly named); when difficulties are severe and permanent, adapted teaching is required. This is **not discretionary**. |
 | **Circulaire n° 2015-016 du 22 janvier 2015** | Implementing circular for the PAP. Defines target population, initiation procedure, standardized document template (four sheets: maternelle, élémentaire, collège, lycée), school physician validation requirement, annual review. |
-| **Circulaire n° 2023-033 du 23 février 2023** | Current implementing guidance on exam accommodations (aménagements d'examens) for candidates with disabilities including DYS. Supersedes earlier circulars. |
+| **Circulaire du 14 mars 2022** (NOR MENE2204112C) | Implementing guidance for aménagements d'examens in enseignement scolaire (DNB, CFG, baccalauréat général/technologique/professionnel, BP, BTS, CAP, DCG/DSCG). Modifies the circulaire du 8 décembre 2020. Defines the procédure complète and procédure simplifiée. |
+| **Circulaire du 17 juillet 2025** (NOR MENE2506522C, BO n° 31 du 21 août 2025) | Replaces annexes 1 to 3 of the 2022 circulaire with sixteen new forms (eight exam families, each with a complete and a simplified procedure) aligned with the Incluscol application. Adds neutralisation of the lecture à voix haute in the oral de français for candidates granted written communication. Applies from the **session 2026** of school exams. |
+| **Circulaire du 6 février 2023** (NOR ESRS2234137C, BO n° 10 du 9 mars 2023) | Cross-ministry framework (enseignement supérieur, éducation nationale, culture, agriculture, santé) for examens et concours, replacing circulaire n° 2011-220. The CDAPH-designated physician may rely on a prior PAP or PPS; compensatory breaks; human aids may reformulate and sequence instructions; calculator exception for dyscalculia/dyspraxia; dysorthographie accommodation or exemption on spelling-assessed tests; no diploma may be conditioned on an external language certification. |
+| **Circulaire du 1er septembre 2025** (NOR MENE2520651C) | Generalisation of the pôles d'appui à la scolarité (PAS), replacing the PIAL from rentrée 2025 to 2027. PAS give first-level responses (pedagogical adjustments, adapted materials, short-term support) without a prior CDAPH decision and help families prepare MDPH files. Statutory basis is contested: Parliament removed the PAS article in the CMP of 1 July 2025 and the Assemblée rejected it again on 11 May 2026; the Delpech proposition de loi is in nouvelle lecture at the Sénat. Cite the circulaire, and flag the pending legal status. |
 | **Code de l'éducation, Art. D351-27 to D351-32** | Exam accommodation provisions for students with disabilities. |
 | **Code du travail, Art. L5213-1 et suivants** | Workplace disability framework. RQTH (Reconnaissance de la Qualité de Travailleur Handicapé) issued by CDAPH; opens access to AGEFIPH (private sector) / FIPHFP (public sector) accommodation funding. |
 
@@ -287,16 +329,17 @@ France uses four distinct K-12 educational support instruments. The correct plan
 | Plan | Full Name | US Equivalent | Key Facts |
 |------|-----------|--------------|-----------|
 | **PPRE** | Programme Personnalisé de Réussite Éducative | RTI Tier 1-2 | First-line intervention; no MDPH, no medical validation; any academic difficulty; short-term |
-| **PAP** | Plan d'Accompagnement Personnalisé | Section 504 Plan | For lasting difficulties due to troubles des apprentissages (DYS); requires school physician validation; NO MDPH involvement; followed from école through lycée; reviewed annually |
-| **PPS** | Projet Personnalisé de Scolarisation | IEP under IDEA | Requires MDPH/CDAPH recognition; enables AESH (human aide), ULIS placement, state-funded equipment; coordinated by enseignant référent; ESS monitoring team |
+| **PAP** | Plan d'Accompagnement Personnalisé | Section 504 Plan | For lasting difficulties due to troubles des apprentissages (DYS); requires school physician validation; NO MDPH involvement; followed from école through lycée; reviewed annually. Since 2025-26 the PAP is created and reviewed in the **Livret de parcours inclusif (LPI)** application under the directeur or chef d'établissement; the Circulaire 2015-016 four-cycle structure remains the content model |
+| **PPS** | Projet Personnalisé de Scolarisation | IEP under IDEA | Requires MDPH/CDAPH recognition; enables AESH (human aide), ULIS placement, state-funded equipment; coordinated by enseignant référent; ESS monitoring team; also recorded in the LPI |
 | **PAI** | Projet d'Accueil Individualisé | Health-specific 504/IHP | For chronic health conditions; not typically used for DYS unless comorbid health condition present |
+| **PAS** | Pôle d'appui à la scolarité | MTSS first-level support + district inclusion team | Not a plan but the territorial service (circulaire du 1er septembre 2025) that families, pupils or teachers can approach directly for first-level responses without a CDAPH decision; implements MDPH-notified AESH; orients to PCO/CAMSP/CMPP for diagnosis; successor to the PIAL. Does not replace PAP, PPS or MDPH compensation |
 
 **Critical rule**: A student cannot hold both a PAP and a PPS simultaneously. If the student needs human assistance (AESH), specialized placement (ULIS), or state-funded personal equipment, the PPS pathway is required.
 
 **Decision tree for DYS students:**
-- Mild/temporary difficulty → PPRE
-- Lasting DYS trouble, pedagogical accommodations only → PAP (no MDPH needed)
-- DYS trouble requiring AESH, ULIS placement, or financial allocation → PPS (MDPH dossier required)
+- Mild/temporary difficulty → PPRE, with the PAS as the first external contact where one is deployed
+- Lasting DYS trouble, pedagogical accommodations only → PAP (no MDPH needed), entered in the LPI
+- DYS trouble requiring AESH, ULIS placement, or financial allocation → PPS (MDPH dossier required; the PAS can help the family assemble it)
 
 #### 7.3 MDPH Process
 
@@ -328,7 +371,7 @@ Under Art. L321-4 Code de l'éducation, accommodations for students with DYS are
 
 **Dyslexia accommodations:**
 - Extra time for reading tasks
-- Adapted document formatting: Arial or OpenDyslexic ≥14pt, line spacing 1.5-2x, left-aligned, no italics, no full justification
+- Adapted document formatting: sans-serif (Arial is the conventional PAP choice; OpenDyslexic is permitted on request but has no demonstrated advantage, see Azzarello et al. 2026) ≥14pt, line spacing 1.5-2x, left-aligned, no italics, no full justification
 - Oral presentation of written instructions
 - Reduced written requirements
 - Text-to-speech software, audio recordings
@@ -361,7 +404,11 @@ Key principle: **Exam accommodations must be consistent with what the student us
 | Adapted materials | Sujets adaptés | Enlarged print, modified formatting |
 | Exemption | Dispense d'épreuve | Rare; replaced by adapted alternatives where possible |
 
-**Application procedure**: Filed during second trimester of year preceding the exam. Medical certificate + specialist assessments + evidence of classroom use required. Decision by academic authority (recteur). Appeal to Défenseur des Droits if refused.
+**Application procedure**: Filed during second trimester of year preceding the exam, on the forms annexed to the circulaire du 17 juillet 2025 (session 2026 onward), through the Incluscol application where the académie has deployed it. Two procedures: the **procédure simplifiée** when the requested accommodations match those already in the PAP, PPS or PAI (the chef d'établissement transmits; no new medical opinion needed), and the **procédure complète** for anything beyond the existing plan (medical certificate + specialist assessments + evidence of classroom use; avis of the médecin désigné par la CDAPH). Decision by academic authority (recteur). Appeal: recours gracieux to the recteur, then tribunal administratif; the Défenseur des Droits may be seised in parallel.
+
+**Session 2026 change**: for candidates granted written communication in oral exams, the lecture à voix haute component of the oral de français is neutralised; the candidate indicates in writing where the chosen text sits in the work and the parcours. Point weighting is unchanged.
+
+**Higher education examens et concours** are governed by the circulaire du 6 février 2023, not by the school-exam circulaire. The CDAPH-designated physician may base the avis on the student's prior PAP or PPS, which is the strongest argument for keeping the K-12 plan documentation.
 
 #### 7.7 Higher Education (Université / CFA)
 
@@ -381,6 +428,8 @@ For adults with dyslexia in the workplace, the framework shifts from PAP/PPS (K-
 - **Adapted assistive technology** for adult workers (French TTS via Vocale Presse, dictionary apps, French-spelling correctors like Antidote, French OCR via Scan&Read).
 - **Centres de Réadaptation Professionnelle (CRP)**: For adult retraining when dyslexia significantly affected initial career path.
 - **Loi Avenir Professionnel (2018)**: Mandates company-level disability référent for firms ≥250 employees.
+- **France Travail** (formerly Pôle emploi, merged 1er janvier 2024 under loi n° 2023-1196 pour le plein emploi): registration as demandeur d'emploi; Cap emploi remains the specialised placement network for RQTH holders.
+- **European Accessibility Act** (ordonnance n° 2023-859 and décret n° 2023-931, in application since 28 June 2025): consumer digital products and services sold in France (e-books and reading apps, e-commerce, banking, telecoms, transport apps) must meet accessibility requirements; EN 301 549 is the technical reference. For adults with dyslexia this makes accessible e-book formats and reflowable text a legal obligation on the seller rather than a request to the employer.
 
 **Disclosure considerations** (parallel to ADA Title I in US):
 - Disclosure to employer is voluntary except when requesting RQTH-funded accommodation.
@@ -406,6 +455,8 @@ For adults with dyslexia in the workplace, the framework shifts from PAP/PPS (K-
 | Tiers-temps | Extended time (time-and-a-half) | France mandates one-third; US typically 25-50% |
 | Secrétaire lecteur | Reader accommodation | Functionally equivalent |
 | AESH | 1:1 paraprofessional aide | AESH is PPS-only; US aide may be on IEP or 504 |
+| PAS (ex-PIAL) | MTSS / district inclusion support team | PAS is a territorial service reachable without a CDAPH decision; US MTSS is school-based |
+| LPI (livret de parcours inclusif) | IEP/504 case-management system | LPI is a single national application holding PPRE, PAP, PAI and PPS |
 | ULIS | Resource room/self-contained class | Both on LRE continuum |
 | RQTH | ADA Title I (workplace coverage) | RQTH is voluntary status that unlocks AGEFIPH funding; ADA coverage is automatic for qualified individuals with disability |
 | AGEFIPH/FIPHFP | EEOC + JAN (Job Accommodation Network) | AGEFIPH funds accommodations directly; US accommodations typically employer-funded with EEOC enforcement |
@@ -414,7 +465,7 @@ For adults with dyslexia in the workplace, the framework shifts from PAP/PPS (K-
 
 ### 8. Spanish Legal Framework (Locale: es)
 
-> *Sources current as of 2026-05. Authority-version pins: LOE — Ley Orgánica 2/2006, LOMLOE — Ley Orgánica 3/2020 (Art. 71/72/79 bis), Real Decreto 157/2022 (Primary curriculum), Real Decreto Legislativo 1/2013 (workplace ≥33% certificado de discapacidad threshold), ICD-11 6A03.0 / DSM-5 315.00 diagnostic criteria. 17-CCAA regional decrees vary; always verify against the specific Comunidad Autónoma. PRODISLEX referenced as screening pattern, not diagnostic instrument.*
+> *Sources current as of 2026-10. Authority-version pins: LOE — Ley Orgánica 2/2006, LOMLOE — Ley Orgánica 3/2020 (Art. 71/72/79 bis), Real Decreto 157/2022 (Primary curriculum), Real Decreto 534/2024 de 11 de junio (PAU, art. 3.2, 13.10, 21.1), Real Decreto Legislativo 1/2013 (workplace ≥33% certificado de discapacidad threshold), Orden PJC/804/2025 de 23 de julio (BOE-A-2025-15426, adaptaciones in public-employment selection processes), Ley 11/2023 de 8 de mayo (European Accessibility Act transposition, obligations from 28 June 2025), ICD-11 6A03.0 / DSM-5-TR F81.0 diagnostic criteria. 17-CCAA regional decrees vary; always verify against the specific Comunidad Autónoma. PRODISLEX referenced as screening pattern, not diagnostic instrument.*
 
 #### 8.1 Key Laws
 
@@ -426,7 +477,10 @@ Spain's education system is significantly devolved to 17 Comunidades Autónomas.
 | **LOMLOE — Ley Orgánica 3/2020** | 2020 reform of LOE. Explicitly broadened ACNEAE to include "trastornos de atención o de aprendizaje." Established DUA (Universal Design for Learning) as a basic principle. Set 10-year timeline for inclusive school resources. |
 | **Real Decreto 157/2022** | Updated Primary Education curriculum under LOMLOE; reinforces competency-based assessment and inclusive attention. |
 | **Real Decreto 217/2022** | ESO (Compulsory Secondary) curriculum under LOMLOE. |
-| **Real Decreto Legislativo 1/2013** (Ley General de Discapacidad) | Consolidated workplace and adult disability framework. Defines Centros Especiales de Empleo, regulates 2% reserved-employment quota for firms ≥50 employees, sets non-discrimination protections, establishes certificado de discapacidad ≥33% as gateway to workplace protections. |
+| **Real Decreto 534/2024, de 11 de junio** | National framework for the new **PAU** (Prueba de Acceso a la Universidad, replacing the EBAU/EvAU name) from the 2024-25 course. Art. 3.2: commissions must adapt time, provide special exam models and the material, technical and human resources a student needs, based on the support received in the previous stage, and **no adaptation may be used to lower the grade** ("no podrá ser tenida en cuenta para minorar las calificaciones"). Art. 13.10: the 10% writing-quality criterion may be relaxed for ACNEAE students. Art. 21.1: non-discrimination measures are mandatory. Regional acuerdos sit on this floor. |
+| **Real Decreto Legislativo 1/2013** (Ley General de Discapacidad) | Consolidated workplace and adult disability framework. Defines Centros Especiales de Empleo, regulates 2% reserved-employment quota for firms ≥50 employees (7% in public employment), sets non-discrimination protections, establishes certificado de discapacidad ≥33% as gateway to workplace protections. |
+| **Orden PJC/804/2025, de 23 de julio** (BOE 25 July 2025, errata BOE-A-2025-17856) | National criteria for adaptación de medios y tiempos and other reasonable adjustments in **selective processes for access to public employment** (oposiciones) for persons with certificado de discapacidad. Gives DEA candidates with a certificate a uniform basis for extra time, adapted formats and assistive technology in state, regional and local civil-service exams. |
+| **Ley 11/2023, de 8 de mayo** | Transposes the European Accessibility Act (Directive 2019/882). Accessibility obligations for consumer digital products and services (e-commerce, e-books and reading software, banking, telecoms, transport and essential-service apps) apply from 28 June 2025; existing services have until 28 June 2030. Enforcement by the Dirección General de Consumo and regional consumer authorities; fines up to EUR 1,000,000 for very serious infractions. |
 | **Regional legislation** | Each Comunidad Autónoma enacts implementing decrees/orders. Key examples: Andalucía (Instrucciones 12/12/2014), Cataluña (Decret 150/2017), Madrid (Decreto 23/2023; Orden 19/01/2021), País Vasco (Decreto 236/2015), Valencia (ORDEN 20/2019), Galicia (Decreto 229/2011). |
 
 #### 8.2 ACNEAE Framework
@@ -488,7 +542,7 @@ Under LOMLOE Articles 71, 72, and 79 bis, administrations must identify early, a
 - Oral reading of questions
 - Allowing oral responses
 - No penalization for spelling/orthographic errors attributable to dyslexia
-- Enlarged text: Arial 14-16pt, 1.5 line spacing; OpenDyslexic font permitted
+- Enlarged text: Arial 14-16pt, 1.5 line spacing; OpenDyslexic permitted where the regional instruction names it (no evidence of benefit over Arial, see Azzarello et al. 2026)
 - Separate testing room when needed
 - Assistive technology (computer, text-to-speech)
 - Reduced volume of written work (same complexity level)
@@ -502,25 +556,32 @@ Under LOMLOE Articles 71, 72, and 79 bis, administrations must identify early, a
 - Visual/manipulative aids
 - Step-by-step problem decomposition
 
-#### 8.6 EBAU/EvAU Exam Accommodations
+#### 8.6 PAU Exam Accommodations (formerly EBAU/EvAU)
 
-The university entrance exam (EBAU/EvAU, formerly Selectividad) is administered regionally. Each Comunidad Autónoma establishes its own accommodation procedures.
+The university entrance exam is the **PAU** (Prueba de Acceso a la Universidad) since the 2024-25 course under Real Decreto 534/2024; older documents call it EBAU, EvAU or Selectividad. It is administered regionally by each Comisión Organizadora, but the national decree now sets a floor that regional acuerdos must respect.
+
+**National floor (RD 534/2024):**
+- Adaptations of time, special exam models, and material, technical and human resources (art. 3.2)
+- Measures are based on the support documented in the previous stage; schools must share that record
+- **No adaptation may lower the grade** (art. 3.2); the 10% writing-quality criterion may be relaxed for ACNEAE (art. 13.10)
+- Information, communication and the venue must be accessible
 
 **Common accommodations across regions:**
-- Extended time (30 additional minutes per exam is common; varies by region)
-- Enlarged text (Arial 16pt, 1.5 line spacing)
-- OpenDyslexic font (recommended in several regions)
-- Oral reading of questions upon request
-- Separate exam room
-- Reduced spelling penalties
-- Specific evaluation tribunals (some regions)
+- Extended time (Madrid: up to 30 additional minutes per exam; varies by region)
+- Enlarged format (DIN A3 in Madrid; Arial 16pt with 1.5 line spacing elsewhere)
+- Oral reading of the enunciados by the tribunal on request (language-test texts excluded)
+- Additional answer sheet
+- Adapted spelling correction ("corrección adaptada de ortografía"): no deductions in non-language subjects; capped deductions in Lengua Castellana y Literatura II and Lengua Extranjera II with natural errors (substitutions, omissions, inversions, joins and splits) not counted
+- Separate exam room, specific evaluation tribunals (some regions)
+- OpenDyslexic or similar on request where the regional acuerdo lists it (no evidence of benefit over Arial)
 
-**Requirements to receive EBAU accommodations**: Official diagnosis (Informe Psicopedagógico), documented history of accommodations during schooling, application within regional deadlines.
+**Requirements to receive PAU accommodations**: Informe Psicopedagógico or equivalent diagnosis, documented history of equivalent adaptations during Bachillerato (or FP / Régimen Especial), signed consent, application by the school through the Servicio de Orientación within the regional window (Madrid 2026: 1 December 2025 to 20 January 2026, at least three months before enrolment closes; resolutions notified before 16 March 2026). Appeals: reconsideration within 10 business days, recurso de reposición within one month, contencioso-administrativo within two months.
 
-**Key exam accommodation linkage principle**: Like France, students must demonstrate a history of using accommodations (consistency between classroom ACNS and exam accommodations). Students who have not had documented ACNS during Bachillerato face greater difficulty obtaining exam accommodations.
+**Key exam accommodation linkage principle**: Like France, students must demonstrate a history of using accommodations (consistency between classroom ACNS and exam accommodations). Students who have not had documented ACNS during Bachillerato face greater difficulty obtaining exam accommodations; the national decree now makes the prior-stage record the formal basis of the decision.
 
 **Regional highlights:**
-- **Madrid**: Resolution 27/04/2023 — specific EVAU adaptations, reduced orthographic penalties
+- **Madrid**: annual Acuerdo de la Comisión Organizadora (11 Nov 2024 for PAU 2025; 17 Nov 2025 for PAU 2026) building on the Resolución of 27 April 2023 of the Dirección General de Universidades: dyslexia in Grupo 2 with +30 min, A3, read-aloud enunciados, extra answer sheet and adapted spelling correction
+- **Castilla y León**: Orden EDU/1225/2024 and the COPAU acuerdo of 21 March 2025 publish explicit deduction rules (Lengua II: max 1 point, first rule-based error free, repeated errors counted once, 0.10 per further error, expression deductions capped at 0.5)
 - **Cataluña**: 30 additional minutes, specific evaluation tribunals, adapted spelling scoring; bilingual/trilingual assessment context (Catalan + Castilian + optional English)
 - **Andalucía**: Instrucciones 12/12/2014 (evaluation measures for dyslexia/DEA/TDAH); was among the first regions to issue specific dyslexia instructions
 - **País Vasco**: Berritzegune handles assessments; trilingual context (Basque + Castilian + English)
@@ -541,6 +602,8 @@ For adults with dyslexia in the Spanish workplace, the framework is established 
 - **Reserved-employment quota**: Firms with ≥50 employees must reserve 2% of positions for workers with certificado de discapacidad ≥33%. Compensable through Centros Especiales de Empleo contracts or AGEFIPH-equivalent fundraising.
 - **Centros Especiales de Empleo**: Specialized workplaces that employ ≥70% workers with disability; provide adapted work environment.
 - **Servicio Público de Empleo Estatal (SEPE)**: Regional offices include Empleo Inclusivo programs; orientación laboral for workers with disability.
+- **Acceso al empleo público (oposiciones)**: Orden PJC/804/2025 (BOE 25 July 2025) sets national criteria for adaptación de medios y tiempos and other reasonable adjustments in selective processes for candidates with certificado de discapacidad, alongside the 7% reserved quota in public employment. Candidates with DEA and a certificate should request extra time, adapted formats and assistive technology under this Orden; regional convocatorias must apply it.
+- **European Accessibility Act (Ley 11/2023)**: since 28 June 2025 consumer digital products and services sold in Spain must be accessible; for adults with dyslexia this covers e-books and reading apps, online banking, e-commerce and telecom portals. Non-compliance is reportable to the Dirección General de Consumo.
 - **Adapted assistive technology** for adult Spanish workers: Spanish-language TTS (Vozme, Loquendo, ReadSpeaker Spanish voices), Spanish OCR (FineReader Spanish), dictation tools (Dragon Spanish, Apple Dictation Spanish), Spanish-spelling correctors (StilusNet, Microsoft Spanish proofing).
 - **Anti-discrimination protections**: Estatuto de los Trabajadores Art. 17 plus Ley General de Discapacidad Art. 35-37.
 
@@ -550,13 +613,13 @@ For adults with dyslexia in the Spanish workplace, the framework is established 
 
 #### 8.9 Regional Variation Summary
 
-An audit targeting Spain must identify the relevant Comunidad Autónoma, as terminology, diagnostic thresholds, EBAU procedures, and assessment team names vary significantly.
+An audit targeting Spain must identify the relevant Comunidad Autónoma, as terminology, diagnostic thresholds, PAU procedures, and assessment team names vary significantly.
 
 | Aspect | Varies by Region | Uniform Nationally |
 |--------|-----------------|-------------------|
 | Diagnostic criteria thresholds | Yes (Pc < 25 in some, less defined in others) | — |
 | Support plan terminology (PTI vs. ACI vs. ACNS) | Yes | — |
-| EBAU accommodation specifics | Yes | — |
+| PAU accommodation specifics (regional acuerdos) | Yes | National floor: RD 534/2024 (no grade reduction) |
 | Assessment team names (EOEP/EAP/Berritzegune) | Yes | — |
 | Right to non-significant adaptations | — | Yes (LOMLOE national floor) |
 | Inclusion as default placement | — | Yes (LOMLOE mandate) |
@@ -599,7 +662,8 @@ When auditing a program, tool, or document for compliance, evaluate against:
 - [ ] Instructor has adequate training (IDA-aligned certification preferred)
 
 ### IEP Compliance
-- [ ] PLAAFP describes current performance and impact of dyslexia
+- [ ] Eligibility does not rest on an IQ-achievement discrepancy (removed from the 2025 IDA definition; not required by IDEA)
+- [ ] PLAAFP describes current performance and impact of dyslexia, reporting word-reading accuracy and speed separately
 - [ ] Goals are measurable, time-bound, and aligned to dyslexia deficits
 - [ ] Services specify type, frequency, duration, and location
 - [ ] Accommodations and modifications listed
@@ -610,6 +674,7 @@ When auditing a program, tool, or document for compliance, evaluate against:
 
 ### 504 Plan Compliance
 - [ ] Disability and functional limitations documented
+- [ ] Every listed accommodation has implementation evidence (after A.J.T. v. Osseo, 2025, undelivered accommodations are actionable without proof of bad faith)
 - [ ] Accommodations are specific and actionable
 - [ ] Implementation responsibilities assigned
 - [ ] Review schedule established
@@ -632,11 +697,13 @@ When auditing a program, tool, or document for compliance, evaluate against:
 - [ ] Working memory demands explicitly managed: external supports (graphic organizers, written instructions, visual schedules) provided as standard practice
 - [ ] Accommodations designed as lifelong supports reflecting persistent cognitive architecture difference, not time-limited remedial aids
 - [ ] Cognitive load per task quantified and kept within dyslexia-appropriate limits (max 2-3 novel elements simultaneously)
+- [ ] Typography requirements are stated as legibility features (size, spacing, alignment, user choice), not as a mandated specialty font
 - [ ] Rapid naming (RAN) deficits recognized as persistent; untimed environments provided as default, not an accommodation
 
 ### French Compliance Audit Checklist (Locale: fr)
 
 #### PAP Compliance (K-12)
+- [ ] PAP recorded in the Livret de parcours inclusif (LPI) by the directeur or chef d'établissement
 - [ ] Student has a diagnosed trouble des apprentissages (DYS) documented by qualified professional
 - [ ] PAP validated by médecin de l'Éducation nationale (school physician)
 - [ ] PAP uses the standardized Circulaire 2015-016 template (correct sheet for school level: maternelle / élémentaire / collège / lycée)
@@ -656,6 +723,7 @@ When auditing a program, tool, or document for compliance, evaluate against:
 - [ ] If state-funded equipment: CDAPH allocation documented
 
 #### Exam Accommodation Compliance (Aménagements d'Examens)
+- [ ] Request uses the session-2026 forms (circulaire du 17 juillet 2025 annexes) and the correct procedure (simplifiée when matching the PAP/PPS, complète otherwise)
 - [ ] Accommodations requested during second trimester of year preceding exam
 - [ ] Medical certificate and specialist assessments included in dossier
 - [ ] Evidence provided that student uses same accommodations in class (PAP/PPS documentation)
@@ -666,6 +734,7 @@ When auditing a program, tool, or document for compliance, evaluate against:
 
 #### Adult / Workplace Compliance (RQTH layer)
 - [ ] RQTH status applicable and pursued where worker needs funded accommodations
+- [ ] Documents refer to France Travail (not Pôle emploi) and Cap emploi
 - [ ] AGEFIPH (private) / FIPHFP (public) funding pathways documented for assistive technology
 - [ ] Workplace accommodations include French-language AT (Antidote, Vocale Presse, French TTS/STT)
 - [ ] If firm ≥250 employees: référent handicap identified (Loi Avenir Professionnel 2018)
@@ -704,12 +773,13 @@ When auditing a program, tool, or document for compliance, evaluate against:
 - [ ] Enlarged text format (Arial 14-16pt, 1.5 line spacing) available for assessments
 - [ ] Spanish-language AT availability (Vozme, ReadSpeaker Spanish, StilusNet, etc.)
 
-#### EBAU/EvAU Exam Accommodations
+#### PAU Exam Accommodations (formerly EBAU/EvAU)
 - [ ] Official diagnosis (Informe Psicopedagógico) included in application
 - [ ] Documented history of receiving classroom ACNS (particularly during Bachillerato)
-- [ ] Application filed within regional deadlines
+- [ ] Application filed by the school within regional deadlines (at least three months before enrolment closes)
 - [ ] Consistency between classroom accommodations and exam accommodations requested
 - [ ] Regional procedure followed for Comunidad Autónoma where exam is taken
+- [ ] Grading rules confirm no adaptation lowers the grade (RD 534/2024 art. 3.2) and adapted spelling correction is applied as published
 
 #### Specialist Resources
 - [ ] Maestro/a de PT (or AL where language-focused) involved in student support
@@ -718,6 +788,8 @@ When auditing a program, tool, or document for compliance, evaluate against:
 
 #### Adult / Workplace Compliance (RDL 1/2013 layer)
 - [ ] Certificado de discapacidad ≥33% obtained where worker needs RDL 1/2013 protections
+- [ ] For oposiciones: adaptación de medios y tiempos requested under Orden PJC/804/2025 and applied by the convocatoria
+- [ ] Consumer-facing digital services used by the worker meet Ley 11/2023 (EAA) requirements where applicable
 - [ ] If firm ≥50 employees: 2% reserved-employment quota compliance documented (direct hire or alternative measures)
 - [ ] Workplace accommodations include Spanish-language AT
 - [ ] Centros Especiales de Empleo or Empleo Inclusivo programs referenced for adapted workplaces
@@ -746,7 +818,7 @@ The audit report MUST follow this structure, matching the format used across oth
 | **Project** | <project name> |
 | **Audit Date** | <YYYY-MM-DD> |
 | **Auditor** | Claude (automated analysis) |
-| **Standards** | IDA KPS 2018, IDEA, Section 504, Structured Literacy |
+| **Standards** | IDA 2025 definition, IDA KPS 2018, IDEA, Section 504, Structured Literacy |
 | **Scope** | <what was audited — files, documents, program components> |
 | **Type** | <Initial audit / Re-audit of prior findings> |
 
@@ -898,9 +970,11 @@ When re-auditing a project that already has an audit file in `audits/`:
 
 - Always distinguish between IDEA services and 504 accommodations — they serve different purposes. (locale=us)
 - Flag when a 504 plan is being used where an IEP may be more appropriate (student is significantly behind academically). (locale=us)
-- Note that state laws may add requirements beyond federal minimums — advise users to check their state's dyslexia mandate. (locale=us)
-- **locale=fr**: Always distinguish PAP from PPS — they are not interchangeable. PAP for DYS pedagogical accommodations with school physician validation; PPS only when AESH / ULIS / state-funded equipment required. Flag any case where a French K-12 student holds both simultaneously (legal error). Flag when a French student requests exam aménagements without documented prior classroom use.
-- **locale=es**: Always classify dyslexia/dyscalculia under DEA, not NEE — applying Dictamen/ACS pathway to a sole-diagnosis DEA student is a common compliance error. Verify regional terminology (ACNS vs. ACI no significativa vs. PTI vs. Plan de Apoyo) before authoring documents. For workplace, check whether certificado de discapacidad ≥33% has been pursued.
+- Note that state laws may add requirements beyond federal minimums — advise users to check their state's dyslexia mandate, and whether screening results are connected to funded instruction (Hu, Sayeski and Morgan 2025). (locale=us)
+- Cite the 2025 IDA definition, DSM-5-TR with ICD-10-CM F81.0, and ICD-11 6A03.0; never present 315.00 as the current code. (all locales)
+- Do not fail content for the absence of a specialty dyslexia font; score legibility features instead. (all locales)
+- **locale=fr**: Always distinguish PAP from PPS — they are not interchangeable. PAP for DYS pedagogical accommodations with school physician validation; PPS only when AESH / ULIS / state-funded equipment required. Flag any case where a French K-12 student holds both simultaneously (legal error). Flag when a French student requests exam aménagements without documented prior classroom use. Cite the school-exam circulaires (14 mars 2022 as amended 17 juillet 2025) for Brevet/Bac and the circulaire du 6 février 2023 for higher-education examens et concours; never cite "Circulaire 2023-033". Mention the PAS as first contact and note its pending statutory basis.
+- **locale=es**: Always classify dyslexia/dyscalculia under DEA, not NEE — applying Dictamen/ACS pathway to a sole-diagnosis DEA student is a common compliance error. Verify regional terminology (ACNS vs. ACI no significativa vs. PTI vs. Plan de Apoyo) before authoring documents. Call the entrance exam PAU and cite RD 534/2024 as the national floor (EBAU/EvAU only as legacy names). For workplace, check whether certificado de discapacidad ≥33% has been pursued, and apply Orden PJC/804/2025 for oposiciones.
 - When evaluating programs, be transparent about evidence levels. Many OG-based programs are widely used but have limited formal RCT evidence; the same caveat applies to FR (Borel-Maisonny, Chassymo) and ES (PRODISLEX) programs.
 - Always prioritize student/employee welfare and access to appropriate services.
 - Cite specific standards (IDA Standard 3, IDEA §300.320 for US; Art. L321-4 Code de l'éducation, Circulaire 2015-016 for FR; LOE Art. 79 bis, regional CCAA decree for ES) when flagging compliance issues.

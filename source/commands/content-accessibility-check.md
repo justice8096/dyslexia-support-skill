@@ -8,16 +8,16 @@ Audit digital content for dyslexia-friendly design and readability, with locale-
 ```
 
 **`--locale`** (default: `us`):
-- `us` — English-focused checks: Flesch-Kincaid readability, English typography norms
-- `fr` — French diacritic rendering checks (é, è, ê, ë, à, â, ç, î, ï, ô, œ, ù, û, ü, ÿ), ligature integrity (œ), French dyslexia accommodation norms (Arial/OpenDyslexic ≥14pt per Circulaire 2015-016), prohibited full justification, Kandel/Moles readability index
-- `es` — Spanish tilde/accent rendering (á, é, í, ó, ú, ü, ñ, ¿, ¡), EBAU/EvAU exam content standards (Arial 16pt + 1.5 line spacing), fluency-supportive design priority (Spanish is transparent — fluency deficit dominates), automated spelling-penalty grading flag, Flesch-Szigriszt/Crawford readability index
+- `us` — English-focused checks: Flesch-Kincaid readability, English typography norms, ADA Title II web rule (WCAG 2.1 AA; compliance 26 April 2027 for entities serving 50,000+, 26 April 2028 for smaller entities) for public-sector and public-education content
+- `fr` — French diacritic rendering checks (é, è, ê, ë, à, â, ç, î, ï, ô, œ, ù, û, ü, ÿ), ligature integrity (œ), French dyslexia accommodation norms (sans-serif ≥14pt per Circulaire 2015-016 practice; OpenDyslexic permitted on request, not required), prohibited full justification, Kandel/Moles readability index, European Accessibility Act scope check for consumer apps and e-books (ordonnance 2023-859, in application since 28 June 2025)
+- `es` — Spanish tilde/accent rendering (á, é, í, ó, ú, ü, ñ, ¿, ¡), PAU exam content standards (Arial 16pt + 1.5 line spacing; RD 534/2024 and regional acuerdos; EBAU/EvAU are legacy names), fluency-supportive design priority (Spanish is transparent — fluency deficit dominates), automated spelling-penalty grading flag, Flesch-Szigriszt/Crawford readability index, European Accessibility Act scope check (Ley 11/2023, obligations since 28 June 2025)
 
 ## What This Command Does
 
 1. **Analyzes the target content** for dyslexia accessibility across four domains:
 
    **Typography & Layout**
-   - Font family (sans-serif preferred)
+   - Font family (sans-serif preferred; the reader can change it). Do not fail content for not using a specialty dyslexia font: Azzarello et al. (Annals of Dyslexia, 2026; 15 studies, N=688) found no pooled effect of OpenDyslexic/Dyslexie on reading speed or accuracy (g = -0.04). Score the measurable features below instead
    - Font size (≥14px body)
    - Line spacing (≥1.5x)
    - Letter and word spacing
@@ -40,7 +40,8 @@ Audit digital content for dyslexia-friendly design and readability, with locale-
    - Location indicators
    - Search and bookmark features
    - Text-to-speech compatibility (semantic HTML)
-   - User customization options
+   - User customization options (font, size, spacing, theme)
+   - WCAG 2.1 AA conformance as the legal floor for US public-sector / public-education content (ADA Title II rule) and for EU-market consumer content (EN 301 549 v3.2.1 under the European Accessibility Act); WCAG 2.2 AA as the recommended target (EN 301 549 v4.1.1, published September 2026, not yet cited in the Official Journal)
 
    **Media & Alternatives**
    - Audio alternatives
@@ -64,15 +65,17 @@ Audit digital content for dyslexia-friendly design and readability, with locale-
 **locale=fr (French):**
 - Verifies that accent marks (é, è, ê, ë, à, â, ç, î, ï, ô, œ, ù, û, ü, ÿ) render correctly at body size in the chosen font
 - Checks that ligatures (œ in particular) are not broken
-- Notes that French dyslexia accommodation norms call for Arial or OpenDyslexic ≥14pt per Circulaire 2015-016 guidance
+- Notes that French dyslexia accommodation practice under Circulaire 2015-016 uses a sans-serif ≥14pt (Arial by default; OpenDyslexic on request only, no demonstrated benefit)
+- Flags consumer apps and e-books sold in France that fall under the European Accessibility Act (ordonnance 2023-859 / décret 2023-931, in application since 28 June 2025) and checks them against EN 301 549
 - Flags use of full justification (text-align: justify) — prohibited in French PAP accommodation guidance
 - Recommends French-language TTS engines (Vocale Presse, Dys@Dom) over English-only TTS
 
 **locale=es (Spanish):**
 - Verifies that tilde (á, é, í, ó, ú, ü, ñ, ¿, ¡) renders correctly at body size
 - Notes that Spanish dyslexia is primarily a fluency deficit — evaluate whether the content design supports reading pace (e.g., line length, spacing, chunk size) more than decoding cues
-- EBAU/EvAU exam accommodation guidance specifies Arial 16pt, 1.5 line spacing — checks assessment/exam content against this standard
+- PAU exam accommodation guidance (RD 534/2024 plus the regional acuerdo) specifies Arial 16pt, 1.5 line spacing, and often DIN A3 — checks assessment/exam content against this standard; flags any grading rule that would let an adaptation lower the grade (prohibited by RD 534/2024 art. 3.2)
 - Flags orthographic error penalization in content (e.g., automated spelling-penalty grading systems) as a specific concern for Spanish EdTech
+- Flags consumer apps and e-books sold in Spain that fall under Ley 11/2023 (European Accessibility Act) and checks them against EN 301 549
 - Recommends Spanish-language TTS engines (Vozme, ReadSpeaker Spanish) over English-only TTS
 
 ## Output
@@ -93,6 +96,6 @@ An accessibility audit report with scores and actionable fixes. For FR/ES audits
 
 # Spanish locale
 /content-accessibility-check material_aula.html --locale es
-/content-accessibility-check examen_ebau_madrid.pdf --locale es
+/content-accessibility-check examen_pau_madrid.pdf --locale es
 /content-accessibility-check app-dislexia-es.jsx --locale es
 ```

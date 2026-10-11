@@ -13,7 +13,7 @@ The command will prompt for necessary student information.
 
 1. **Gathers student information:**
    - Name, grade, school
-   - Assessment results (CTOPP-2, WRMT, cognitive, language, achievement)
+   - Assessment results (CTOPP-2, WRMT, cognitive, language, achievement), with word-reading accuracy and rate reported separately per the 2025 IDA definition
    - Current reading level and areas of deficit
    - Strengths and interests
    - Current services (if any)
@@ -28,10 +28,26 @@ The command will prompt for necessary student information.
 
 3. **Validates the IEP** against:
    - IDEA §300.320 requirements
+   - 2025 IDA definition (no IQ-discrepancy language; persistence despite effective instruction documented)
    - IDA standards for goal alignment
    - Structured literacy element coverage
+   - Clinical coding as DSM-5-TR / ICD-10-CM F81.0 (not 315.00)
+   - Typography accommodations stated as legibility features, not a mandated specialty font
+   - French (PAP in the LPI; session-2026 exam forms) and Spanish (PAU under RD 534/2024) equivalents when a locale is given
 
 4. **Outputs** the IEP as a professional document (DOCX or PDF)
+
+## Linguistic analysis support (optional)
+
+When the `linguistics` MCP server is available, use its tools to make IEP materials
+objective and grade-matched:
+- `readability(text)` — set/verify the reading level of goal passages and accommodated materials (Flesch-Kincaid grade).
+- `decodability(text)` — list irregular/non-decodable words to pre-teach; quantify decoding load for the PLAAFP.
+- `syllabify(word)` / `pronounce(word)` — generate decoding and phonological-awareness practice items aligned to goals.
+- `frequency(words)` — flag below-grade-frequency vocabulary as sight-word/vocab targets.
+
+These inform **remediation targets** only; preserve the two-track framing (pair with bypass/AT accommodations).
+Full procedures: `D:\linguistics-mcp\INTEGRATION-literacy-numeracy.md` (§1–2). English-only tools; for FR/ES see §4.
 
 ## Important Disclaimer
 Generated IEPs are professional-quality templates that require review and approval by a qualified IEP team. They are starting points — not substitutes for professional judgment.
