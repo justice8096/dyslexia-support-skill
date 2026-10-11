@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "Dyslexia Support Skill",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "Clinical and accommodation framework for dyslexia as a neurodevelopmental cognitive disorder - a lifelong, brain-based difference in phonological and orthographic processing architecture (left temporoparietal cortex, visual word form area, inferior frontal gyrus). Covers the full lifespan: K-12 special education, higher education, workplace, and adult accommodation across three legal jurisdictions. Distinguishes remediation targets (trainable skills) from bypass targets (persistent deficits requiring permanent cognitive prosthetics). Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, Gabrieli neuroimaging evidence, the 2025 IDA definition of dyslexia, DSM-5-TR Specific Learning Disorder with impairment in reading (ICD-10-CM F81.0), and ICD-11 Developmental Learning Disorder (6A03.0). Multi-jurisdiction legal framework support: United States (IDEA, Section 504, ADA Title I/II/III including the Title II web rule, A.J.T. v. Osseo 2025), France (Loi n° 2005-102, Code de l'éducation, PAP/PPS via MDPH/CDAPH in the Livret de parcours inclusif, pôles d'appui à la scolarité, session-2026 exam circulaires, RQTH for workplace), Spain (LOE/LOMLOE, ACNEAE/DEA framework, ACNS pathway, PAU under Real Decreto 534/2024, Orden PJC/804/2025, 17-Comunidad Autónoma regional implementations), and the European Accessibility Act layer for FR/ES consumer digital content.",
     "author": "Justice",
     "license": "CC0-1.0",

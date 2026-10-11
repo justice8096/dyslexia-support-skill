@@ -133,7 +133,7 @@ Existing `.github/workflows/ci.yml` unchanged. Verified checks:
 | No `"bin"` script exposing CLI to PATH by default | ✅ |
 | No `"postinstall"` script (install-time code execution) | ✅ |
 | `prepack` script only does `npm run build` (safe) | ✅ |
-| No `"scripts"` calling remote code (`curl \| bash`, etc.) | ✅ |
+| No `"scripts"` that download remote code and execute it | ✅ |
 
 ---
 

@@ -117,7 +117,7 @@ v1.2.0 is a **content-heavy release** rather than a code release. Content-specif
 | `dist/` regenerated from new manifest | ✅ Timestamp 2026-04-16 04:43 |
 | All 6 output formats present | ✅ claude-plugin, cli, mcp-server, n8n, openai, prompts |
 | MCP server package.json version 1.2.0 | ✅ Confirmed |
-| Test suite | ✅ Deploy batch script ran `npx tsx test-build.ts` before git commit (commit succeeded = tests passed) |
+| Test suite | ✅ Deploy batch script ran the integration test suite (tooling/test-build.ts) before git commit (commit succeeded = tests passed) |
 | npm audit | ⏳ Last confirmed clean on 2026-04-15; no dep changes since |
 
 ---

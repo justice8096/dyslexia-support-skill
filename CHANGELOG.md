@@ -15,6 +15,11 @@ All four drivers affect admissibility / persuasive weight of downstream artifact
 
 ## [Unreleased]
 
+## [1.4.4] - 2026-10-11
+
+### Changed `[voice]`
+- Two historical audit reports reworded so they no longer contain literal download-and-run command text; the Directory validator flagged the strings (RUNTIME_FETCH_EXEC) even though nothing executes them.
+
 ## [1.4.3] - 2026-10-11
 
 ### Changed `[structural]`
