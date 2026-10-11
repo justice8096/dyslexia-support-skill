@@ -15,6 +15,11 @@ All four drivers affect admissibility / persuasive weight of downstream artifact
 
 ## [Unreleased]
 
+## [1.4.3] - 2026-10-11
+
+### Changed `[structural]`
+- Build tooling (package.json, package-lock.json, build.ts, test-build.ts, tsconfig.json, cli-template/, sbom.cdx.json) moved from the plugin root into `tooling/`. The plugin root now contains only the manifests, commands, skills and docs, so installing the plugin involves no package install; this is aimed at the Directory's "Dependencies install from a lockfile" policy hold. build.ts and test-build.ts resolve `source/`, `dist/`, `commands/` and `skills/` from the repository root; `dist/` still lands at the root (gitignored). CI runs from `tooling/`. README, CONTRIBUTING and SECURITY updated.
+
 ## [1.4.2] - 2026-10-11
 
 ### Changed `[voice]`

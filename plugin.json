@@ -1,6 +1,6 @@
 {
   "name": "dyslexia-support-skill",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Clinical and accommodation framework treating dyslexia as a neurodevelopmental cognitive disorder across the full lifespan: K-12 (IDEA, Section 504), higher education (Section 504, ADA Title II/III), workplace (ADA Title I), and adult contexts. Implements structured literacy methodology for trainable skills and cognitive prosthetics (text-to-speech, speech-to-text, audiobooks, OCR) for persistent processing differences. Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, Gabrieli neuroimaging evidence, DSM-5-TR Specific Learning Disorder with impairment in reading (ICD-10-CM F81.0), 2025 IDA definition, and ICD-11 Developmental Learning Disorder (6A03.0).",
   "author": "Justice",
   "license": "CC0-1.0",
