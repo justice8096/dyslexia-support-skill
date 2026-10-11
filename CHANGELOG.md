@@ -15,6 +15,11 @@ All four drivers affect admissibility / persuasive weight of downstream artifact
 
 ## [Unreleased]
 
+## [1.4.2] - 2026-10-11
+
+### Changed `[voice]`
+- CHANGELOG no longer names the icon file by path; the Directory validator treats any text that refers to an image file as an unread asset reference.
+
 ## [1.4.1] - 2026-10-11
 
 Directory policy fixes and CI dependency refresh.
@@ -25,7 +30,7 @@ Directory policy fixes and CI dependency refresh.
 - `npm audit fix`: js-yaml 4.3.2, brace-expansion 2.1.7, tsx 4.21.0; SBOM regenerated. Clears the high advisories that were failing the CI security-audit step (supersedes dependabot #6, #9, #10).
 
 ### Added `[structural]`
-- `.claude-plugin/icon.png` (1024x1024) for the Directory listing.
+- Plugin icon (1024x1024 PNG) for the Directory listing.
 
 ## [1.4.0] - 2026-10-11
 
