@@ -15,6 +15,18 @@ All four drivers affect admissibility / persuasive weight of downstream artifact
 
 ## [Unreleased]
 
+## [1.4.1] - 2026-10-11
+
+Directory policy fixes and CI dependency refresh.
+
+### Fixed `[defect]`
+- Removed the unused bare `Bash` entry from `allowed-tools` in `dyslexia-audit` and `content-accessibility-check`; neither command runs shell commands.
+- Replaced local `D:\` documentation paths in `generate-iep` and `remediation-plan` with a name-only reference to the linguistics-mcp integration guide.
+- `npm audit fix`: js-yaml 4.3.2, brace-expansion 2.1.7, tsx 4.21.0; SBOM regenerated. Clears the high advisories that were failing the CI security-audit step (supersedes dependabot #6, #9, #10).
+
+### Added `[structural]`
+- `.claude-plugin/icon.png` (1024x1024) for the Directory listing.
+
 ## [1.4.0] - 2026-10-11
 
 Research refresh. Every "Sources current as of" pin moves from 2026-05 to 2026-10. Full findings with sources: `docs/research/research-update-2026-10-11.md`. Downstream consumers of 1.3.x audits should re-run FR exam-accommodation and font-related findings; see the addendum triggers below.
