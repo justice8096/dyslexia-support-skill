@@ -13,7 +13,7 @@ The command will prompt for necessary student information.
 
 1. **Gathers student information:**
    - Name, grade, school
-   - Assessment results (CTOPP-2, WRMT, cognitive, language, achievement)
+   - Assessment results (CTOPP-2, WRMT, cognitive, language, achievement), with word-reading accuracy and rate reported separately per the 2025 IDA definition
    - Current reading level and areas of deficit
    - Strengths and interests
    - Current services (if any)
@@ -28,8 +28,12 @@ The command will prompt for necessary student information.
 
 3. **Validates the IEP** against:
    - IDEA §300.320 requirements
+   - 2025 IDA definition (no IQ-discrepancy language; persistence despite effective instruction documented)
    - IDA standards for goal alignment
    - Structured literacy element coverage
+   - Clinical coding as DSM-5-TR / ICD-10-CM F81.0 (not 315.00)
+   - Typography accommodations stated as legibility features, not a mandated specialty font
+   - French (PAP in the LPI; session-2026 exam forms) and Spanish (PAU under RD 534/2024) equivalents when a locale is given
 
 4. **Outputs** the IEP as a professional document (DOCX or PDF)
 

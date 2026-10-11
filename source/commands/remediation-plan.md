@@ -19,6 +19,7 @@ The command will prompt for student profile information.
    - Available resources and constraints (time, staffing, programs)
 
 2. **Analyzes the profile** against structured literacy elements to identify:
+   - Reading profile by accuracy and rate measured separately (accuracy-disabled, rate-disabled, doubly disabled; Shechter, Share et al. 2026)
    - Primary deficit areas
    - Secondary deficit areas
    - Strengths to leverage
@@ -40,7 +41,7 @@ The command will prompt for student profile information.
    - Wilson Reading System for word-level deficits (grades 2-12)
    - Barton for flexible delivery / paraprofessional use
    - Lindamood-Bell (LiPS) for phonological processing weaknesses
-   - RAVE-O as a fluency supplement for accurate-but-slow readers
+   - RAVE-O as a rate/automaticity supplement for accurate-but-slow (rate-disabled) readers
    - Sonday for digital or traditional settings
 
 ## Linguistic analysis support (optional)

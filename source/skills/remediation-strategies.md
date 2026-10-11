@@ -1,13 +1,15 @@
 # Dyslexia Remediation Strategies Skill
 
 ## Purpose
-Provide evidence-based strategies addressing both tracks of dyslexia support: **remediation** (trainable skills) and **cognitive prosthetics** (permanent bypass tools for persistent processing differences). Grounded in structured literacy principles, Orton-Gillingham methodology, the IDA Knowledge and Practice Standards, and the clinical framing of dyslexia as a neurodevelopmental cognitive disorder.
+Provide evidence-based strategies addressing both tracks of dyslexia support: **remediation** (trainable skills) and **cognitive prosthetics** (permanent bypass tools for persistent processing differences). Grounded in structured literacy principles, Orton-Gillingham methodology, the IDA Knowledge and Practice Standards, the 2025 IDA definition of dyslexia (difficulties in word reading and/or spelling, in accuracy, speed, or both, that persist despite instruction effective for peers), and the clinical framing of dyslexia as a neurodevelopmental cognitive disorder.
 
 > **Two-Track Framing**: This skill explicitly separates two target types that require different interventions:
-> - **Remediation targets** are trainable skills (phonological awareness, decoding accuracy, fluency, spelling patterns). These improve with structured literacy instruction over time.
+> - **Remediation targets** are trainable skills (phonological awareness, morphological awareness, decoding accuracy, reading speed within limits, spelling patterns). These improve with structured literacy instruction over time.
 > - **Bypass targets** are persistent cognitive processing differences (phonological processing speed, orthographic mapping efficiency, rapid automatized naming). These require permanent cognitive prosthetics — text-to-speech, speech-to-text, audiobooks, OCR, spell-checkers. These tools are not temporary scaffolds; they compensate for lifelong brain-based differences, analogous to eyeglasses for refractive errors.
 >
-> Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, and Gabrieli neuroimaging evidence showing persistent functional differences in left temporoparietal cortex, visual word form area, and inferior frontal gyrus.
+> Grounded in Shaywitz phonological deficit theory, Dehaene VWFA research, and Gabrieli neuroimaging evidence showing persistent functional differences in left temporoparietal cortex, visual word form area, and inferior frontal gyrus. The 2025 IDA definition names phonological and morphological processing difficulties as common but not universal, so a plan must not assume every learner has a phonological deficit.
+>
+> **Accuracy and rate are separate dimensions.** Shechter, Share et al. (Reading and Writing, March 2026) operationalise the 2025 definition with an untimed fixed word list read to completion, yielding separate accuracy and rate scores. Three profiles emerge: accuracy-disabled (phonological and morphological awareness deficits, intact RAN), rate-disabled (RAN deficit, intact PA/MA), and doubly disabled. Cut-offs used: below the 25th percentile on the affected dimension and above the 35th on the other. The profiles call for different plans: accuracy-disabled learners need the phonology and morphology track; rate-disabled learners need automaticity and speed work (repeated reading, RAVE-O-type programs) plus earlier reliance on prosthetics. Measure both at baseline rather than a single words-correct-per-minute score, which conflates them and does not transfer across orthographies.
 
 ## When to Use
 Trigger this skill when the user mentions:
@@ -43,7 +45,7 @@ Cognitive prosthetics are assistive tools that bypass persistent processing diff
 | **Text-to-speech (TTS)** | Processing long documents, dense technical text, complex vocabulary | Read&Write, Natural Reader, Voice Dream, JAWS, NVDA, Balabolka | Education, workplace, daily life |
 | **Audiobook services** | Literature, textbooks, leisure reading | Learning Ally (educational, human-narrated), Bookshare (accessible copies, free with qualifying disability), Audible (commercial) | Education, leisure |
 | **OCR tools** | Converting scanned documents, images of text | Kurzweil 3000, Read&Write, Adobe Acrobat Pro, Microsoft Lens | Education, workplace |
-| **Dyslexia-friendly fonts** | Reducing visual processing load | Lexend, Atkinson Hyperlegible, OpenDyslexic | All contexts |
+| **Legible typography** | Reducing visual crowding | Sans-serif body text, 12-14pt+, 1.5 line spacing, 0.05-0.1 em letter spacing, 45-65 character lines, left-aligned, user-selectable font (Atkinson Hyperlegible Next and Lexend are reasonable defaults). Specialty dyslexia fonts (OpenDyslexic, Dyslexie) show no pooled benefit on speed or accuracy: Azzarello et al., Annals of Dyslexia 2026, 15 studies, N=688, g = -0.04, 95% CI [-0.15, 0.07]. Offer them on request, never prescribe them | All contexts |
 | **Reading rulers / overlays** | Tracking text, reducing crowding | Hardware rulers, browser extensions (BeeLine, Spread The Word) | All contexts |
 | **Color overlays** | For Irlen Syndrome comorbidity | Physical overlays, software tinting | All contexts |
 
@@ -177,7 +179,7 @@ When generating a remediation plan, include:
 
 ## French Remediation Context (Locale: fr)
 
-> *Sources current as of 2026-05. Authority-version pins: ODÉDYS-2 (Cogni-Sciences, Université Grenoble Alpes), BALE / EVALEC / EVALEO (Orthomotus), Alouette test (Lefavrais — adapted edition), orthophonie nomenclature per décret n° 2002-721 / Code de la santé publique Art. R4341-1. Sécurité Sociale prescription pathway for remediation; CRTLA (Centre de Référence pour les Troubles du Langage et des Apprentissages) for severe cases.*
+> *Sources current as of 2026-10. Authority-version pins: ODÉDYS-2 (Cogni-Sciences, Université Grenoble Alpes), BALE / EVALEC / EVALEO (Orthomotus), Alouette test (Lefavrais — adapted edition), orthophonie nomenclature per décret n° 2002-721 / Code de la santé publique Art. R4341-1. Sécurité Sociale prescription pathway for remediation; CRTLA (Centre de Référence pour les Troubles du Langage et des Apprentissages) for severe cases.*
 
 ### FR Orthographic Profile: Semi-Opaque Orthography
 
@@ -233,7 +235,7 @@ The two-track framing (remediation + cognitive prosthetics) applies equally in F
 | Spell-check (correcteur) | Antidote (gold standard for French), Cordial, Le Robert Correcteur |
 | OCR (reconnaissance de texte) | FineReader français, Microsoft Lens (FR) |
 | Audiobooks (livres audio) | Audible.fr, Lizzie, Bibliothèques sonores de France |
-| Dyslexia-friendly fonts | OpenDyslexic, Lexend, Atkinson Hyperlegible (all support French diacritics) |
+| Legible typography | Sans-serif at 14pt+ with 1.5 line spacing (Arial is the conventional PAP choice); Atkinson Hyperlegible Next (2025, expanded character set) and Lexend render French diacritics and the œ ligature; OpenDyslexic on request only, no evidence of benefit (Azzarello et al. 2026) |
 
 **Workplace AT layer**: For adult French workers with dyslexia, AGEFIPH (private sector) and FIPHFP (public sector) can fund the above tools as workplace accommodations under RQTH status.
 
@@ -251,7 +253,7 @@ When generating a remediation plan for a French student, add these French-specif
 
 ## Spanish Remediation Context (Locale: es)
 
-> *Sources current as of 2026-05. Authority-version pins: PROLEC-R (Cuetos et al. — TEA Ediciones), DST-J / EDIL-1 / TALE / BIL (TEA Ediciones), PRODISLEX (school-network screening protocol), Método Glifing (private digital intervention). Public coverage via convenios with Sistema Nacional de Salud; logopedia via Colegio Profesional de Logopedas (regional colegios). Transparent Spanish orthography means fluency-focused remediation (speed deficits dominate accuracy deficits).*
+> *Sources current as of 2026-10. Authority-version pins: PROLEC-R (Cuetos et al. — TEA Ediciones), DST-J / EDIL-1 / TALE / BIL (TEA Ediciones), PRODISLEX (school-network screening protocol), Método Glifing (private digital intervention). Public coverage via convenios with Sistema Nacional de Salud; logopedia via Colegio Profesional de Logopedas (regional colegios). Transparent Spanish orthography means rate-focused remediation (speed deficits dominate accuracy deficits); the 2025 IDA definition's "accuracy, speed, or both, depending on the orthography" is now the citation for this stance. E-book and reading-app accessibility is a legal obligation on sellers in Spain under Ley 11/2023 (European Accessibility Act) since 28 June 2025.*
 
 ### ES Orthographic Profile: Transparent Orthography
 
@@ -302,7 +304,7 @@ Spanish dyslexia intervention has a smaller evidence base than English, but vali
 | Spell-check (corrector) | StilusNet (gold standard for Spanish), Microsoft Editor español, RAE-aligned tools |
 | OCR | FineReader español, Adobe Acrobat con OCR español |
 | Audiobooks (audiolibros) | Audible.es, Storytel, RNIB Reading Services Spanish |
-| Dyslexia-friendly fonts | OpenDyslexic, Lexend, Atkinson Hyperlegible (support Spanish diacritics including ñ and tilde) |
+| Legible typography | Sans-serif at 14-16pt with 1.5 line spacing (the regional ACNS and PAU standard); Atkinson Hyperlegible Next and Lexend render ñ, tilde accents and ¿¡; OpenDyslexic on request only where the regional instruction lists it, no evidence of benefit (Azzarello et al. 2026) |
 
 **Workplace AT layer**: For adult Spanish workers with dyslexia and certificado de discapacidad ≥33%, the above tools may be reimbursed through workplace accommodation funding under RDL 1/2013.
 
@@ -349,13 +351,15 @@ When generating a remediation plan for a Spanish student, add these Spanish-spec
   - Every remediation plan should explicitly identify which skills are remediation targets (expected to improve) and which are bypass targets (expected to require permanent accommodation). Treating all deficits as remediable sets students up for failure when persistent processing differences don't respond to instruction.
 - Never recommend Fundations as a dyslexia intervention — it is Wilson's classroom prevention program, not their remediation tool.
 - Adapt intensity recommendations to the severity of the deficit: mild = 3x/week, moderate = 4-5x/week, severe = daily or intensive block.
+- Report word-reading accuracy and rate as separate baseline measures and select the track mix from the resulting profile (accuracy-disabled, rate-disabled, doubly disabled).
+- Never prescribe a specialty dyslexia font as an intervention or accommodation; specify legibility features and let the reader choose the typeface. Cite Azzarello et al. (2026) if asked why.
 - Always include progress monitoring — intervention without data is not evidence-based practice.
 - **Normalization**: Explicitly discuss that dyslexia is a neurodevelopmental cognitive disorder — a brain-based difference in how written language is processed (left temporoparietal cortex, VWFA), not a reflection of intelligence, effort, or character.
 - Consider comorbid conditions (dyscalculia, dysgraphia, ADHD) when designing plans.
 
 **Locale-specific guidelines:**
-- **locale=fr (French students)**: The primary intervention provider is the orthophoniste. Recommend orthophoniste referral as first-line support. Note the 1-2x/week intensity gap — advocate for increased frequency or supplemental school-based support for moderate/severe cases. Prioritize morphological spelling instruction alongside phonological work, as French's semi-opaque spelling requires it. Recommend French-language AT (Antidote, Vocale Presse, Dragon FR) rather than English tools. For adults, integrate RQTH/AGEFIPH funding pathways for cognitive prosthetics.
-- **locale=es (Spanish students)**: Do NOT default to accuracy-focused decoding intervention. Assess and document reading fluency (palabras por minuto) as the primary outcome variable. Use syllable-based phonological instruction. Include repeated reading as a core component. Be transparent that the evidence base for Spanish dyslexia intervention is smaller than for English. Recommend Spanish-language AT (StilusNet, Vozme, Dragon ES). For adults, integrate certificado de discapacidad ≥33% pathway and RDL 1/2013 protections.
+- **locale=fr (French students)**: The primary intervention provider is the orthophoniste. Recommend orthophoniste referral as first-line support. Note the 1-2x/week intensity gap — advocate for increased frequency or supplemental school-based support for moderate/severe cases. Prioritize morphological spelling instruction alongside phonological work, as French's semi-opaque spelling requires it. Recommend French-language AT (Antidote, Vocale Presse, Dragon FR) rather than English tools. For adults, integrate RQTH/AGEFIPH funding pathways for cognitive prosthetics, refer to France Travail (not Pôle emploi) and Cap emploi, and note that e-books and reading apps sold in France must be accessible under the European Accessibility Act (ordonnance 2023-859) since 28 June 2025. Where a PAS (pôle d'appui à la scolarité) is deployed, name it as the first-level contact for school-based adjustments.
+- **locale=es (Spanish students)**: Do NOT default to accuracy-focused decoding intervention. Assess and document reading fluency (palabras por minuto) as the primary outcome variable. Use syllable-based phonological instruction. Include repeated reading as a core component. Be transparent that the evidence base for Spanish dyslexia intervention is smaller than for English. Recommend Spanish-language AT (StilusNet, Vozme, Dragon ES). For adults, integrate certificado de discapacidad ≥33% pathway, RDL 1/2013 protections, and Orden PJC/804/2025 for adaptations in public-employment exams. Call the entrance exam PAU (RD 534/2024), with EBAU/EvAU as legacy names only.
 - **Multilingual students in bilingual regions** (Cataluña, País Vasco, Galicia, Valencia; French overseas territories with regional languages): Note that dyslexia manifests across all the student's languages. Intervention and assessment should address the language(s) of instruction, not only the dominant/home language.
 
 ## Output Formats

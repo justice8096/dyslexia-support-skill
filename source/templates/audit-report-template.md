@@ -21,7 +21,7 @@ This block is the linchpin of the addendum-filing workflow under the [Skill Vers
 | **Project** | {{PROJECT_NAME}} |
 | **Audit Date** | {{YYYY-MM-DD}} |
 | **Auditor** | Claude (automated analysis) |
-| **Standards** | IDA KPS 2018, IDEA, Section 504, Structured Literacy (US) / Loi 2005-102, PAP, PPS, Circulaire 2023-033 (FR) / LOE/LOMLOE, ACNEAE/DEA, ACNS (ES) |
+| **Standards** | IDA 2025 definition, IDA KPS 2018, IDEA, Section 504, Structured Literacy (US) / Loi 2005-102, PAP, PPS, PAS, circulaire du 14 mars 2022 as amended 17 juillet 2025 (FR) / LOE/LOMLOE, ACNEAE/DEA, ACNS, RD 534/2024 (ES) |
 | **Scope** | {{SCOPE_DESCRIPTION}} |
 | **Type** | {{Initial audit / Re-audit of prior findings}} |
 

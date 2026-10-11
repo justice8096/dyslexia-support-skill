@@ -12,7 +12,7 @@ A clinical and accommodation framework treating dyslexia as a **neurodevelopment
 Dyslexia is a **persistent neurodevelopmental cognitive disorder**, not a learning difficulty that resolves with sufficient instruction. The neuroscience is unambiguous:
 
 - **Neural architecture** — Left temporoparietal cortex, visual word form area (VWFA), and inferior frontal gyrus show structural and functional differences (Shaywitz; Dehaene; Gabrieli et al.)
-- **Clinical classification** — DSM-5 Specific Learning Disorder with impairment in reading (315.00); ICD-11 Developmental Learning Disorder with impairment in reading (6A03.0)
+- **Clinical classification** — 2025 IDA definition of dyslexia; DSM-5-TR Specific Learning Disorder with impairment in reading (ICD-10-CM F81.0; legacy ICD-9-CM 315.00); ICD-11 Developmental Learning Disorder with impairment in reading (6A03.0)
 - **Lifespan persistence** — Phonological processing differences remain detectable into adulthood even after successful remediation
 
 This distinction matters in practice. Accommodations must compensate for a **persistent cognitive processing difference**, not merely scaffold a temporary learning gap. This skill takes the two-track approach:
@@ -26,7 +26,7 @@ This distinction matters in practice. Accommodations must compensate for a **per
 
 A Cowork plugin **and** standalone skill set that provides:
 
-- **Remediation & Cognitive Prosthetics** — Evidence-based intervention plans grounded in structured literacy, Orton-Gillingham methodology, and IDA standards. Explicitly distinguishes remediation targets (trainable skills) from bypass targets (persistent deficits requiring permanent cognitive prosthetics: text-to-speech, speech-to-text, audiobooks via Learning Ally/Bookshare, OCR, spell-checkers, dyslexia-friendly fonts).
+- **Remediation & Cognitive Prosthetics** — Evidence-based intervention plans grounded in structured literacy, Orton-Gillingham methodology, and IDA standards. Explicitly distinguishes remediation targets (trainable skills) from bypass targets (persistent deficits requiring permanent cognitive prosthetics: text-to-speech, speech-to-text, audiobooks via Learning Ally/Bookshare, OCR, spell-checkers, legible typography with user-chosen typeface).
 - **Standards & Regulatory Compliance** — Audit programs, IEPs, 504 plans, workplace policies, and tools against the applicable legal framework: IDA Knowledge and Practice Standards, IDEA (K-12), Section 504 (K-12 and higher ed), ADA Title I (workplace), ADA Title II (public colleges), ADA Title III (private colleges and public accommodations). Clinical frameworks: DSM-5, ICD-11.
 - **Document Generation** — K-12 IEPs/504s, higher-ed disability services requests, workplace ADA Title I accommodation letters, clinical evaluation summaries, cognitive prosthetics prescriptions, and self-advocacy documentation across the lifespan.
 - **Gap Analysis & Measure Creation** — Identify what's missing in dyslexia support tooling across education, clinical practice, workplace, and consumer technology. Evaluates gaps against legal frameworks, cognitive neuroscience evidence, and adult/workplace outcomes.
@@ -81,7 +81,8 @@ Point your skill configuration to any of:
 Grounded in:
 
 **Clinical Frameworks**
-- **DSM-5** — Specific Learning Disorder (315.00) with impairment in reading
+- **DSM-5-TR** — Specific Learning Disorder with impairment in reading (ICD-10-CM F81.0)
+- **IDA 2025 definition** — accuracy and/or speed deficits in word reading and spelling, persisting despite effective instruction
 - **ICD-11** — Developmental Learning Disorder (6A03.0) with impairment in reading
 
 **Neuroscience**

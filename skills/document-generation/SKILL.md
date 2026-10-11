@@ -1,6 +1,6 @@
 ---
 name: document-generation
-description: Professional document templates for the full lifespan of dyslexia accommodation needs across three jurisdictions. **K-12 educational (US)**: IEPs, Section 504 Accommodation Plans, Progress Monitoring Reports, Prior Written Notice (PWN), RTI/Intervention Documentation. **K-12 educational (France)**: PAP standardized template per Circulaire 2015-016 (four cycle versions: maternelle/élémentaire/collège/lycée), MDPH dossier support package for PPS request (Cerfa 15692*01 + 15695*01 + bilans), demande d'aménagements d'examens (Brevet/Baccalauréat per Circulaire 2023-033). **K-12 educational (Spain)**: Informe Psicopedagógico template, ACNS (Adaptaciones Curriculares No Significativas) documentation, EBAU/EvAU exam accommodation request. **Higher education**: Section 504/ADA disability services request letters, accommodation letters to faculty, testing accommodation requests; FR university aménagements via service handicap; ES universidad ACNEAE adaptation requests. **Workplace**: ADA Title I reasonable accommodation request letters (US), RQTH application support (FR - Reconnaissance de la Qualité de Travailleur Handicapé via MDPH), Spain workplace accommodation requests (Ley General de Discapacidad 1/2013), interactive process documentation. **Clinical**: Psychoeducational evaluation summaries (US: CTOPP-2, WRMT-III, GORT-5, KTEA-3, WISC-V, Nelson-Denny; FR: bilan orthophonique, BMT-i, WISC-V French norms; ES: PROLEC-R, BELEC adaptations, WISC-V Spanish norms), DSM-5/ICD-11 diagnostic summary letters, cognitive prosthetics prescription letters. **General**: Dyslexia screening checklists (early childhood, school-age, adult - locale-appropriate), parent/self-advocacy communication letters in EN/FR/ES.
+description: Professional document templates for the full lifespan of dyslexia accommodation needs across three jurisdictions. **K-12 educational (US)**: IEPs, Section 504 Accommodation Plans, Progress Monitoring Reports, Prior Written Notice (PWN), RTI/Intervention Documentation. **K-12 educational (France)**: PAP standardized template per Circulaire 2015-016 (four cycle versions: maternelle/élémentaire/collège/lycée), MDPH dossier support package for PPS request (Cerfa 15692*01 + 15695*01 + bilans), demande d'aménagements d'examens (Brevet/Baccalauréat on the session-2026 forms of the circulaire du 17 juillet 2025; higher-education examens per the circulaire du 6 février 2023), PAP entry in the Livret de parcours inclusif. **K-12 educational (Spain)**: Informe Psicopedagógico template, ACNS (Adaptaciones Curriculares No Significativas) documentation, PAU exam accommodation request under Real Decreto 534/2024 (formerly EBAU/EvAU). **Higher education**: Section 504/ADA disability services request letters, accommodation letters to faculty, testing accommodation requests; FR university aménagements via service handicap; ES universidad ACNEAE adaptation requests. **Workplace**: ADA Title I reasonable accommodation request letters (US), RQTH application support (FR - Reconnaissance de la Qualité de Travailleur Handicapé via MDPH), Spain workplace accommodation requests (Ley General de Discapacidad 1/2013; Orden PJC/804/2025 for public-employment exams), RQTH forms updated for France Travail, interactive process documentation. **Clinical**: Psychoeducational evaluation summaries (US: CTOPP-2, WRMT-III, GORT-5, KTEA-3, WISC-V, Nelson-Denny; FR: bilan orthophonique, BMT-i, WISC-V French norms; ES: PROLEC-R, BELEC adaptations, WISC-V Spanish norms), DSM-5-TR (ICD-10-CM F81.0) / ICD-11 diagnostic summary letters with a 2025 IDA definition criteria line, cognitive prosthetics prescription letters. **General**: Dyslexia screening checklists (early childhood, school-age, adult - locale-appropriate), parent/self-advocacy communication letters in EN/FR/ES.
 ---
 # Dyslexia Document Generation Skill
 
@@ -22,11 +22,11 @@ Trigger this skill when the user mentions:
 - "parent letter", "parent communication"
 - "PAP template", "Plan d'Accompagnement Personnalisé", "remplir PAP", "modèle PAP"
 - "PPS template", "Projet Personnalisé de Scolarisation", "dossier MDPH", "demande PPS"
-- "aménagements d'examens", "demande tiers-temps", "Circulaire 2023-033"
+- "aménagements d'examens", "demande tiers-temps", "circulaire du 17 juillet 2025", "Incluscol", "procédure simplifiée"
 - "RQTH application", "dossier RQTH", "demande de reconnaissance travailleur handicapé"
 - "ACNS template", "Adaptaciones Curriculares No Significativas", "PTI template", "Plan de Trabajo Individualizado"
 - "informe psicopedagógico", "ACNEAE classification", "DEA documentation"
-- "EBAU adaptation request", "EvAU adaptación"
+- "PAU adaptation request", "EBAU adaptation request", "EvAU adaptación", "adaptaciones PAU", "oposiciones adaptación"
 - "locale=fr", "locale=es", "generate document in French", "generate document in Spanish"
 
 ## Document Templates
@@ -340,10 +340,11 @@ Profile Analysis:
 └── Spelling: [persistent weakness typical]
 
 Diagnostic Determination:
-├── DSM-5: [315.00 Specific Learning Disorder With Impairment in Reading]
+├── DSM-5-TR: [F81.0 (ICD-10-CM) Specific Learning Disorder With Impairment in Reading; legacy ICD-9-CM 315.00]
 │   ├── Specifiers: [word reading accuracy / reading rate/fluency / reading comprehension]
 │   └── Severity: [mild / moderate / severe]
 ├── ICD-11: [6A03.0 Developmental Learning Disorder With Impairment in Reading]
+├── Meets 2025 IDA definition: [persistence despite instruction effective for peers: Yes/No; accuracy deficit: Yes/No; speed deficit: Yes/No]
 └── Pattern consistent with neurodevelopmental cognitive disorder: [Yes]
 
 Functional Impact Statement:
@@ -390,7 +391,7 @@ Documentation Attached:
 └── [Functional impact statement]
 
 Diagnosis:
-├── DSM-5: 315.00 Specific Learning Disorder With Impairment in Reading
+├── DSM-5-TR: F81.0 (ICD-10-CM) Specific Learning Disorder With Impairment in Reading
 ├── ICD-11: 6A03.0 Developmental Learning Disorder
 └── Diagnosed by: [Evaluator credentials]
 
@@ -439,8 +440,9 @@ Dear [Name]:
 
 I am writing to formally request reasonable accommodations under the Americans
 with Disabilities Act (ADA) Title I. I have a documented disability (dyslexia,
-a neurodevelopmental cognitive disorder classified as DSM-5 Specific Learning
-Disorder 315.00 and ICD-11 Developmental Learning Disorder 6A03.0) that
+a neurodevelopmental cognitive disorder classified as DSM-5-TR Specific Learning
+Disorder with impairment in reading, ICD-10-CM F81.0, and ICD-11 Developmental
+Learning Disorder 6A03.0) that
 affects my ability to process written text at typical reading rates.
 
 Functional Impact on Work:
@@ -583,7 +585,7 @@ Patient/Client: [Name]    DOB: [Date]    Date: [Date]
 Re: Recommended Cognitive Prosthetics for Dyslexia
 
 Diagnosis:
-├── DSM-5: 315.00 Specific Learning Disorder With Impairment in Reading
+├── DSM-5-TR: F81.0 (ICD-10-CM) Specific Learning Disorder With Impairment in Reading
 ├── ICD-11: 6A03.0 Developmental Learning Disorder
 └── Severity: [mild / moderate / severe]
 
@@ -611,7 +613,8 @@ Recommended Cognitive Prosthetics Stack:
 │   ├── [Kurzweil 3000 / Read&Write / Adobe Acrobat Pro]
 │   └── Use case: converting scanned documents and images to accessible text
 └── Visual Supports
-    ├── Dyslexia-friendly fonts: Lexend, Atkinson Hyperlegible, OpenDyslexic
+    ├── Legible typography: sans-serif, 12-14pt+, 1.5 line spacing, left-aligned, user-chosen typeface
+    │   (specialty dyslexia fonts show no pooled benefit, Azzarello et al. 2026; offer on request only)
     ├── Reading rulers / focus overlays
     └── Color overlays for users with Irlen Syndrome comorbidity
 
@@ -660,7 +663,7 @@ License #: _____________________    State: _______
 
 ## French Document Templates (Locale: fr)
 
-> *Sources current as of 2026-05. Template structures derived from Circulaire n° 2015-016 (PAP, four cycle versions: maternelle / élémentaire / collège / lycée), Circulaire n° 2023-033 (aménagements d'examens), MDPH/CDAPH PPS procédure standard (Code de l'action sociale et des familles), RQTH dossier per Code du travail Art. L5213-2. AESH role per Circulaire n° 2017-084.*
+> *Sources current as of 2026-10. Template structures derived from Circulaire n° 2015-016 (PAP, four cycle versions: maternelle / élémentaire / collège / lycée; since 2025-26 entered in the Livret de parcours inclusif), the circulaire du 14 mars 2022 (NOR MENE2204112C) with annexes replaced by the circulaire du 17 juillet 2025 (NOR MENE2506522C, BO n° 31 du 21 août 2025, session 2026 onward) for aménagements d'examens de l'enseignement scolaire, the circulaire du 6 février 2023 (NOR ESRS2234137C) for higher-education examens et concours, the circulaire du 1er septembre 2025 (NOR MENE2520651C) for the pôles d'appui à la scolarité, MDPH/CDAPH PPS procédure standard (Code de l'action sociale et des familles), RQTH dossier per Code du travail Art. L5213-2, France Travail (ex-Pôle emploi since 1er janvier 2024). AESH role per Circulaire n° 2017-084. The "Circulaire n° 2023-033" cited in releases before 1.4.0 matches no BO entry and has been replaced.*
 
 ### 12. PAP — Plan d'Accompagnement Personnalisé (K-12)
 
@@ -669,6 +672,7 @@ The PAP follows a standardized template defined by Circulaire n° 2015-016. Ther
 ```
 PLAN D'ACCOMPAGNEMENT PERSONNALISÉ (PAP)
 Circulaire n° 2015-016 du 22 janvier 2015
+Saisie dans le Livret de parcours inclusif (LPI) par le directeur / chef d'établissement
 
 Cycle: ☐ Maternelle  ☐ Élémentaire  ☐ Collège  ☐ Lycée
 École / Établissement: [Nom]
@@ -704,7 +708,7 @@ Langage oral:
 
 Langage écrit (lecture / écriture):
 ├── Temps supplémentaire pour les activités de lecture et d'écriture
-├── Documents adaptés: police ≥ 14pt (Arial ou OpenDyslexic), interligne 1,5 à 2
+├── Documents adaptés: police sans empattement ≥ 14pt (Arial par défaut; autre police au choix de l'élève), interligne 1,5 à 2
 ├── Texte aligné à gauche, pas de justification complète
 ├── Non-pénalisation des erreurs d'orthographe dans les matières non linguistiques
 ├── Autorisation d'un ordinateur avec logiciel de synthèse vocale
@@ -730,7 +734,7 @@ Prothèses cognitives (cognitive prosthetics — supports permanents):
 ├── Reconnaissance vocale (STT): Dragon NaturallySpeaking français
 ├── Correcteur orthographique avancé: Antidote, Cordial
 ├── Lecteur d'écran ou loupe de lecture pour textes denses
-└── Polices spécifiques: OpenDyslexic, Lexend, Atkinson Hyperlegible
+└── Police au choix de l'élève (Atkinson Hyperlegible Next, Lexend, Arial); les polices "dyslexie" n'ont pas d'effet démontré (Azzarello et al. 2026)
 
 ─── RÉVISION ANNUELLE ───────────────────────────────────────
 Date de la prochaine révision: [JJ/MM/AAAA]
@@ -802,9 +806,20 @@ Médecin de l'Éducation nationale: [Nom, contact]
 
 ```
 DEMANDE D'AMÉNAGEMENTS D'EXAMENS POUR ÉLÈVE AVEC TROUBLES DYS
-Circulaire n° 2023-033 du 23 février 2023
+Circulaire du 14 mars 2022 (NOR MENE2204112C), annexes remplacées par la
+circulaire du 17 juillet 2025 (NOR MENE2506522C, BO n° 31 du 21 août 2025),
+applicable à compter de la session 2026. Formulaire à saisir dans Incluscol
+lorsque l'académie l'a déployé.
 
-Examen concerné: ☐ Brevet  ☐ Baccalauréat  ☐ BTS  ☐ Autre: ___
+Procédure: ☐ Simplifiée (aménagements identiques au PAP/PPS/PAI en cours;
+           transmission par le chef d'établissement, sans nouvel avis médical)
+           ☐ Complète (aménagements au-delà du plan en cours; avis du médecin
+           désigné par la CDAPH requis)
+
+Examen concerné: ☐ DNB / CFG  ☐ Baccalauréat général et technologique
+                 ☐ Baccalauréat professionnel / BMA  ☐ BP / DTMS  ☐ BTS
+                 ☐ CAP  ☐ Certificat de spécialisation  ☐ DCG / DSCG
+                 ☐ Autre: ___
 Session: [Année]
 Établissement: [Nom]
 Académie: [Nom]
@@ -827,6 +842,8 @@ INE: [Numéro si connu]
 ☐ Calculatrice pour toutes les épreuves (y compris épreuves sans calculatrice)
 ☐ Sujets adaptés: ☐ Police agrandie  ☐ Interligne augmenté  ☐ Fond de couleur
 ☐ Épreuve orale de remplacement: [Préciser la matière]
+☐ Communication écrite pour les épreuves orales (entraîne la neutralisation de la
+   lecture à voix haute à l'oral de français, session 2026)
 ☐ Dispense d'épreuve: [Préciser — justification détaillée requise]
 ☐ Autre: [Préciser]
 
@@ -852,8 +869,11 @@ Signature: _________________ Date: ___________
 Décision du recteur: ☐ Accordé  ☐ Partiellement accordé  ☐ Refusé
 Aménagements accordés: [Détail]
 Date de la décision: [JJ/MM/AAAA]
-Recours possible: Défenseur des Droits (www.defenseurdesdroits.fr)
+Recours possible: recours gracieux auprès du recteur, puis tribunal administratif;
+saisine du Défenseur des Droits en parallèle (www.defenseurdesdroits.fr)
 ```
+
+**Higher-education examens et concours** (université, BTS en lycée excepté, concours): use the circulaire du 6 février 2023 (NOR ESRS2234137C) instead; the médecin désigné par la CDAPH may rely on the prior PAP or PPS.
 
 **Critical compliance note**: Exam accommodations must match what the student actually uses in class. If tiers-temps is not documented in the PAP/PPS as a regular classroom accommodation, the recteur may refuse it for the exam. Document classroom accommodation use early and consistently.
 
@@ -872,7 +892,7 @@ Téléphone: [N°]    Email: [Adresse]
 
 ─── SITUATION PROFESSIONNELLE ────────────────────────────────
 ☐ Salarié(e) en CDI / CDD chez: [Employeur]
-☐ Demandeur(euse) d'emploi inscrit(e) à Pôle Emploi
+☐ Demandeur(euse) d'emploi inscrit(e) à France Travail (ex-Pôle emploi)
 ☐ Travailleur(euse) indépendant(e) / profession libérale
 ☐ En reconversion / formation
 ☐ Étudiant(e) en CFA ou alternance
@@ -926,7 +946,7 @@ Médecin certificateur: _______________ Date: ___________
 
 ## Spanish Document Templates (Locale: es)
 
-> *Sources current as of 2026-05. Template structures aligned with LOMLOE (Ley Orgánica 3/2020) ACNEAE/DEA framework, ACNS procedures per regional implementing decrees (Andalucía Instrucciones 12/12/2014, Cataluña Decret 150/2017, Madrid Orden 19/01/2021, País Vasco Decreto 236/2015), Informe Psicopedagógico standard per CCAA guidance. Workplace certification per Real Decreto Legislativo 1/2013 (≥33% certificado de discapacidad threshold).*
+> *Sources current as of 2026-10. Template structures aligned with LOMLOE (Ley Orgánica 3/2020) ACNEAE/DEA framework, ACNS procedures per regional implementing decrees (Andalucía Instrucciones 12/12/2014, Cataluña Decret 150/2017, Madrid Orden 19/01/2021, País Vasco Decreto 236/2015), Informe Psicopedagógico standard per CCAA guidance, Real Decreto 534/2024 (PAU national floor, art. 3.2 / 13.10 / 21.1) with the annual regional acuerdos (Madrid 17 Nov 2025 for PAU 2026). Workplace certification per Real Decreto Legislativo 1/2013 (≥33% certificado de discapacidad threshold); public-employment exam adaptations per Orden PJC/804/2025.*
 
 ### 16. ACNS — Adaptaciones Curriculares No Significativas (K-12)
 
@@ -978,7 +998,7 @@ Organización del aula:
 
 Presentación de materiales:
 ☐ Texto en Arial o fuente similar ≥ 14pt; interlineado ≥ 1,5
-☐ Fuente OpenDyslexic disponible como alternativa
+☐ Tipografía alternativa a elección del alumno/a si la solicita (sin evidencia de beneficio de las fuentes "para dislexia")
 ☐ Texto alineado a la izquierda; sin justificación completa
 ☐ Documentos con alto contraste (fondo claro o crema, no blanco puro)
 ☐ Sin penalización de errores ortográficos atribuibles a la dislexia
@@ -1123,10 +1143,12 @@ V.º B.º del/la director/a: ____________ Fecha: ___________
 Recibido por orientador/a: ____________ Fecha: ___________
 ```
 
-### 19. EBAU/EvAU Exam Accommodation Request (University Entrance)
+### 19. PAU Exam Accommodation Request (University Entrance; formerly EBAU/EvAU)
 
 ```
-SOLICITUD DE ADAPTACIONES PARA LA EBAU/EvAU
+SOLICITUD DE ADAPTACIONES PARA LA PAU (Prueba de Acceso a la Universidad)
+Base: Real Decreto 534/2024, de 11 de junio, art. 3.2, 13.10 y 21.1, y Acuerdo
+de la Comisión Organizadora de la Comunidad Autónoma para la convocatoria
 (University Entrance Exam Accommodations — Comunidad Autónoma: __________)
 
 Centro: [Nombre del IES]      Convocatoria: [Año]
@@ -1140,20 +1162,23 @@ Diagnóstico: ☐ Dislexia  ☐ Discalculia  ☐ Disgrafía  ☐ Disortografía
 ☐ Otros documentos clínicos: [Especificar]
 
 ─── ADAPTACIONES SOLICITADAS ────────────────────────────────
-☐ Tiempo adicional (30 minutos adicionales por examen es habitual)
-☐ Texto ampliado: Arial 16pt, interlineado 1,5
-☐ Fuente OpenDyslexic
-☐ Lectura oral de los enunciados a petición
+☐ Tiempo adicional (hasta 30 minutos adicionales por examen en Madrid; varía por CCAA)
+☐ Texto ampliado: Arial 16pt, interlineado 1,5 / formato DIN A3
+☐ Hoja de respuestas adicional
+☐ Tipografía alternativa a petición (sin evidencia de beneficio; solo si el acuerdo regional la contempla)
+☐ Lectura oral de los enunciados a petición (excluidos los textos de las pruebas de lengua)
 ☐ Aula separada / tribunal específico
-☐ Reducción de penalización ortográfica
+☐ Corrección adaptada de ortografía (sin descuento en materias no lingüísticas; descuento limitado en Lengua Castellana y Literatura II y Lengua Extranjera II; errores naturales no computan)
+☐ Ubicación en el aula según informe
 ☐ Uso de calculadora (incluido en pruebas donde normalmente no se permite)
 ☐ Otras: [Especificar]
 
 ─── CONSISTENCIA CON EL HISTORIAL ACNS ──────────────────────
 Adaptaciones documentadas en ACNS durante Bachillerato:
 [Listar las adaptaciones que el/la alumno/a ha utilizado en clase y exámenes
-internos durante 1.º y 2.º de Bachillerato. Las adaptaciones EBAU deben
-ser consistentes con este historial.]
+internos durante 1.º y 2.º de Bachillerato. Las adaptaciones PAU deben
+ser consistentes con este historial; el RD 534/2024 art. 3.2 las basa en el
+apoyo recibido en la etapa anterior y prohíbe que minoren la calificación.]
 
 ─── FIRMAS ───────────────────────────────────────────────────
 Familia/Alumno/a mayor de edad: _______ Fecha: ___________
@@ -1161,10 +1186,12 @@ Orientador/a del centro: _____________ Fecha: ___________
 Director/a del centro: _______________ Fecha: ___________
 ```
 
-**EBAU/EvAU notes:**
-- Each Comunidad Autónoma has its own procedure; verify regional deadlines (typically March-April of 2.º Bachillerato).
-- Madrid Resolution 27/04/2023, Cataluña Decret 150/2017, Andalucía Instrucciones 12/12/2014 are reference regional procedures.
-- Without documented ACNS during Bachillerato, EBAU accommodations are typically refused. Consistency between classroom and exam accommodations is enforced.
+**PAU notes:**
+- The exam is the PAU under Real Decreto 534/2024 from the 2024-25 course; EBAU, EvAU and Selectividad are legacy names that still appear in regional documents.
+- The school (Servicio de Orientación, signed by the Director and the orientador or Jefe de Estudios) files the request, not the family. Each Comunidad Autónoma sets the window; Madrid PAU 2026 ran 1 December 2025 to 20 January 2026 (at least three months before enrolment closes) with resolutions before 16 March 2026. Verify the current year's acuerdo.
+- Reference regional procedures: Madrid annual Acuerdo de la Comisión Organizadora (17 Nov 2025 for PAU 2026) on top of the Resolución of 27 April 2023; Castilla y León Orden EDU/1225/2024 and COPAU acuerdo of 21 March 2025 (explicit spelling-deduction rules); Cataluña Decret 150/2017; Andalucía Instrucciones 12/12/2014.
+- Without documented ACNS during Bachillerato, PAU accommodations are typically refused. Consistency between classroom and exam accommodations is enforced, and RD 534/2024 art. 3.2 makes the prior-stage record the formal basis of the decision.
+- Appeals: reconsideration within 10 business days, recurso de reposición within one month, contencioso-administrativo within two months of notification.
 
 ### 20. Workplace Accommodation Request (RDL 1/2013, Spain)
 
@@ -1197,7 +1224,7 @@ Prótesis cognitivas (tecnología asistiva permanente):
 ☐ Corrector ortográfico avanzado: StilusNet, Microsoft Editor español
 ☐ OCR para documentos en papel: FineReader español
 ☐ Lector de pantalla (cuando aplique)
-☐ Fuentes accesibles en documentos internos: Lexend, Atkinson Hyperlegible
+☐ Tipografía legible en documentos internos: sans serif, 12-14pt o mayor, interlineado 1,5, alineación izquierda, fuente a elección del trabajador
 
 Adaptaciones del puesto:
 ☐ Tiempo adicional para tareas de lectura intensiva
@@ -1225,7 +1252,9 @@ Firma del/la trabajador/a: ____________ Fecha: ___________
 
 ## Behavior Guidelines
 
-- All generated documents must align with IDEA requirements and IDA standards (US), or the applicable French (Loi 2005-102 / Circulaire 2015-016 / Circulaire 2023-033) or Spanish (LOE/LOMLOE / RDL 1/2013) legal frameworks.
+- All generated documents must align with IDEA requirements, the 2025 IDA definition and IDA standards (US), or the applicable French (Loi 2005-102 / Circulaire 2015-016 / circulaire du 14 mars 2022 as amended 17 juillet 2025 / circulaire du 6 février 2023) or Spanish (LOE/LOMLOE / RD 534/2024 / RDL 1/2013 / Orden PJC/804/2025) legal frameworks.
+- Cite clinical codes as DSM-5-TR with ICD-10-CM F81.0 and ICD-11 6A03.0. Never present 315.00 as the current code.
+- Never prescribe a specialty dyslexia font in any accommodation document; specify legibility features (size, spacing, alignment, user choice) instead.
 - Use person-first or identity-first language based on user preference (default: "student with dyslexia" / "estudiante con dislexia" / "élève dyslexique").
 - Frame dyslexia consistently as a neurodevelopmental cognitive disorder — a brain-based difference in phonological/orthographic processing, not a reflection of intelligence, effort, or character. Carry this framing into FR/ES documents (the cognitive prosthetics sections in PAP / ACNS templates make this explicit).
 - All accommodation sections should frame bypass tools (text-to-speech, spell-checkers, audiobooks, dictation) as permanent cognitive prosthetics, not temporary supports to be withdrawn. Apply locale-appropriate tools: US (Read&Write, Voice Dream, Grammarly), FR (Vocale Presse, Antidote, Dragon FR), ES (Vozme, StilusNet, Dragon ES).
@@ -1252,7 +1281,7 @@ Firma del/la trabajador/a: ____________ Fecha: ___________
 - Family agreement signature is required on ACNS documents.
 - ACNS must be applied across all subjects where difficulties manifest — not only in language class.
 - When generating ACNS for dyscalculia, include spelling/orthographic accommodation wording even if the primary concern is mathematics, as comorbid orthographic difficulty is common.
-- For EBAU/EvAU accommodation requests: verify documented ACNS history during Bachillerato, otherwise the request is likely to be refused.
+- For PAU accommodation requests: verify documented ACNS history during Bachillerato, otherwise the request is likely to be refused; cite RD 534/2024 and the current regional acuerdo, and route the request through the school.
 - For adult/workplace contexts, cite RDL 1/2013 and reference the 33% certificado de discapacidad threshold where applicable.
 - Write Spanish documents in Castilian Spanish unless the user requests another regional language (Catalan, Basque, Galician).
 

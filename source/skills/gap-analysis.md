@@ -3,7 +3,7 @@
 ## Purpose
 Identify gaps in existing dyslexia support tools, assessments, standards, and practices — then create new measures, frameworks, or tools where none exist. This skill fills the "if it doesn't exist, build it" mandate.
 
-> **Framing Note**: This analysis treats dyslexia as a neurodevelopmental cognitive disorder — a persistent difference in phonological and orthographic processing architecture (Shaywitz phonological deficit theory; Dehaene VWFA research; Gabrieli et al.) — not merely a learning disability that resolves with sufficient instruction. Gaps are evaluated against both the legal/educational framework (IDEA, Section 504, IDA KPS) and the cognitive neuroscience evidence. The most critical gaps are those where current practice assumes the deficit is temporary and remediable, when the evidence shows it is persistent and requires lifelong accommodation alongside targeted remediation.
+> **Framing Note**: This analysis treats dyslexia as a neurodevelopmental cognitive disorder — a persistent difference in phonological, morphological and orthographic processing architecture (Shaywitz phonological deficit theory; Dehaene VWFA research; Gabrieli et al.; 2025 IDA definition: difficulties in word reading and/or spelling, in accuracy, speed, or both, persisting despite instruction effective for peers) — not merely a learning disability that resolves with sufficient instruction. Gaps are evaluated against both the legal/educational framework (IDEA, Section 504, IDA KPS, the 2025 IDA definition) and the cognitive neuroscience evidence. The most critical gaps are those where current practice assumes the deficit is temporary and remediable, when the evidence shows it is persistent and requires lifelong accommodation alongside targeted remediation.
 
 ## When to Use
 Trigger this skill when the user mentions:
@@ -26,8 +26,8 @@ Trigger this skill when the user mentions:
 ## Known Gaps in the Dyslexia Support Ecosystem
 
 ### Gap 1: Retroactive vs. Proactive Accessibility
-**Problem:** Content is created without accessibility consideration. Students must request accommodations after struggling.
-**Opportunity:** Build accessibility into authoring tools and content creation workflows from the start. Universal design at the source.
+**Problem:** Content is created without accessibility consideration. Students must request accommodations after struggling. The same pattern holds at the policy level: 49 US states have dyslexia laws, yet Hu, Sayeski and Morgan (Annals of Dyslexia, 2025; NAEP 2003-2022, 47 states) found no significant change in SLD identification in 55% of states after a law passed and improved SLD reading achievement in only four. Screening mandates that are not wired to funded instruction leave students exactly where retroactive accommodation leaves them: identified, then waiting.
+**Opportunity:** Build accessibility into authoring tools and content creation workflows from the start. Universal design at the source. Two legal levers now exist: the ADA Title II web rule (WCAG 2.1 AA, compliance 26 April 2027 / 26 April 2028 for US public entities) and the European Accessibility Act (in application since 28 June 2025 for consumer digital products and e-books in FR and ES).
 **Potential Measures to Create:**
 - Dyslexia-Friendly Content Authoring Checklist
 - Content Accessibility Score (CAS) for educational materials
@@ -82,12 +82,12 @@ Trigger this skill when the user mentions:
 - Professional Development Needs Analysis Tool
 
 ### Gap 8: Dyslexia-Specific UX Design Standards
-**Problem:** No widely adopted UX design standard exists specifically for dyslexic users.
-**Opportunity:** Create a dyslexia-specific design system beyond WCAG.
+**Problem:** No widely adopted UX design standard exists specifically for dyslexic users, and the folk standard that fills the vacuum is wrong: the most-recommended intervention, a specialty dyslexia font, has no pooled effect on reading speed or accuracy (Azzarello et al., Annals of Dyslexia 2026; 15 studies, N=688, g = -0.04). Products that ship OpenDyslexic as their accessibility feature have spent their effort on the one measure the evidence does not support.
+**Opportunity:** Create a dyslexia-specific design system beyond WCAG, built on measurable legibility features (size, spacing, line length, alignment, user control, TTS parseability) rather than typeface identity.
 **Potential Measures to Create:**
 - Dyslexia UX Design Checklist (typography, layout, navigation, color, interaction)
 - Dyslexia Usability Heuristics (extending Nielsen's for dyslexic users)
-- Font and Typography Accessibility Scoring for dyslexia
+- Typography Accessibility Scoring for dyslexia based on legibility features, explicitly excluding specialty-font presence as a criterion
 
 ### Gap 9: Cross-Linguistic Assessment Tool Availability
 **Problem:** The dominant dyslexia assessment instruments (CTOPP-2, WRMT, DIBELS, RAVE-O) are normed on English-speaking populations and cannot be validly applied to French or Spanish learners. French- and Spanish-normed instruments are less widely known by practitioners and under-integrated in EdTech.
@@ -109,8 +109,8 @@ Trigger this skill when the user mentions:
 - Fluency Norm Database for French and Spanish (palabras por minuto / mots par minute grade-level norms)
 - International Dyslexia Assessment Equivalency Matrix (mapping FR/ES assessments to CTOPP-2/WRMT equivalents for cross-border practitioners)
 
-### Gap 10: Fluency-First Intervention Programs for Transparent Orthographies
-**Problem:** Most commercially available structured literacy programs (Wilson, Barton, LiPS, Sonday) are designed for English — an opaque orthography where accuracy is the primary deficit. Spanish (and to a lesser extent Portuguese and Italian) requires fluency-first intervention, but validated fluency-focused programs in these languages are scarce commercially.
+### Gap 10: Rate-First Intervention Programs for Transparent Orthographies
+**Problem:** Most commercially available structured literacy programs (Wilson, Barton, LiPS, Sonday) are designed for English — an opaque orthography where accuracy is the primary deficit. Spanish (and to a lesser extent Portuguese and Italian) requires rate-first intervention, but validated rate-focused programs in these languages are scarce commercially. The 2025 IDA definition (accuracy, speed, or both, depending on the orthography) and the accuracy/rate subtyping of Shechter, Share et al. (2026: accuracy-disabled with PA/MA deficits, rate-disabled with RAN deficits, doubly disabled) now give this gap a shared clinical vocabulary, but no Spanish program is yet built around the rate-disabled profile, and most Spanish assessment still reports a single words-per-minute figure that conflates the two dimensions.
 **Opportunity:** Fluency-focused intervention curriculum for Spanish and other transparent orthographies; repeated reading program banks with Spanish-normed wpm targets.
 **Potential Measures to Create:**
 - Transparent Orthography Fluency Intervention Framework (program design principles for Spanish, Italian, Portuguese)
@@ -118,7 +118,7 @@ Trigger this skill when the user mentions:
 - Fluency Progress Monitoring Probe Set — Spanish (equivalent to DIBELS in English)
 
 ### Gap 11: EdTech Locale-Awareness for Dyslexia
-**Problem:** EdTech tools for dyslexia (TTS, font customization, phonics apps) are predominantly built for English. French and Spanish users encounter English-centric default settings, English-normed readability algorithms, and English-optimized phonics sequences. The cognitive prosthetics layer (v1.2.0 framing) suffers from the same English bias.
+**Problem:** EdTech tools for dyslexia (TTS, font customization, phonics apps) are predominantly built for English. French and Spanish users encounter English-centric default settings, English-normed readability algorithms, and English-optimized phonics sequences. The cognitive prosthetics layer (v1.2.0 framing) suffers from the same English bias. Since 28 June 2025 the European Accessibility Act (France: ordonnance 2023-859; Spain: Ley 11/2023) makes accessibility of consumer apps, e-books and reading software a legal obligation on the seller in both markets, with EN 301 549 (v3.2.1 / WCAG 2.1 AA, v4.1.1 / WCAG 2.2 pending citation) as the reference, so locale-unaware products are now a compliance exposure, not only a usability gap.
 **Opportunity:** Locale-aware dyslexia EdTech: language-specific phonics sequences, locale-appropriate TTS voices, readability indices calibrated for French/Spanish, UI in the target language, cognitive-prosthetic AT stacks adapted per locale (FR: Antidote, Vocale Presse; ES: StilusNet, Vozme).
 **Potential Measures to Create:**
 - Dyslexia EdTech Locale-Readiness Scorecard (does the product support FR/ES adequately?)
@@ -253,7 +253,7 @@ Integration: [How this connects to existing tools/workflows]
 A checklist developers can use to evaluate whether digital content is accessible for dyslexic users:
 
 **Typography & Layout**
-- [ ] Sans-serif font used (e.g., Arial, Verdana, Open Dyslexic, Lexie Readable)
+- [ ] Sans-serif font used and user-changeable (e.g., Arial, Verdana, Atkinson Hyperlegible Next, Lexend); do not score for a specialty dyslexia font
 - [ ] Font size ≥ 14px (body text)
 - [ ] Line spacing ≥ 1.5x
 - [ ] Letter spacing slightly increased (0.12em+)
