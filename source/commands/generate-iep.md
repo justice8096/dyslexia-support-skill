@@ -47,7 +47,7 @@ objective and grade-matched:
 - `frequency(words)` — flag below-grade-frequency vocabulary as sight-word/vocab targets.
 
 These inform **remediation targets** only; preserve the two-track framing (pair with bypass/AT accommodations).
-Full procedures: `D:\linguistics-mcp\INTEGRATION-literacy-numeracy.md` (§1–2). English-only tools; for FR/ES see §4.
+Full procedures: the `INTEGRATION-literacy-numeracy.md` guide in the linguistics-mcp repository (§1–2). English-only tools; for FR/ES see §4.
 
 ## Important Disclaimer
 Generated IEPs are professional-quality templates that require review and approval by a qualified IEP team. They are starting points — not substitutes for professional judgment.
