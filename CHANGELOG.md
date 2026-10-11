@@ -15,6 +15,12 @@ All four drivers affect admissibility / persuasive weight of downstream artifact
 
 ## [Unreleased]
 
+## [1.3.1] - 2026-10-11
+
+### Fixed
+- Replaced U+2014 em dashes with hyphens in plugin.json, .claude-plugin/plugin.json, .claude-plugin/marketplace.json and source/manifest.json; the Anthropic Directory rendered the UTF-8 em dash as mojibake in the listing description. `[defect]`
+- Bumped version to 1.3.1. `[voice]`
+
 ## [1.3.0] — 2026-05-16
 
 Framework integration release. Brings dyslexia-support-skill onto the Skill Versioning and Addendum Framework that landed in dyscalculia-support-skill v1.3.0–v1.3.2. Also closes the root-canonical drift defect: the FR/ES locale expansion that landed on `main` as commit `3939a6e` had only been written to `source/` and `dist/`; root canonical (`commands/*` + `skills/*/SKILL.md`) had drifted from source since the marketplace scaffold (`d6b08b5`). The new build-time sync resolves this and prevents recurrence.
