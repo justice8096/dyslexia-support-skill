@@ -46,6 +46,7 @@ A Cowork plugin **and** standalone skill set that provides:
 ```bash
 git clone https://github.com/justice8096/dyslexia-support-skill.git
 cd dyslexia-support-skill
+cd tooling
 npm install
 npm run build        # Build all 6 distribution formats
 npm test             # Run 42 integration tests across 7 suites
@@ -130,7 +131,7 @@ Once installed, the four skills (`standards-compliance`, `remediation-strategies
 
 ## Platform Support
 
-This skill builds to 6 formats from a single source in `source/`: Claude Code Plugin, MCP Server, OpenAI Functions, n8n Node, Prompt Library, and CLI Audit Tool. Run `npm run build` to generate all formats in `dist/`.
+This skill builds to 6 formats from a single source in `source/`: Claude Code Plugin, MCP Server, OpenAI Functions, n8n Node, Prompt Library, and CLI Audit Tool. Run `npm run build` from `tooling/` to generate all formats in `dist/`; the plugin root itself carries no package.json, so installing the plugin runs nothing.
 
 ## Project Structure
 
@@ -141,13 +142,14 @@ dyslexia-support-skill/
 │   ├── skills/              # Skill markdown files
 │   ├── commands/            # Command markdown files
 │   └── templates/           # Document templates
-├── build.ts                 # Multi-format build system
-├── test-build.ts            # 42-test integration suite (7 suites)
+├── tooling/                 # Build system, tests, SBOM (not part of the plugin)
+│   ├── build.ts             # Multi-format build system
+│   ├── test-build.ts        # 42-test integration suite (7 suites)
 ├── skills/                  # Cowork plugin skill directories
 ├── commands/                # Cowork plugin command files
 ├── examples/                # Sample audit reports
 ├── audits/                  # Security & compliance audit reports
-├── sbom.cdx.json            # CycloneDX SBOM
+│   └── sbom.cdx.json        # CycloneDX SBOM
 ├── SECURITY.md              # Vulnerability disclosure policy
 └── .github/workflows/ci.yml # CI pipeline (Node 18/20/22)
 ```
