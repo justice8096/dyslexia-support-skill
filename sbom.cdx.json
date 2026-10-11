@@ -9,7 +9,7 @@
         {
           "type": "application",
           "name": "npm",
-          "version": "11.6.1"
+          "version": "12.2.0"
         },
         {
           "type": "library",
@@ -47,7 +47,7 @@
           "type": "application",
           "name": "cyclonedx-npm",
           "group": "@cyclonedx",
-          "version": "4.2.1",
+          "version": "6.0.1",
           "author": "Jan Kowalleck",
           "description": "Create CycloneDX Software Bill of Materials (SBOM) from NPM projects.",
           "licenses": [
@@ -80,19 +80,19 @@
     "component": {
       "type": "application",
       "name": "dyslexia-support-skill",
-      "version": "1.2.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0",
+      "version": "1.4.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0",
       "author": "Justice",
       "description": "Multi-format distribution system for dyslexia cognitive accommodation across K-12, higher education, workplace, and adult contexts",
       "licenses": [
         {
           "license": {
-            "id": "MIT",
+            "id": "CC0-1.0",
             "acknowledgement": "declared"
           }
         }
       ],
-      "purl": "pkg:npm/dyslexia-support-skill@1.2.0",
+      "purl": "pkg:npm/dyslexia-support-skill@1.4.0",
       "properties": [
         {
           "name": "cdx:npm:package:path",
@@ -114,1010 +114,10 @@
   "components": [
     {
       "type": "library",
-      "name": "aix-ppc64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/aix-ppc64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/aix-ppc64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "10a5f74309a1cf578c74426892100baf46220f496140dc03aa43d8c8f8624b02ab87bff82918d0734e2c67c75bfb90d55676752e66cd0c8d6e00c3c45019d03e"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/aix-ppc64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "android-arm",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/android-arm@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/android-arm@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "8db3d7bc1e188f6c8157b1d47c4d8a1dee06257e75429942375a466d88efb320996d09a27acdbd12825b90473ebd8b94e68e3901f427dfbbd99725f2e1827c45"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/android-arm"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "android-arm64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/android-arm64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/android-arm64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/android-arm64/-/android-arm64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "eb674f647a485f3bc285fbdf2c9a30deae5d0ed88d324c224733f295209fae22ef65eab46b56d60a1ac6c7f05b51b3f03abb1628c9fc89d4a5964973072f9d81"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/android-arm64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "android-x64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/android-x64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/android-x64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/android-x64/-/android-x64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "c7956930e0e77950dbef43d85765503a621452206d6370f798f046f0dc559390a882779886447b326337c91fee31d2132eb0b59a5fcd575ae3e1b309bb2f4c0a"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/android-x64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "darwin-arm64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/darwin-arm64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/darwin-arm64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "e6572476a7ae04f94a530be80972202360fdfc00663eadd1769ec87cbef4dfddd881a012b7bb5b8eedc073e78f562dca0c7e8dd91a9e3df1e75e4683b58f5f93"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/darwin-arm64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "darwin-x64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/darwin-x64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/darwin-x64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "ad89d7aca717b93ed9f962f92bdf348d515dbd52a1087854c2277e743610a47faabbe4de7dca2688c009a48882d84337463b6ad2c3b74ad315ffedf0dcccb2a9"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/darwin-x64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "freebsd-arm64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/freebsd-arm64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/freebsd-arm64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/freebsd-arm64/-/freebsd-arm64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "078f0fa9e0ac1203adccc13619b34cdaba14dbd00c4ee38837dd5db0c3b7d2df98762b37cffdcd8288f98619ec3924b03734bee89a69a96b2e853a7a13cda5db"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/freebsd-arm64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "freebsd-x64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/freebsd-x64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/freebsd-x64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/freebsd-x64/-/freebsd-x64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "8ce0432b95c48c0e26e4824addba40405f7f2de96efd9f5971d85344b7f871a8e507ef151211454635a07f2dccd4ee2b3b6190fdbd9d2f00941a9885fde01335"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/freebsd-x64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-arm",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-arm@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-arm@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-arm/-/linux-arm-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "4644ff6176014d250ba37f9a7fc21bd32907f2ed8c061e7ba3babf0c0b37953265c95424810be5acf4e78c8cf344f4326afc6d3ed7e0d04a29bc3c88b748f5ac"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-arm"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-arm64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-arm64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-arm64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "4593c7068c57b8d9cf40ef6bbe38798dd9119958b392d913ed3083903990d16d92c07227282015f79191baf752bc0ef0e153307c28d488fc038b464ee8d7def4"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-arm64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-ia32",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-ia32@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-ia32@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-ia32/-/linux-ia32-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "180e3c68a364c900db7772ad929958593d74d82e6c9ff1194d8e1744e93138d82bb873d4ef697e816f857c5f2d7f67058de1da45b5a93986bfb91073fd7ab53e"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-ia32"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-loong64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-loong64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-loong64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "6b83ceaee34cda85ac0f858abc148428622259017c7d9380b327073ade8906967e24dda7d891fd580bf9e923b2bbd5f922a023a9220f4da264a8df05ed7390e5"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-loong64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-mips64el",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-mips64el@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-mips64el@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-mips64el/-/linux-mips64el-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "29a6d3e48e92b62ac67c8cf414c825d48f91d47ef71a9d287cbf40de71b78bf718149cca1e1a2e055e5558ad424a02af55a1b8ab544da424d1d8bb93541ddf23"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-mips64el"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-ppc64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-ppc64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-ppc64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-ppc64/-/linux-ppc64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "811b0be31eb0b061c646a86d23e89fa4dfefa4e15342d9dbb2ea54179479613020fb2fe529e9584758576e705dcc38c66cc6235492c94ddd8e16631ec0083095"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-ppc64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-riscv64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-riscv64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-riscv64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-riscv64/-/linux-riscv64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "84bdb92dbc4ed503a7806ceed94e71797b715dc5befc6bcc3777a300da9793167fa29c9201932b73ef4b63f5b28c06a7e35ba7ad1dd8ae6b53b14a704fae889d"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-riscv64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-s390x",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-s390x@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-s390x@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-s390x/-/linux-s390x-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "da4f20a3c61cbb529be3abc47a586ed6fa843fe51e4558f6cd8d694ae3dd82f6dde72900c3cd8baeba36f2f5d4ad19b312c515d0dcc27f9e3201120af2bd1f77"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-s390x"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "linux-x64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-x64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/linux-x64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "873ce79800cfb7e3a6b18cf0d44137ddc700f873dd22a88246aedc41e2f5265ab681bd7e3b258190c0ab606049facc55cef7b664911579e3db2ccda2108652c4"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/linux-x64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "netbsd-arm64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/netbsd-arm64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/netbsd-arm64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/netbsd-arm64/-/netbsd-arm64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "6faa6ab6b41d8a0641c19c409f55296b3122b2fc1a203bdd6cc6e6ae5cbb7034cc167c3ffb7955c7109318eae43d59ec608a2c2495c0b082c6f577104be62eeb"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/netbsd-arm64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "netbsd-x64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/netbsd-x64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/netbsd-x64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/netbsd-x64/-/netbsd-x64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "39f6ad90ba23afa53e58de440d8ba8421b4cfb5c5ca3effa152cc9267b96894c3979572271bc8adddab911e57f4074f5bb2e86a038466c5a69ad4887518820af"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/netbsd-x64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "openbsd-arm64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/openbsd-arm64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/openbsd-arm64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/openbsd-arm64/-/openbsd-arm64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "005ba88cc413c40cfbe45a3c89d55caa84161072171516ce7354eb55c15280266d41f49d735457801ded8ce9ff92b44710d501e23d346df1a3ca5da626b537ec"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/openbsd-arm64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "openbsd-x64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/openbsd-x64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/openbsd-x64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/openbsd-x64/-/openbsd-x64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "f80d4d2667ccf16343bf908b550609e4fb21b919bfe1c23a58c6518356f2d46c0f2103c24ecd462c4507c22890193e730ddc8b89133f9751b43efe7882fb4a22"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/openbsd-x64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "openharmony-arm64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/openharmony-arm64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/openharmony-arm64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/openharmony-arm64/-/openharmony-arm64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "f8aaef61bfc2f3303d094fe0d2c47ac36441c3b20673927604f9dcddd61ce552711c2485d7234cc535792d0ec6b8ab5e41766db298c56e2b96e7f74e8fb1f863"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/openharmony-arm64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "sunos-x64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/sunos-x64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/sunos-x64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/sunos-x64/-/sunos-x64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "8a492d221141cd036dfd00f238be7cd2d8bdfb998bfd865e50f294da2bc6b468dd4d8a2acfa8ce6e3ea738c7e1012a52e0653843f0a587542dc5602f71829a98"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/sunos-x64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "win32-arm64",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-arm64@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/win32-arm64@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/win32-arm64/-/win32-arm64-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "ef24616c7bcfa92a51515ed0db456e0f06e35b99083304c7a69b6e53357e000e3a9223f37b967baa0b7a08b08ade9585ac778d7c377554a8323f83be9e0d7b08"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/win32-arm64"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "name": "win32-ia32",
-      "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-ia32@0.27.7",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/%40esbuild/win32-ia32@0.27.7",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/@esbuild/win32-ia32/-/win32-ia32-0.27.7.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "4a6c0a5dee951c8c9961b04b26b84ea0225107f675b5c9339a04cb7c560e7e9300c7adc124468bf44c48f31eefd2800edd987a0ff3a2d60571118af9a1408587"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/@esbuild/win32-ia32"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "win32-x64",
       "group": "@esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-x64@0.27.7",
+      "version": "0.27.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|@esbuild/win32-x64@0.27.2",
       "description": "The Windows 64-bit binary for esbuild, a JavaScript bundler.",
       "scope": "optional",
       "licenses": [
@@ -1128,15 +128,15 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40esbuild/win32-x64@0.27.7",
+      "purl": "pkg:npm/%40esbuild/win32-x64@0.27.2",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.27.7.tgz",
+          "url": "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.27.2.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "e7a8620093e1c10d51e22fb6d45545ed5f24483e73653747715b9114c5b4867ef9def55f40df31971e2e38f4f8c68187d19fe85404ee47cd808aa4930c8a5a1e"
+              "content": "b11754d7c99c29fec5f98821788ff319fe5a9596ad3144ca8ff8cd4ba97be387fdbb7585bb8bfbb7071423dbeee2692717863d68395b94889ed0833ee71c5aa9"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -1173,7 +173,7 @@
       "name": "cliui",
       "group": "@isaacs",
       "version": "8.0.2",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@isaacs/cliui@8.0.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|@isaacs/cliui@8.0.2",
       "author": "Ben Coe",
       "description": "easily create complex multi-column command-line-interfaces",
       "licenses": [
@@ -1229,7 +229,7 @@
       "name": "parseargs",
       "group": "@pkgjs",
       "version": "0.11.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@pkgjs/parseargs@0.11.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|@pkgjs/parseargs@0.11.0",
       "description": "Polyfill of future proposal for `util.parseArgs()`",
       "scope": "optional",
       "licenses": [
@@ -1285,7 +285,7 @@
       "name": "js-yaml",
       "group": "@types",
       "version": "4.0.9",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@types/js-yaml@4.0.9",
+      "bom-ref": "dyslexia-support-skill@1.4.0|@types/js-yaml@4.0.9",
       "description": "TypeScript definitions for js-yaml",
       "licenses": [
         {
@@ -1340,7 +340,7 @@
       "name": "node",
       "group": "@types",
       "version": "20.19.39",
-      "bom-ref": "dyslexia-support-skill@1.2.0|@types/node@20.19.39",
+      "bom-ref": "dyslexia-support-skill@1.4.0|@types/node@20.19.39",
       "description": "TypeScript definitions for node",
       "licenses": [
         {
@@ -1394,7 +394,7 @@
       "type": "library",
       "name": "ansi-regex",
       "version": "6.2.2",
-      "bom-ref": "dyslexia-support-skill@1.2.0|ansi-regex@6.2.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|ansi-regex@6.2.2",
       "author": "Sindre Sorhus",
       "description": "Regular expression for matching ANSI escape codes",
       "licenses": [
@@ -1449,7 +449,7 @@
       "type": "library",
       "name": "ansi-styles",
       "version": "6.2.3",
-      "bom-ref": "dyslexia-support-skill@1.2.0|ansi-styles@6.2.3",
+      "bom-ref": "dyslexia-support-skill@1.4.0|ansi-styles@6.2.3",
       "author": "Sindre Sorhus",
       "description": "ANSI escape codes for styling strings in the terminal",
       "licenses": [
@@ -1504,7 +504,7 @@
       "type": "library",
       "name": "argparse",
       "version": "2.0.1",
-      "bom-ref": "dyslexia-support-skill@1.2.0|argparse@2.0.1",
+      "bom-ref": "dyslexia-support-skill@1.4.0|argparse@2.0.1",
       "description": "CLI arguments parser. Native port of python's argparse.",
       "licenses": [
         {
@@ -1558,7 +558,7 @@
       "type": "library",
       "name": "balanced-match",
       "version": "1.0.2",
-      "bom-ref": "dyslexia-support-skill@1.2.0|balanced-match@1.0.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|balanced-match@1.0.2",
       "author": "Julian Gruber",
       "description": "Match balanced character pairs, like \"{\" and \"}\"",
       "licenses": [
@@ -1612,8 +612,8 @@
     {
       "type": "library",
       "name": "brace-expansion",
-      "version": "2.1.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|brace-expansion@2.1.0",
+      "version": "2.1.7",
+      "bom-ref": "dyslexia-support-skill@1.4.0|brace-expansion@2.1.7",
       "author": "Julian Gruber",
       "description": "Brace expansion as known from sh/bash",
       "licenses": [
@@ -1624,15 +624,15 @@
           }
         }
       ],
-      "purl": "pkg:npm/brace-expansion@2.1.0",
+      "purl": "pkg:npm/brace-expansion@2.1.7",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.1.0.tgz",
+          "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.1.7.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "4cdd64099020760c1e261596a60298ad068c34770350b1e45b0408b2976d8d5e18e5abab45d6698c0aa7eb25f714fa9303d9e01c2738849c4c00c8067ef7bce7"
+              "content": "b996dec3536a7663c34cc27c6a1d72f9bfbd40426b7e45c593745c4d0c375f48d6ff1454bc52ac83509f41d49819d4db5d9584c6d53727771cc6d9dfc35162d2"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -1668,7 +668,7 @@
       "type": "library",
       "name": "color-convert",
       "version": "2.0.1",
-      "bom-ref": "dyslexia-support-skill@1.2.0|color-convert@2.0.1",
+      "bom-ref": "dyslexia-support-skill@1.4.0|color-convert@2.0.1",
       "author": "Heather Arthur",
       "description": "Plain color conversion functions",
       "licenses": [
@@ -1723,7 +723,7 @@
       "type": "library",
       "name": "color-name",
       "version": "1.1.4",
-      "bom-ref": "dyslexia-support-skill@1.2.0|color-name@1.1.4",
+      "bom-ref": "dyslexia-support-skill@1.4.0|color-name@1.1.4",
       "author": "DY",
       "description": "A list of color names and its values",
       "licenses": [
@@ -1778,7 +778,7 @@
       "type": "library",
       "name": "cross-spawn",
       "version": "7.0.6",
-      "bom-ref": "dyslexia-support-skill@1.2.0|cross-spawn@7.0.6",
+      "bom-ref": "dyslexia-support-skill@1.4.0|cross-spawn@7.0.6",
       "author": "André Cruz",
       "description": "Cross platform child_process#spawn and child_process#spawnSync",
       "licenses": [
@@ -1833,7 +833,7 @@
       "type": "library",
       "name": "eastasianwidth",
       "version": "0.2.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|eastasianwidth@0.2.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|eastasianwidth@0.2.0",
       "author": "Masaki Komagata",
       "description": "Get East Asian Width from a character.",
       "licenses": [
@@ -1888,7 +888,7 @@
       "type": "library",
       "name": "emoji-regex",
       "version": "9.2.2",
-      "bom-ref": "dyslexia-support-skill@1.2.0|emoji-regex@9.2.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|emoji-regex@9.2.2",
       "author": "Mathias Bynens",
       "description": "A regular expression to match all Emoji-only symbols as per the Unicode Standard.",
       "licenses": [
@@ -1942,8 +942,8 @@
     {
       "type": "library",
       "name": "esbuild",
-      "version": "0.27.7",
-      "bom-ref": "dyslexia-support-skill@1.2.0|esbuild@0.27.7",
+      "version": "0.27.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|esbuild@0.27.2",
       "description": "An extremely fast JavaScript and CSS bundler and minifier.",
       "licenses": [
         {
@@ -1953,15 +953,15 @@
           }
         }
       ],
-      "purl": "pkg:npm/esbuild@0.27.7",
+      "purl": "pkg:npm/esbuild@0.27.2",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/esbuild/-/esbuild-0.27.7.tgz",
+          "url": "https://registry.npmjs.org/esbuild/-/esbuild-0.27.2.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "231a626d38f25679ab210a396aa3690a0a00080fdd4ca2d39613078a154785d9312b23ced6e041b61ba64f4add1e672c93db8ca272164b49b81658d6cc82e1df"
+              "content": "1f23502269ec382ed7f4f30d68221e026e08482417b396b961ab135d59622afe2eb81a3574aac6d00fae412f0ce5e5e354c9cb8375a05da2afa6b1e514941f7f"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -1997,7 +997,7 @@
       "type": "library",
       "name": "foreground-child",
       "version": "3.3.1",
-      "bom-ref": "dyslexia-support-skill@1.2.0|foreground-child@3.3.1",
+      "bom-ref": "dyslexia-support-skill@1.4.0|foreground-child@3.3.1",
       "author": "Isaac Z. Schlueter",
       "description": "Run a child as if it's the foreground process. Give it stdio. Exit when it exits.",
       "licenses": [
@@ -2050,48 +1050,9 @@
     },
     {
       "type": "library",
-      "name": "fsevents",
-      "version": "2.3.3",
-      "bom-ref": "dyslexia-support-skill@1.2.0|fsevents@2.3.3",
-      "scope": "excluded",
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT",
-            "acknowledgement": "declared"
-          }
-        }
-      ],
-      "purl": "pkg:npm/fsevents@2.3.3",
-      "externalReferences": [
-        {
-          "url": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-512",
-              "content": "e71a037d7f9f2fb7da0139da82658fa5b16dc21fd1efb5a630caaa1c64bae42defbc1d181eb805f81d58999df8e35b4c8f99fade4d36d765cda09c339617df43"
-            }
-          ],
-          "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
-        }
-      ],
-      "properties": [
-        {
-          "name": "cdx:npm:package:development",
-          "value": "true"
-        },
-        {
-          "name": "cdx:npm:package:path",
-          "value": "node_modules/fsevents"
-        }
-      ]
-    },
-    {
-      "type": "library",
       "name": "get-tsconfig",
       "version": "4.14.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|get-tsconfig@4.14.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|get-tsconfig@4.14.0",
       "author": "Hiroki Osame",
       "description": "Find and parse the tsconfig.json file from a directory path",
       "licenses": [
@@ -2146,7 +1107,7 @@
       "type": "library",
       "name": "glob",
       "version": "10.5.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|glob@10.5.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|glob@10.5.0",
       "author": "Isaac Z. Schlueter",
       "description": "the most correct and second fastest glob implementation in JavaScript",
       "licenses": [
@@ -2201,7 +1162,7 @@
       "type": "library",
       "name": "is-fullwidth-code-point",
       "version": "3.0.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|is-fullwidth-code-point@3.0.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|is-fullwidth-code-point@3.0.0",
       "author": "Sindre Sorhus",
       "description": "Check if the character represented by a given Unicode code point is fullwidth",
       "licenses": [
@@ -2256,7 +1217,7 @@
       "type": "library",
       "name": "isexe",
       "version": "2.0.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|isexe@2.0.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|isexe@2.0.0",
       "author": "Isaac Z. Schlueter",
       "description": "Minimal module to check if a file is executable.",
       "licenses": [
@@ -2311,7 +1272,7 @@
       "type": "library",
       "name": "jackspeak",
       "version": "3.4.3",
-      "bom-ref": "dyslexia-support-skill@1.2.0|jackspeak@3.4.3",
+      "bom-ref": "dyslexia-support-skill@1.4.0|jackspeak@3.4.3",
       "author": "Isaac Z. Schlueter",
       "description": "A very strict and proper argument parser.",
       "licenses": [
@@ -2365,8 +1326,8 @@
     {
       "type": "library",
       "name": "js-yaml",
-      "version": "4.1.1",
-      "bom-ref": "dyslexia-support-skill@1.2.0|js-yaml@4.1.1",
+      "version": "4.3.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|js-yaml@4.3.2",
       "author": "Vladimir Zapparov",
       "description": "YAML 1.2 parser and serializer",
       "licenses": [
@@ -2377,15 +1338,15 @@
           }
         }
       ],
-      "purl": "pkg:npm/js-yaml@4.1.1",
+      "purl": "pkg:npm/js-yaml@4.3.2",
       "externalReferences": [
         {
-          "url": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz",
+          "url": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.3.2.tgz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-512",
-              "content": "a90293e334315e5f252f006d1cc5b06937067c5399be23897addcecbfc661a4da0647ebbec224cf44bed7dd4a48167004d9863ff9e49674ae6cb79b2093e65b0"
+              "content": "48534ebd227e0e07fff409fdd38631f828129483c2908a5aa38aa8e7596979edb94c845e8dd1f7ae1478119306a0dc77fd33f73bec335ae893165e2ca9b96dcc"
             }
           ],
           "comment": "as detected from npm-ls property \"resolved\" and property \"integrity\""
@@ -2421,7 +1382,7 @@
       "type": "library",
       "name": "lru-cache",
       "version": "10.4.3",
-      "bom-ref": "dyslexia-support-skill@1.2.0|lru-cache@10.4.3",
+      "bom-ref": "dyslexia-support-skill@1.4.0|lru-cache@10.4.3",
       "author": "Isaac Z. Schlueter",
       "description": "A cache object that deletes the least-recently-used items.",
       "licenses": [
@@ -2476,7 +1437,7 @@
       "type": "library",
       "name": "minimatch",
       "version": "9.0.9",
-      "bom-ref": "dyslexia-support-skill@1.2.0|minimatch@9.0.9",
+      "bom-ref": "dyslexia-support-skill@1.4.0|minimatch@9.0.9",
       "author": "Isaac Z. Schlueter",
       "description": "a glob matcher in javascript",
       "licenses": [
@@ -2531,7 +1492,7 @@
       "type": "library",
       "name": "minipass",
       "version": "7.1.3",
-      "bom-ref": "dyslexia-support-skill@1.2.0|minipass@7.1.3",
+      "bom-ref": "dyslexia-support-skill@1.4.0|minipass@7.1.3",
       "author": "Isaac Z. Schlueter",
       "description": "minimal implementation of a PassThrough stream",
       "licenses": [
@@ -2586,7 +1547,7 @@
       "type": "library",
       "name": "package-json-from-dist",
       "version": "1.0.1",
-      "bom-ref": "dyslexia-support-skill@1.2.0|package-json-from-dist@1.0.1",
+      "bom-ref": "dyslexia-support-skill@1.4.0|package-json-from-dist@1.0.1",
       "author": "Isaac Z. Schlueter",
       "description": "Load the local package.json from either src or dist folder",
       "licenses": [
@@ -2641,7 +1602,7 @@
       "type": "library",
       "name": "path-key",
       "version": "3.1.1",
-      "bom-ref": "dyslexia-support-skill@1.2.0|path-key@3.1.1",
+      "bom-ref": "dyslexia-support-skill@1.4.0|path-key@3.1.1",
       "author": "Sindre Sorhus",
       "description": "Get the PATH environment variable key cross-platform",
       "licenses": [
@@ -2696,7 +1657,7 @@
       "type": "library",
       "name": "path-scurry",
       "version": "1.11.1",
-      "bom-ref": "dyslexia-support-skill@1.2.0|path-scurry@1.11.1",
+      "bom-ref": "dyslexia-support-skill@1.4.0|path-scurry@1.11.1",
       "author": "Isaac Z. Schlueter",
       "description": "walk paths fast and efficiently",
       "licenses": [
@@ -2751,7 +1712,7 @@
       "type": "library",
       "name": "resolve-pkg-maps",
       "version": "1.0.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|resolve-pkg-maps@1.0.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|resolve-pkg-maps@1.0.0",
       "author": "Hiroki Osame",
       "description": "Resolve package.json exports & imports maps",
       "licenses": [
@@ -2806,7 +1767,7 @@
       "type": "library",
       "name": "shebang-command",
       "version": "2.0.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|shebang-command@2.0.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|shebang-command@2.0.0",
       "author": "Kevin Mårtensson",
       "description": "Get the command from a shebang",
       "licenses": [
@@ -2861,7 +1822,7 @@
       "type": "library",
       "name": "shebang-regex",
       "version": "3.0.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|shebang-regex@3.0.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|shebang-regex@3.0.0",
       "author": "Sindre Sorhus",
       "description": "Regular expression for matching a shebang line",
       "licenses": [
@@ -2916,7 +1877,7 @@
       "type": "library",
       "name": "signal-exit",
       "version": "4.1.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|signal-exit@4.1.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|signal-exit@4.1.0",
       "author": "Ben Coe",
       "description": "when you want to fire an event no matter how a process exits.",
       "licenses": [
@@ -2971,7 +1932,7 @@
       "type": "library",
       "name": "string-width",
       "version": "4.2.3",
-      "bom-ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3",
+      "bom-ref": "dyslexia-support-skill@1.4.0|string-width@4.2.3",
       "author": "Sindre Sorhus",
       "description": "Get the visual width of a string - the number of columns required to display it",
       "licenses": [
@@ -3026,7 +1987,7 @@
           "type": "library",
           "name": "ansi-regex",
           "version": "5.0.1",
-          "bom-ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|ansi-regex@5.0.1",
+          "bom-ref": "dyslexia-support-skill@1.4.0|string-width@4.2.3|ansi-regex@5.0.1",
           "author": "Sindre Sorhus",
           "description": "Regular expression for matching ANSI escape codes",
           "licenses": [
@@ -3081,7 +2042,7 @@
           "type": "library",
           "name": "emoji-regex",
           "version": "8.0.0",
-          "bom-ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|emoji-regex@8.0.0",
+          "bom-ref": "dyslexia-support-skill@1.4.0|string-width@4.2.3|emoji-regex@8.0.0",
           "author": "Mathias Bynens",
           "description": "A regular expression to match all Emoji-only symbols as per the Unicode Standard.",
           "licenses": [
@@ -3136,7 +2097,7 @@
           "type": "library",
           "name": "strip-ansi",
           "version": "6.0.1",
-          "bom-ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|strip-ansi@6.0.1",
+          "bom-ref": "dyslexia-support-skill@1.4.0|string-width@4.2.3|strip-ansi@6.0.1",
           "author": "Sindre Sorhus",
           "description": "Strip ANSI escape codes from a string",
           "licenses": [
@@ -3193,7 +2154,7 @@
       "type": "library",
       "name": "string-width",
       "version": "5.1.2",
-      "bom-ref": "dyslexia-support-skill@1.2.0|string-width@5.1.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|string-width@5.1.2",
       "author": "Sindre Sorhus",
       "description": "Get the visual width of a string - the number of columns required to display it",
       "licenses": [
@@ -3248,7 +2209,7 @@
       "type": "library",
       "name": "strip-ansi",
       "version": "6.0.1",
-      "bom-ref": "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1",
+      "bom-ref": "dyslexia-support-skill@1.4.0|strip-ansi@6.0.1",
       "author": "Sindre Sorhus",
       "description": "Strip ANSI escape codes from a string",
       "licenses": [
@@ -3303,7 +2264,7 @@
           "type": "library",
           "name": "ansi-regex",
           "version": "5.0.1",
-          "bom-ref": "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1|ansi-regex@5.0.1",
+          "bom-ref": "dyslexia-support-skill@1.4.0|strip-ansi@6.0.1|ansi-regex@5.0.1",
           "author": "Sindre Sorhus",
           "description": "Regular expression for matching ANSI escape codes",
           "licenses": [
@@ -3360,7 +2321,7 @@
       "type": "library",
       "name": "strip-ansi",
       "version": "7.2.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|strip-ansi@7.2.0",
       "author": "Sindre Sorhus",
       "description": "Strip ANSI escape codes from a string",
       "licenses": [
@@ -3415,7 +2376,7 @@
       "type": "library",
       "name": "tsx",
       "version": "4.21.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|tsx@4.21.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|tsx@4.21.0",
       "author": "Hiroki Osame",
       "description": "TypeScript Execute (tsx): Node.js enhanced with esbuild to run TypeScript & ESM files",
       "licenses": [
@@ -3470,7 +2431,7 @@
       "type": "library",
       "name": "typescript",
       "version": "5.9.3",
-      "bom-ref": "dyslexia-support-skill@1.2.0|typescript@5.9.3",
+      "bom-ref": "dyslexia-support-skill@1.4.0|typescript@5.9.3",
       "author": "Microsoft Corp.",
       "description": "TypeScript is a language for application scale JavaScript development",
       "licenses": [
@@ -3525,7 +2486,7 @@
       "type": "library",
       "name": "undici-types",
       "version": "6.21.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|undici-types@6.21.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|undici-types@6.21.0",
       "description": "A stand-alone types package for Undici",
       "licenses": [
         {
@@ -3579,7 +2540,7 @@
       "type": "library",
       "name": "which",
       "version": "2.0.2",
-      "bom-ref": "dyslexia-support-skill@1.2.0|which@2.0.2",
+      "bom-ref": "dyslexia-support-skill@1.4.0|which@2.0.2",
       "author": "Isaac Z. Schlueter",
       "description": "Like which(1) unix command. Find the first instance of an executable in the PATH.",
       "licenses": [
@@ -3634,7 +2595,7 @@
       "type": "library",
       "name": "wrap-ansi",
       "version": "7.0.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0",
       "author": "Sindre Sorhus",
       "description": "Wordwrap a string with ANSI escape codes",
       "licenses": [
@@ -3689,7 +2650,7 @@
           "type": "library",
           "name": "ansi-regex",
           "version": "5.0.1",
-          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-regex@5.0.1",
+          "bom-ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|ansi-regex@5.0.1",
           "author": "Sindre Sorhus",
           "description": "Regular expression for matching ANSI escape codes",
           "licenses": [
@@ -3744,7 +2705,7 @@
           "type": "library",
           "name": "ansi-styles",
           "version": "4.3.0",
-          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
+          "bom-ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
           "author": "Sindre Sorhus",
           "description": "ANSI escape codes for styling strings in the terminal",
           "licenses": [
@@ -3799,7 +2760,7 @@
           "type": "library",
           "name": "emoji-regex",
           "version": "8.0.0",
-          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|emoji-regex@8.0.0",
+          "bom-ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|emoji-regex@8.0.0",
           "author": "Mathias Bynens",
           "description": "A regular expression to match all Emoji-only symbols as per the Unicode Standard.",
           "licenses": [
@@ -3854,7 +2815,7 @@
           "type": "library",
           "name": "string-width",
           "version": "4.2.3",
-          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|string-width@4.2.3",
+          "bom-ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|string-width@4.2.3",
           "author": "Sindre Sorhus",
           "description": "Get the visual width of a string - the number of columns required to display it",
           "licenses": [
@@ -3909,7 +2870,7 @@
           "type": "library",
           "name": "strip-ansi",
           "version": "6.0.1",
-          "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|strip-ansi@6.0.1",
+          "bom-ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|strip-ansi@6.0.1",
           "author": "Sindre Sorhus",
           "description": "Strip ANSI escape codes from a string",
           "licenses": [
@@ -3966,7 +2927,7 @@
       "type": "library",
       "name": "wrap-ansi",
       "version": "8.1.0",
-      "bom-ref": "dyslexia-support-skill@1.2.0|wrap-ansi@8.1.0",
+      "bom-ref": "dyslexia-support-skill@1.4.0|wrap-ansi@8.1.0",
       "author": "Sindre Sorhus",
       "description": "Wordwrap a string with ANSI escape codes",
       "licenses": [
@@ -4020,378 +2981,274 @@
   ],
   "dependencies": [
     {
-      "ref": "dyslexia-support-skill@1.2.0",
+      "ref": "dyslexia-support-skill@1.4.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|@types/js-yaml@4.0.9",
-        "dyslexia-support-skill@1.2.0|@types/node@20.19.39",
-        "dyslexia-support-skill@1.2.0|glob@10.5.0",
-        "dyslexia-support-skill@1.2.0|js-yaml@4.1.1",
-        "dyslexia-support-skill@1.2.0|tsx@4.21.0",
-        "dyslexia-support-skill@1.2.0|typescript@5.9.3"
+        "dyslexia-support-skill@1.4.0|@types/js-yaml@4.0.9",
+        "dyslexia-support-skill@1.4.0|@types/node@20.19.39",
+        "dyslexia-support-skill@1.4.0|glob@10.5.0",
+        "dyslexia-support-skill@1.4.0|js-yaml@4.3.2",
+        "dyslexia-support-skill@1.4.0|tsx@4.21.0",
+        "dyslexia-support-skill@1.4.0|typescript@5.9.3"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/aix-ppc64@0.27.7"
+      "ref": "dyslexia-support-skill@1.4.0|@esbuild/win32-x64@0.27.2"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/android-arm@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/android-arm64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/android-x64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/darwin-arm64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/darwin-x64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/freebsd-arm64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/freebsd-x64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-arm@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-arm64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-ia32@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-loong64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-mips64el@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-ppc64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-riscv64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-s390x@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/linux-x64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/netbsd-arm64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/netbsd-x64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/openbsd-arm64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/openbsd-x64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/openharmony-arm64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/sunos-x64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-arm64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-ia32@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@esbuild/win32-x64@0.27.7"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|@isaacs/cliui@8.0.2",
+      "ref": "dyslexia-support-skill@1.4.0|@isaacs/cliui@8.0.2",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|string-width@4.2.3",
-        "dyslexia-support-skill@1.2.0|string-width@5.1.2",
-        "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1",
-        "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0",
-        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0",
-        "dyslexia-support-skill@1.2.0|wrap-ansi@8.1.0"
+        "dyslexia-support-skill@1.4.0|string-width@4.2.3",
+        "dyslexia-support-skill@1.4.0|string-width@5.1.2",
+        "dyslexia-support-skill@1.4.0|strip-ansi@6.0.1",
+        "dyslexia-support-skill@1.4.0|strip-ansi@7.2.0",
+        "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0",
+        "dyslexia-support-skill@1.4.0|wrap-ansi@8.1.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|@pkgjs/parseargs@0.11.0"
+      "ref": "dyslexia-support-skill@1.4.0|@pkgjs/parseargs@0.11.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|@types/js-yaml@4.0.9"
+      "ref": "dyslexia-support-skill@1.4.0|@types/js-yaml@4.0.9"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|@types/node@20.19.39",
+      "ref": "dyslexia-support-skill@1.4.0|@types/node@20.19.39",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|undici-types@6.21.0"
+        "dyslexia-support-skill@1.4.0|undici-types@6.21.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|ansi-regex@6.2.2"
+      "ref": "dyslexia-support-skill@1.4.0|ansi-regex@6.2.2"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|ansi-styles@6.2.3"
+      "ref": "dyslexia-support-skill@1.4.0|ansi-styles@6.2.3"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|argparse@2.0.1"
+      "ref": "dyslexia-support-skill@1.4.0|argparse@2.0.1"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|balanced-match@1.0.2"
+      "ref": "dyslexia-support-skill@1.4.0|balanced-match@1.0.2"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|brace-expansion@2.1.0",
+      "ref": "dyslexia-support-skill@1.4.0|brace-expansion@2.1.7",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|balanced-match@1.0.2"
+        "dyslexia-support-skill@1.4.0|balanced-match@1.0.2"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|color-convert@2.0.1",
+      "ref": "dyslexia-support-skill@1.4.0|color-convert@2.0.1",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|color-name@1.1.4"
+        "dyslexia-support-skill@1.4.0|color-name@1.1.4"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|color-name@1.1.4"
+      "ref": "dyslexia-support-skill@1.4.0|color-name@1.1.4"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|cross-spawn@7.0.6",
+      "ref": "dyslexia-support-skill@1.4.0|cross-spawn@7.0.6",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|path-key@3.1.1",
-        "dyslexia-support-skill@1.2.0|shebang-command@2.0.0",
-        "dyslexia-support-skill@1.2.0|which@2.0.2"
+        "dyslexia-support-skill@1.4.0|path-key@3.1.1",
+        "dyslexia-support-skill@1.4.0|shebang-command@2.0.0",
+        "dyslexia-support-skill@1.4.0|which@2.0.2"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|eastasianwidth@0.2.0"
+      "ref": "dyslexia-support-skill@1.4.0|eastasianwidth@0.2.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|emoji-regex@9.2.2"
+      "ref": "dyslexia-support-skill@1.4.0|emoji-regex@9.2.2"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|esbuild@0.27.7",
+      "ref": "dyslexia-support-skill@1.4.0|esbuild@0.27.2",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|@esbuild/aix-ppc64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/android-arm@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/android-arm64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/android-x64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/darwin-arm64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/darwin-x64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/freebsd-arm64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/freebsd-x64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-arm@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-arm64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-ia32@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-loong64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-mips64el@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-ppc64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-riscv64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-s390x@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/linux-x64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/netbsd-arm64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/netbsd-x64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/openbsd-arm64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/openbsd-x64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/openharmony-arm64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/sunos-x64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/win32-arm64@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/win32-ia32@0.27.7",
-        "dyslexia-support-skill@1.2.0|@esbuild/win32-x64@0.27.7"
+        "dyslexia-support-skill@1.4.0|@esbuild/win32-x64@0.27.2"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|foreground-child@3.3.1",
+      "ref": "dyslexia-support-skill@1.4.0|foreground-child@3.3.1",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|cross-spawn@7.0.6",
-        "dyslexia-support-skill@1.2.0|signal-exit@4.1.0"
+        "dyslexia-support-skill@1.4.0|cross-spawn@7.0.6",
+        "dyslexia-support-skill@1.4.0|signal-exit@4.1.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|fsevents@2.3.3"
-    },
-    {
-      "ref": "dyslexia-support-skill@1.2.0|get-tsconfig@4.14.0",
+      "ref": "dyslexia-support-skill@1.4.0|get-tsconfig@4.14.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|resolve-pkg-maps@1.0.0"
+        "dyslexia-support-skill@1.4.0|resolve-pkg-maps@1.0.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|glob@10.5.0",
+      "ref": "dyslexia-support-skill@1.4.0|glob@10.5.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|foreground-child@3.3.1",
-        "dyslexia-support-skill@1.2.0|jackspeak@3.4.3",
-        "dyslexia-support-skill@1.2.0|minimatch@9.0.9",
-        "dyslexia-support-skill@1.2.0|minipass@7.1.3",
-        "dyslexia-support-skill@1.2.0|package-json-from-dist@1.0.1",
-        "dyslexia-support-skill@1.2.0|path-scurry@1.11.1"
+        "dyslexia-support-skill@1.4.0|foreground-child@3.3.1",
+        "dyslexia-support-skill@1.4.0|jackspeak@3.4.3",
+        "dyslexia-support-skill@1.4.0|minimatch@9.0.9",
+        "dyslexia-support-skill@1.4.0|minipass@7.1.3",
+        "dyslexia-support-skill@1.4.0|package-json-from-dist@1.0.1",
+        "dyslexia-support-skill@1.4.0|path-scurry@1.11.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|is-fullwidth-code-point@3.0.0"
+      "ref": "dyslexia-support-skill@1.4.0|is-fullwidth-code-point@3.0.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|isexe@2.0.0"
+      "ref": "dyslexia-support-skill@1.4.0|isexe@2.0.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|jackspeak@3.4.3",
+      "ref": "dyslexia-support-skill@1.4.0|jackspeak@3.4.3",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|@isaacs/cliui@8.0.2",
-        "dyslexia-support-skill@1.2.0|@pkgjs/parseargs@0.11.0"
+        "dyslexia-support-skill@1.4.0|@isaacs/cliui@8.0.2",
+        "dyslexia-support-skill@1.4.0|@pkgjs/parseargs@0.11.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|js-yaml@4.1.1",
+      "ref": "dyslexia-support-skill@1.4.0|js-yaml@4.3.2",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|argparse@2.0.1"
+        "dyslexia-support-skill@1.4.0|argparse@2.0.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|lru-cache@10.4.3"
+      "ref": "dyslexia-support-skill@1.4.0|lru-cache@10.4.3"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|minimatch@9.0.9",
+      "ref": "dyslexia-support-skill@1.4.0|minimatch@9.0.9",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|brace-expansion@2.1.0"
+        "dyslexia-support-skill@1.4.0|brace-expansion@2.1.7"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|minipass@7.1.3"
+      "ref": "dyslexia-support-skill@1.4.0|minipass@7.1.3"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|package-json-from-dist@1.0.1"
+      "ref": "dyslexia-support-skill@1.4.0|package-json-from-dist@1.0.1"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|path-key@3.1.1"
+      "ref": "dyslexia-support-skill@1.4.0|path-key@3.1.1"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|path-scurry@1.11.1",
+      "ref": "dyslexia-support-skill@1.4.0|path-scurry@1.11.1",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|lru-cache@10.4.3",
-        "dyslexia-support-skill@1.2.0|minipass@7.1.3"
+        "dyslexia-support-skill@1.4.0|lru-cache@10.4.3",
+        "dyslexia-support-skill@1.4.0|minipass@7.1.3"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|resolve-pkg-maps@1.0.0"
+      "ref": "dyslexia-support-skill@1.4.0|resolve-pkg-maps@1.0.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|shebang-command@2.0.0",
+      "ref": "dyslexia-support-skill@1.4.0|shebang-command@2.0.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|shebang-regex@3.0.0"
+        "dyslexia-support-skill@1.4.0|shebang-regex@3.0.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|shebang-regex@3.0.0"
+      "ref": "dyslexia-support-skill@1.4.0|shebang-regex@3.0.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|signal-exit@4.1.0"
+      "ref": "dyslexia-support-skill@1.4.0|signal-exit@4.1.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3",
+      "ref": "dyslexia-support-skill@1.4.0|string-width@4.2.3",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|is-fullwidth-code-point@3.0.0",
-        "dyslexia-support-skill@1.2.0|string-width@4.2.3|emoji-regex@8.0.0",
-        "dyslexia-support-skill@1.2.0|string-width@4.2.3|strip-ansi@6.0.1"
+        "dyslexia-support-skill@1.4.0|is-fullwidth-code-point@3.0.0",
+        "dyslexia-support-skill@1.4.0|string-width@4.2.3|emoji-regex@8.0.0",
+        "dyslexia-support-skill@1.4.0|string-width@4.2.3|strip-ansi@6.0.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|ansi-regex@5.0.1"
+      "ref": "dyslexia-support-skill@1.4.0|string-width@4.2.3|ansi-regex@5.0.1"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|emoji-regex@8.0.0"
+      "ref": "dyslexia-support-skill@1.4.0|string-width@4.2.3|emoji-regex@8.0.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|string-width@4.2.3|strip-ansi@6.0.1",
+      "ref": "dyslexia-support-skill@1.4.0|string-width@4.2.3|strip-ansi@6.0.1",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|string-width@4.2.3|ansi-regex@5.0.1"
+        "dyslexia-support-skill@1.4.0|string-width@4.2.3|ansi-regex@5.0.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|string-width@5.1.2",
+      "ref": "dyslexia-support-skill@1.4.0|string-width@5.1.2",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|eastasianwidth@0.2.0",
-        "dyslexia-support-skill@1.2.0|emoji-regex@9.2.2",
-        "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0"
+        "dyslexia-support-skill@1.4.0|eastasianwidth@0.2.0",
+        "dyslexia-support-skill@1.4.0|emoji-regex@9.2.2",
+        "dyslexia-support-skill@1.4.0|strip-ansi@7.2.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1",
+      "ref": "dyslexia-support-skill@1.4.0|strip-ansi@6.0.1",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1|ansi-regex@5.0.1"
+        "dyslexia-support-skill@1.4.0|strip-ansi@6.0.1|ansi-regex@5.0.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|strip-ansi@6.0.1|ansi-regex@5.0.1"
+      "ref": "dyslexia-support-skill@1.4.0|strip-ansi@6.0.1|ansi-regex@5.0.1"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0",
+      "ref": "dyslexia-support-skill@1.4.0|strip-ansi@7.2.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|ansi-regex@6.2.2"
+        "dyslexia-support-skill@1.4.0|ansi-regex@6.2.2"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|tsx@4.21.0",
+      "ref": "dyslexia-support-skill@1.4.0|tsx@4.21.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|esbuild@0.27.7",
-        "dyslexia-support-skill@1.2.0|fsevents@2.3.3",
-        "dyslexia-support-skill@1.2.0|get-tsconfig@4.14.0"
+        "dyslexia-support-skill@1.4.0|esbuild@0.27.2",
+        "dyslexia-support-skill@1.4.0|get-tsconfig@4.14.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|typescript@5.9.3"
+      "ref": "dyslexia-support-skill@1.4.0|typescript@5.9.3"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|undici-types@6.21.0"
+      "ref": "dyslexia-support-skill@1.4.0|undici-types@6.21.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|which@2.0.2",
+      "ref": "dyslexia-support-skill@1.4.0|which@2.0.2",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|isexe@2.0.0"
+        "dyslexia-support-skill@1.4.0|isexe@2.0.0"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0",
+      "ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
-        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|string-width@4.2.3",
-        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|strip-ansi@6.0.1"
+        "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
+        "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|string-width@4.2.3",
+        "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|strip-ansi@6.0.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-regex@5.0.1"
+      "ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|ansi-regex@5.0.1"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
+      "ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|ansi-styles@4.3.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|color-convert@2.0.1"
+        "dyslexia-support-skill@1.4.0|color-convert@2.0.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|emoji-regex@8.0.0"
+      "ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|emoji-regex@8.0.0"
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|string-width@4.2.3",
+      "ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|string-width@4.2.3",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|is-fullwidth-code-point@3.0.0",
-        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|emoji-regex@8.0.0",
-        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|strip-ansi@6.0.1"
+        "dyslexia-support-skill@1.4.0|is-fullwidth-code-point@3.0.0",
+        "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|emoji-regex@8.0.0",
+        "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|strip-ansi@6.0.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|strip-ansi@6.0.1",
+      "ref": "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|strip-ansi@6.0.1",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|wrap-ansi@7.0.0|ansi-regex@5.0.1"
+        "dyslexia-support-skill@1.4.0|wrap-ansi@7.0.0|ansi-regex@5.0.1"
       ]
     },
     {
-      "ref": "dyslexia-support-skill@1.2.0|wrap-ansi@8.1.0",
+      "ref": "dyslexia-support-skill@1.4.0|wrap-ansi@8.1.0",
       "dependsOn": [
-        "dyslexia-support-skill@1.2.0|ansi-styles@6.2.3",
-        "dyslexia-support-skill@1.2.0|string-width@5.1.2",
-        "dyslexia-support-skill@1.2.0|strip-ansi@7.2.0"
+        "dyslexia-support-skill@1.4.0|ansi-styles@6.2.3",
+        "dyslexia-support-skill@1.4.0|string-width@5.1.2",
+        "dyslexia-support-skill@1.4.0|strip-ansi@7.2.0"
       ]
     }
   ]
